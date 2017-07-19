@@ -2,5 +2,4 @@
 A personal website.
 
 # About this website
-* Made using Bootstrap.
-* Resume made using Creddle.
+* Made using Bootstrap; resume made using Creddle.
