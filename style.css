@@ -1,31 +1,38 @@
-body{
+body {
   font-family: 'Share Tech Mono', monospace;
   color: white;
   background-color: #F3C82C;
 }
-h1{
+
+h1 {
   color: #5f5777;
   text-align: center;
   font-size: 40px;
 }
-h2{
+
+h2 {
   font-size: 36px;
   text-align: center;
 }
-p{
+
+p {
   font-size: 17px;
-vertical-align: middle;
+  vertical-align: middle;
 }
+
 a:link, a:visited {
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-a:hover{
-  color:rgb(180, 180, 180);
+
+a:hover {
+  color: rgb(180, 180, 180);
   text-decoration: underline;
 }
-.resume{
-  max-height: 1100px;
+
+.resume {
+  max-height: 100px;
 }
+
 .resume .embed-responsive {
   position: relative;
   display: block;
@@ -33,15 +40,26 @@ a:hover{
   padding: 0;
   overflow: hidden;
 }
-.about{
-  background-color:rgba(0, 0, 0, 0.4);
+
+.about {
+  background-color: rgba(0, 0, 0, 0.4);
   margin: 5px;
 }
 
-.row{
+.row {
   padding-left: 10%;
   padding-right: 10%
 }
+
+.row.match-cols {
+  overflow: hidden;
+}
+
+.row.match-cols [class*="col-"] {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
 .row .about .extlink {
   text-align: center;
   font-size: 18px;
