@@ -1,0 +1,48 @@
+body{
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  background-color: #F3C82C;
+}
+h1{
+  color: #5f5777;
+  text-align: center;
+  font-size: 40px;
+}
+h2{
+  font-size: 36px;
+  text-align: center;
+}
+p{
+  font-size: 17px;
+vertical-align: middle;
+}
+a:link, a:visited {
+  color:rgb(255, 255, 255);
+}
+a:hover{
+  color:rgb(180, 180, 180);
+  text-decoration: underline;
+}
+.resume{
+  max-height: 1100px;
+}
+.resume .embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.about{
+  background-color:rgba(0, 0, 0, 0.4);
+  margin: 5px;
+}
+
+.row{
+  padding-left: 10%;
+  padding-right: 10%
+}
+.row .about .extlink {
+  text-align: center;
+  font-size: 18px;
+}
