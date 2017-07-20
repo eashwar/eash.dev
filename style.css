@@ -6,7 +6,6 @@ body {
 }
 
 h1 {
-  color: #5f5777;
   text-align: center;
   font-size: 40px;
 }
@@ -39,9 +38,12 @@ a:hover {
   color: black;
 }
 .resume {
+  background-color: rgba(95,87,119, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 360px;
+  border: solid #f3c82c 2.5px;
 }
 .about {
   background-color: rgba(0, 0, 0, 0.4);
@@ -57,4 +59,7 @@ a:hover {
 .row .about .extlink {
   text-align: center;
   font-size: 18px;
+}
+.row .resume .reslink {
+  font-size: 45px;
 }
