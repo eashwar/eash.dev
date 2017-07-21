@@ -1,6 +1,5 @@
 body {
   font-family: 'Share Tech Mono', monospace;
-  color: white;
   background-color: #F3C82C;
   /*background-color: black;*/
 }
@@ -12,7 +11,6 @@ h1 {
 
 h2 {
   font-size: 36px;
-  text-align: center;
 }
 
 p {
@@ -29,6 +27,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.row {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+/*BEFORE ROW 1*/
+
 .firstName {
   color: white;
   font-weight: bold;
@@ -37,29 +43,41 @@ a:hover {
 .lastName {
   color: black;
 }
+
+
+/*ROW 1: ABOUT*/
+
+.about {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 360px;
+  border: solid #f3c82c 2.5px;
+}
+
+.extlink {
+  text-align: center;
+  font-size: 18px;
+}
+
 .resume {
-  background-color: rgba(95,87,119, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 360px;
   border: solid #f3c82c 2.5px;
 }
-.about {
-  background-color: rgba(0, 0, 0, 0.4);
-  min-height: 360px;
-  border: solid #f3c82c 2.5px;
-}
 
-.row {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.row .about .extlink {
-  text-align: center;
-  font-size: 18px;
-}
-.row .resume .reslink {
+.reslink {
   font-size: 45px;
+}
+
+
+/*ROW 2: A POST*/
+
+.post {
+  color: black;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: left;
+  border-top: solid #f3c82c 5px;
 }
