@@ -4,7 +4,7 @@ converter.setFlavor('github');
 
 var info_box_text =
   `
-##hello!
+## hello!
 I\'m a freshman at the University of Michigan. My interests include:
 * computer science
 * computer music
@@ -31,7 +31,6 @@ function test() {
 }
 \`\`\`
 
-- [x] this is a complete item
-- [ ] this is an incomplete item
+I'll probably post here more often later, and probably set up an actual blogsite. Until then, this is empty!
 `;
 var post_one_html = converter.makeHtml(post_one);
