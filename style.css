@@ -17,7 +17,6 @@ p {
   font-size: 17px;
   vertical-align: middle;
 }
-
 a:link, a:visited {
   color: rgb(255, 255, 255);
 }
@@ -77,7 +76,7 @@ a:hover {
 
 .post {
   color: black;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(30, 30, 30, 0.4);
   text-align: left;
   border-top: solid #f3c82c 5px;
 }

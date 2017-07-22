@@ -14,20 +14,23 @@
   <!-- Icon -->
   <link rel="shortcut icon" type="image/png" href="favicon2.png" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script>
+  <script src="scripts/main.js"></script>
 
-  <script src="main.js"></script>
-
-  <title>EASHWAR MOHAN</title>
+  <title>eashwar mohan</title>
 
 </head>
 
 <body>
   <!-- First name bold/white, last name normal/black -->
   <h1 align="center">
-    <span class="firstName">Eashwar </span>
-    <span class="lastName">Mohan</span>
+    <a href="./index.html">
+    <span class="firstName">eashwar </span>
+    <span class="lastName">mohan</span>
+  </a>
   </h1>
   <div class="container-fluid">
+    <div class="row"><div class="col-lg-12">  <p style="text-align: right; font-size: 20px"><a href="./index.html">home</a> <a href="./blog.html">blog</a></p>
+</div></div>
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-6 about" id="info"></div>
       <script>
@@ -65,7 +68,6 @@
         </div>
         <div class="extlink">
           <br>
-
           <a href="" target="_blank">
                     <i class="fa fa-envelope fa-lg" aria-hidden="true"></i> eashwar[at]umich[dot]edu
         </a>
@@ -86,9 +88,13 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-lg-12 post" id="post_one"></div>
+      <div class="col-lg-12">  <p style="text-align: left; font-size: 40px">a recent post from <a href="./blog.html">my blog</a></p>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 post" id="front_page_post"></div>
       <script>
-        document.getElementById('post_one').innerHTML = post_one_html;
+        document.getElementById('front_page_post').innerHTML = post_one_html;
       </script>
     </div>
   </div>
