@@ -44,3 +44,12 @@ Hey guys! I got the blog set up, so now there can be multiple posts! You can nav
 
 `;
 var post_two_html = converter.makeHtml(post_two);
+
+var post_three;
+
+$.get("https://eashwar.github.io/posts/post3.txt", function (my_var) {
+    post_three = my_var;
+}, 'text');
+
+console.log(post_three);
+var post_three_html = converter.makeHtml(post_three);
