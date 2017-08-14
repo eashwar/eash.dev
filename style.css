@@ -1,7 +1,7 @@
 body {
-  font-family: 'Share Tech Mono', monospace;
-  background-color: #F3C82C;
-  /*background-color: black;*/
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #F3C82C;
+    /*background-color: black;*/
 }
 
 h1 {
@@ -14,8 +14,9 @@ h2 {
 }
 
 p {
-  font-size: 17px;
-  vertical-align: middle;
+    font-size: 17px;
+    /*color: #F3C82C;*/
+    vertical-align: middle;
 }
 a:link, a:visited {
   color: rgb(255, 255, 255);
@@ -40,17 +41,18 @@ a:hover {
 }
 
 .lastName {
-  color: black;
+    color: black;
+    /*color: #F3C82C;*/
 }
 
 
 /*ROW 1: ABOUT*/
 
 .about {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
-  min-height: 360px;
-  border: solid #f3c82c 2.5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 360px;
+    border: solid #f3c82c 2.5px;
 }
 
 .extlink {

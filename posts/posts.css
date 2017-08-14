@@ -4,13 +4,13 @@
 }
 
 .lastName {
-    color: black;
+    color: #F3C82C;
 }
 
 body {
     font-family: 'Share Tech Mono', monospace;
-    background-color: #F3C82C;
-    /*background-color: black;*/
+    /*background-color: #F3C82C;*/
+    background-color: black;
 }
 
 h2 {
@@ -20,6 +20,7 @@ h2 {
 
 p {
     font-size: 20px;
+    color: #F3C82C;
 }
 
 a:link, a:visited {
