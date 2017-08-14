@@ -1,6 +1,3 @@
-# Header 1
+# [third post: WE DID IT REDDIT](./posts/post3.html)
 
-`console.log("inline code!")`
-
-* Bullet
-* Points
+We're loading posts from external files now! Isn't that sweet? It's some neat jquery stuff.
