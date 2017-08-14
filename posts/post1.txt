@@ -1,4 +1,4 @@
-## [first post: learning](./posts/post1.html)
+## [first post: learning](https://eashwar.github.io/posts/post1.html)
 
 I'm writing this post using [`showdown`](https://github.com/showdownjs/showdown)!
 It's a javascript library that parses markdown files and inserts them as html.
