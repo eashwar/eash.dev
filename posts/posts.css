@@ -1,0 +1,37 @@
+﻿.firstName {
+    color: white;
+    font-weight: bold;
+}
+
+.lastName {
+    color: black;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #F3C82C;
+    /*background-color: black;*/
+}
+
+h2 {
+    font-size: 50px;
+    text-decoration-style: solid;
+}
+
+p {
+    font-size: 20px;
+}
+
+a:link, a:visited {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration: underline;
+}
+
+.row {
+    padding-left: 10%;
+    padding-right: 10%;
+}
