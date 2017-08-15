@@ -1,4 +1,4 @@
-## how are things?
+## [how are things?](https://eashwar.github.io/posts/post4.html)
 
 Things are going pretty well for me, actually. I've learned so much this summer from writing this website, my Java internship, and the [running app](https://github.com/eashwar/running-calculator) I built. It's making me really excited for college to start - I can't wait to make new friends and just learn a bunch of stuff. I also have to get started on packing - there's a lot left.
 
