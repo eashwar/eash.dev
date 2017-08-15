@@ -36,3 +36,10 @@ a:hover {
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.post {
+    color: black;
+    background: rgba(243,200,44, 0.5);
+    text-align: left;
+    border-top: solid black 5px;
+}
