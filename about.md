@@ -1,8 +1,11 @@
 ## hello!
 I'm a freshman at the University of Michigan. My interests include:
+
 * computer science
-* computer music
+* music technology
 * clarinet and piano performance
 * speedrunning
 
-On this website you can find links to my profiles on various platforms, as well as my [resume](https://resume.creddle.io/resume/1r07ere59ch).
+Feel free to check out my blog or get in touch with me using any of the platforms listed on the right!
+
+This website was made using [`showdown`](https://github.com/showdownjs/showdown), [`jQuery`](http://jquery.com), and [`bootstrap`](http://getbootstrap.com/); the resume was made using [Creddle](http://creddle.io).

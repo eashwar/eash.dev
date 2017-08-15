@@ -1,0 +1,95 @@
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #F3C82C;
+    /*background-color: black;*/
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+    /*color: #F3C82C;*/
+    vertical-align: middle;
+}
+
+a:link, a:visited {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration: underline;
+}
+
+.row {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+}
+
+
+/*BEFORE ROW 1*/
+
+.firstName {
+    color: white;
+    font-weight: bold;
+}
+
+.lastName {
+    color: black;
+    /*color: #F3C82C;*/
+}
+
+
+/*ROW 1: ABOUT*/
+
+.about {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 450px;
+    border: solid #f3c82c 2.5px;
+}
+
+.extlink {
+    text-align: center;
+    font-size: 18px;
+}
+
+.resume {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+    border: solid #f3c82c 2.5px;
+}
+
+.reslink {
+    font-size: 45px;
+}
+
+
+/*ROW 2: A POST AND TWITTER FEED*/
+
+.post {
+    color: black;
+    background: rgba(30, 30, 30, 0.4);
+    text-align: left;
+    border-top: solid #f3c82c 5px;
+}
+
+.twitter-feed {
+    border-top: solid #f3c82c 5px;
+}

@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\posts",
-    "\\scripts"
+    "\\scripts",
+    "\\styles"
   ],
-  "SelectedNode": "\\scripts\\main.js",
+  "SelectedNode": "\\about.md",
   "PreviewInSolutionExplorer": false
 }
