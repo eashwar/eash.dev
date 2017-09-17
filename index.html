@@ -122,7 +122,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12 col-lg-6 post" id="post"></div>
+			<div class="col-md-12 col-lg-12 post" id="post"></div>
 			<script>
 				$.get(post_url + "post4.md", 'text', function (post)
 				{
@@ -130,6 +130,7 @@
 					document.getElementById('post').innerHTML = html + "<br>";
 				});
 			</script>
+			<!--
 			<div class="col-md-12 col-lg-6 twitter-feed">
 				<a class="twitter-timeline" href="https://twitter.com/_eashwar"
 				   data-height="800"
@@ -137,6 +138,7 @@
 				   data-tweet-limit="4">Tweets by _eashwar</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
+				-->
 		</div>
 	</div>
 </body>
