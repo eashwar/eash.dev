@@ -5,6 +5,7 @@ I'm a freshman at the University of Michigan. My interests include:
 * music technology
 * clarinet and piano performance
 * speedrunning
+* parkour
 
 Feel free to check out my blog or get in touch with me using any of the platforms listed on the right!
 
