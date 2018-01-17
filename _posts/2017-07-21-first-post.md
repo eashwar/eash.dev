@@ -2,6 +2,7 @@
 title: first post - learning
 layout: post
 ---
+{{ page.date | date: "%b %-d, %Y" }}
 ## [first post: learning]({{page.url}})
 
 I'm writing this post using [`showdown`](https://github.com/showdownjs/showdown)!

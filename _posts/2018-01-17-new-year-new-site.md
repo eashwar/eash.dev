@@ -2,8 +2,8 @@
 title: new year, updated site!
 layout: post
 ---
-
-## [page.title]({{page.url}})
+{{ page.date | date: "%b %-d, %Y" }}
+## [{{page.title}}]({{page.url}})
 
 ### The site looks the same, what was updated?
 

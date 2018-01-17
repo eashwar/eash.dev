@@ -1,4 +1,6 @@
---- title: blog ---
+---
+title: blog
+---
 <!DOCTYPE html>
 <html>
 
@@ -25,7 +27,7 @@
             <div class="col-lg-12 post" id={{post.title}}>
                 {{ post.excerpt }}
                 {% if post.content contains site.excerpt_separator %}
-                    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/>
+                    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
                 {% endif %}
             </div>
         </div>
