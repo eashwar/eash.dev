@@ -1,25 +1,13 @@
+---
+title: home
+---
 <!DOCTYPE html>
 <html>
 
 <head>
-	<meta name="robots" content="noindex">
-	<!-- Icons -->
-	<script src="https://use.fontawesome.com/3ddc1f836a.js"></script>
-	<!-- Share Tech Mono-->
-	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	{% include common-head.html %}
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="./styles/style.css">
-	<!-- Icon -->
-	<link rel="shortcut icon" type="image/png" href="./images/favicon2.png" />
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script>
-	<script src="scripts/main.js"></script>
-
-	<title>eashwar mohan</title>
-
+	<link rel="stylesheet" type="text/css" href="{{site.url}}/styles/style.css">
 </head>
 
 <body>
@@ -32,20 +20,17 @@
 	</h1>
 	<div class="container-fluid">
 		<!-- The navbar row-->
+		{% include navbar.html %}
+
 		<div class="row">
-			<div class="col-lg-12 navbar">
-				<p style="text-align: right; font-size: 20px"><a href="./index.html">home</a> <a href="./blog.html">blog</a></p>
+			<div class="col-lg-4 col-md-6 col-sm-6 about" id="info">
+				{% for page in site.pages limit:1 %}
+					{% if page.title == "about" %}
+						{{ page.content }}
+					{% endif %}
+				{% endfor %}
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-6 about" id="info"></div>
-			<script>
-				$.get("https://eashwar.github.io/about.md", 'text', function (post)
-				{
-					var html = converter.makeHtml(post);
-					document.getElementById('info').innerHTML = html + "<br>";
-				});
-			</script>
+
 			<!-- External Links -->
 			<div class="col-lg-4 col-md-6 col-sm-6 about links">
 				<h3>Find me elsewhere on the internet!</h3>
@@ -99,7 +84,8 @@
 				<!--  Email embed-->
 				<div class="extlink">
 					<br>
-					<a href="http://www.google.com/recaptcha/mailhide/d?k=01acpirUAdGm8kXTEX3VqxAQ==&amp;c=gHBKTo4lpAXZTN2ZlH_3VYBvFxQZw9ThesKtdMg8BY8=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01acpirUAdGm8kXTEX3VqxAQ\x3d\x3d\x26c\x3dgHBKTo4lpAXZTN2ZlH_3VYBvFxQZw9ThesKtdMg8BY8\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">
+					<a href="http://www.google.com/recaptcha/mailhide/d?k=01acpirUAdGm8kXTEX3VqxAQ==&amp;c=gHBKTo4lpAXZTN2ZlH_3VYBvFxQZw9ThesKtdMg8BY8=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01acpirUAdGm8kXTEX3VqxAQ\x3d\x3d\x26c\x3dgHBKTo4lpAXZTN2ZlH_3VYBvFxQZw9ThesKtdMg8BY8\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;"
+					    title="Reveal this e-mail address">
 						<i class="fa fa-envelope fa-lg" aria-hidden="true"></i> e...@umich.edu
 					</a>
 					<br />
@@ -117,28 +103,27 @@
 		</div>
 		<br>
 		<div class="row">
-			<div class="col-sm-12">
-				<p style="text-align: left; font-size: 40px">a recent post from <a href="./blog.html">my blog</a></p>
+			<div class="col-sm-6">
+				<p style="text-align: left; font-size: 20px">a recent post from <a href="{{site.url}}/blog.html">my blog</a></p>
+			</div>
+			<div class="col-sm-6">
+				<p style="text-align: right; font-size: 20px"> my <a href="https://www.twitter.com/_eashwar/">twitter feed</a></p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12 col-lg-12 post" id="post"></div>
-			<script>
-				$.get(post_url + "post5.md", 'text', function (post)
-				{
-					var html = converter.makeHtml(post);
-					document.getElementById('post').innerHTML = html + "<br>";
-				});
-			</script>
-			<!--
+			{% for post in site.posts limit:1 %}
+				<div class="col-md-12 col-lg-6 post" id={{post.title}}>
+					{{ post.excerpt }}
+					{% if post.content contains site.excerpt_separator %}
+					<a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+					{% endif %}
+				</div>
+			{% endfor %}
 			<div class="col-md-12 col-lg-6 twitter-feed">
-				<a class="twitter-timeline" href="https://twitter.com/_eashwar"
-				   data-height="800"
-				   data-chrome="nofooter noscrollbar noborders"
-				   data-tweet-limit="4">Tweets by _eashwar</a>
+				<a class="twitter-timeline" href="https://twitter.com/_eashwar" data-height="800" data-chrome="nofooter noscrollbar noborders transparent" data-tweet-limit="3">Tweets by _eashwar</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
-				-->
+
 		</div>
 	</div>
 </body>
