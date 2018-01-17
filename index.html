@@ -23,7 +23,7 @@ title: home
 		{% include navbar.html %}
 
 		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-6 about" id="info">
+			<div class="col-lg-4 col-md-6 col-sm-12 about" id="info">
 				{% for page in site.pages limit:1 %}
 					{% if page.title == "about" %}
 						{{ page.content }}
@@ -32,9 +32,10 @@ title: home
 			</div>
 
 			<!-- External Links -->
-			<div class="col-lg-4 col-md-6 col-sm-6 about links">
+			<div class="col-lg-4 col-md-6 col-sm-12 about links">
 				<h3>Find me elsewhere on the internet!</h3>
 				<!--  Soundcloud embed -->
+				<br>
 				<div class="extlink">
 					<br>
 					<a href="https://soundcloud.com/eashw" target="_blank">
@@ -103,16 +104,9 @@ title: home
 		</div>
 		<br>
 		<div class="row">
-			<div class="col-sm-6">
-				<p style="text-align: left; font-size: 20px">a recent post from <a href="{{site.url}}/blog.html">my blog</a></p>
-			</div>
-			<div class="col-sm-6">
-				<p style="text-align: right; font-size: 20px"> my <a href="https://www.twitter.com/_eashwar/">twitter feed</a></p>
-			</div>
-		</div>
-		<div class="row">
 			{% for post in site.posts limit:1 %}
 				<div class="col-md-12 col-lg-6 post" id={{post.title}}>
+					<p style="text-align: right; font-size: 20px">a recent post from <a href="{{site.url}}/blog.html">my blog</a></p>
 					{{ post.excerpt }}
 					{% if post.content contains site.excerpt_separator %}
 					<a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
@@ -120,6 +114,7 @@ title: home
 				</div>
 			{% endfor %}
 			<div class="col-md-12 col-lg-6 twitter-feed">
+				<p style="text-align: right; font-size: 20px"> my <a href="https://www.twitter.com/_eashwar/">twitter feed</a></p>
 				<a class="twitter-timeline" href="https://twitter.com/_eashwar" data-height="800" data-chrome="nofooter noscrollbar noborders transparent" data-tweet-limit="3">Tweets by _eashwar</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>

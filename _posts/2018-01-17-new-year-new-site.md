@@ -16,7 +16,7 @@ I was at the 5th Annual North American Conference for Video Game Music! It was h
 [Here's](http://smtd.umich.edu/performances_events/nacvgm/documents/nacvgm-program.pdf) the program if you're interested, and check out [#nacvgm](https://twitter.com/hashtag/NACVGM) on twitter to follow up on what happened and what the people that were there are doing now.
 
 ### School
-First semester is over, and second semester is under way! I'm taking 3 EECS classes ([Computing for Computer Scientists](c4cs.github.io), Intro to DSA, Discrete Mathematics), Honors Physics 2 (electromagnetism), and University Band! That's cool.
+First semester is over, and second semester is under way! I'm taking 3 EECS classes ([Computing for Computer Scientists](https://c4cs.github.io), Intro to DSA, Discrete Mathematics), Honors Physics 2 (electromagnetism), and University Band! That's cool.
 
 ### Some Other Stuff
 I got a Nintendo Switch with Xenoblade Chronicles!! That game is really pretty and has a wonderful soundtrack. I'm absolutely enjoying the gameplay, I may write a review up when I finish it fully (no rush, though).
