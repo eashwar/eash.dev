@@ -24,7 +24,7 @@ title: home
 
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-12 about" id="info">
-				{% for page in site.pages limit:1 %}
+				{% for page in site.pages %}
 					{% if page.title == "about" %}
 						{{ page.content }}
 					{% endif %}
@@ -121,6 +121,7 @@ title: home
 
 		</div>
 	</div>
+	{% include common-script.html %}
 </body>
 
 </html>
