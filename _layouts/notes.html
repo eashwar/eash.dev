@@ -8,14 +8,15 @@
 </head>
 
 <body>
-    {{content}}
     <h1 align="center">
     notes -
     <a href="{{site.url}}">
     <span class="firstName">eashwar </span>
     <span class="lastName">mohan</span>
     </a>
-  </h1> {% include navbar.html %}
+  </h1>
+  {% include navbar.html %}
+      {{content}}
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12" id="post">
@@ -450,7 +451,7 @@
                     <li><span class="math"><script type="math/tex">\forall y Q(y)</script></span> (<span class="math"><script type="math/tex">\forall</script></span>-intro 3-8) (<strong>CONCLUSION</strong>)</li>
                 </ol>
                 <h3>proof by contradiction</h3>
-                <p><strong><u>Claim:</u></strong> There ar einfinitely many prime numbers.<br>
+                <p><strong><u>Claim:</u></strong> There are infinitely many prime numbers.<br>
                     <strong><u>Proof (by contradiction:</u></strong></p>
                 <ol>
                     <li>Assume the claim is <u><em>false</em></u>.</li>
