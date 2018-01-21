@@ -1,18 +1,21 @@
 ﻿.firstName {
     color: white;
-    font-weight: bold;
 }
 
 .lastName {
-    color: #F3C82C;
+    color: #E8EDE7;
 }
 
 body {
-    font-family: 'Share Tech Mono', monospace;
-    /*background-color: #F3C82C;*/
+    font-family: 'Raleway', sans-serif;
     background-color: black;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+    text-transform: uppercase;
+}
 h2 {
     font-size: 50px;
     text-decoration-style: solid;
@@ -24,15 +27,15 @@ h3 {
 
 p {
     font-size: 20px;
-    color: #F3C82C;
+    color: #E8EDE7;
 }
 
 a:link, a:visited {
-    color: rgb(255, 255, 255);
+    color: #51bb59;
 }
 
 a:hover {
-    color: rgb(180, 180, 180);
+    color: #2f6b34;
     text-decoration: underline;
 }
 
@@ -43,7 +46,7 @@ a:hover {
 
 .post {
     color: black;
-    background: rgba(243,200,44, 0.5);
+    background: rgba(81, 187, 89, 0.4);
     text-align: left;
     border-top: solid black 5px;
 }

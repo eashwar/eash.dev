@@ -1,5 +1,5 @@
 ---
-title: about
+title: ABOUT
 ---
 ## hello!
 I'm a freshman at the University of Michigan. My interests include:

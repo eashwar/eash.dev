@@ -1,11 +1,13 @@
 body {
-    font-family: 'Share Tech Mono', monospace;
-    background-color: #F3C82C;
-    /*background-color: black;*/
+    font-family: 'Raleway', sans-serif;
+    background-color: #E8EDE7;
 }
 table, th, td {
     border: 1px solid black;
     padding: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
 }
 h1 {
     text-align: center;
@@ -23,16 +25,16 @@ h3 {
 
 p {
     font-size: 17px;
-    /*color: #F3C82C;*/
+    /*color: #E8EDE7;*/
     vertical-align: middle;
 }
 
 a:link, a:visited {
-    color: rgb(255, 255, 255);
+    color: #51bb59;
 }
 
 a:hover {
-    color: rgb(180, 180, 180);
+    color: #2f6b34;
     text-decoration: underline;
 }
 /* Rows */
@@ -52,17 +54,17 @@ a:hover {
 
 .lastName {
     color: black;
-    /*color: #F3C82C;*/
+    /*color: #E8EDE7;*/
 }
 
 
 /*ROW 1: ABOUT*/
 
 .about {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    color: black;
+    background-color: rgba(81, 187, 89, 0.2);
     min-height: 500px;
-    border: solid #f3c82c 2.5px;
+    border: solid #E8EDE7 2.5px;
 }
 
 .extlink {
@@ -71,12 +73,12 @@ a:hover {
 }
 
 .resume {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(81, 187, 89, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 500px;
-    border: solid #f3c82c 2.5px;
+    border: solid #E8EDE7 2.5px;
 }
 
 .reslink {
@@ -88,11 +90,11 @@ a:hover {
 
 .post {
     color: black;
-    background: rgba(30, 30, 30, 0.4);
+    background: rgba(81, 187, 89, 0.2);
     text-align: left;
-    border-top: solid #f3c82c 5px;
+    border-top: solid #E8EDE7 5px;
 }
 
 .twitter-feed {
-    border-top: solid #f3c82c 5px;
+    border-top: solid #E8EDE7 5px;
 }
