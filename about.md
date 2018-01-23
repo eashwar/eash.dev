@@ -5,7 +5,7 @@ title: ABOUT
 I'm a freshman at the University of Michigan. My interests include:
 
 * computer science
-* music technology
+* video game music and music technology
 * clarinet and piano performance
 * speedrunning
 * parkour
