@@ -1,5 +1,5 @@
 # eashwar.github.io
-A personal website, featuring a blog.
+This is a personal website, featuring a blog.
 
 
 * The blog is built on [`mathjax`](https://www.mathjax.org/),   
