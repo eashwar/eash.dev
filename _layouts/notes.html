@@ -163,10 +163,13 @@
                 </ul>
                 <p><em>p = have your iClicker,   q = you attend class</em></p>
                 <p><span class="math"><script type="math/tex">q \to p</script></span> is correct. <span class="math"><script type="math/tex">\neg p \to \neg q</script></span> is called the <strong>contrapositive</strong> and is also true.</p>
-                <p><strong>Tautologies</strong> are propositions that are <strong>always true</strong>. Example: <span class="math"><script type="math/tex">\neg p \lor p</script></span>
-                    <br>
+                <p><strong>Tautologies</strong> are propositions that are <strong>always true</strong>. Example: <span class="math"><script type="math/tex">\neg p \lor p</script></span><br>
                     <strong>Contradictions</strong> are propositions that are <strong>always false</strong> Example: <span class="math"><script type="math/tex">\neg p \land p</script></span></p>
-                <p>Two compound propositions <span class="math"><script type="math/tex">p</script></span> and <span class="math"><script type="math/tex">q</script></span> are <strong>logically equivalent</strong> if and only if they have the same truth table, i.e. <span class="math"><script type="math/tex">p \leftrightarrow q</script></span> is a tautology.</p>
+                <p>Two compound propositions <span class="math"><script type="math/tex">p</script></span> and <span class="math"><script type="math/tex">q</script></span> are <strong>logically equivalent</strong> if and only if they have the same truth table, i.e.
+                    <span
+                        class="math">
+                        <script type="math/tex">p \leftrightarrow q</script>
+                        </span> is a tautology.</p>
                 <h3>Proving Logical Equivalence</h3>
                 <ol>
                     <li>If my nose is cold then I am unhappy.</li>
@@ -259,7 +262,7 @@
                 <ul>
                     <li>Let’s create <em>Dan</em>, <em>M1</em>, and <em>M2</em>.</li>
                 </ul>
-                <p>And <strong>relations</strong> among objects: <span class="math"><script type="math/tex">T(x,y)=</script></span> "<span class="math"><script type="math/tex">x</script></span> <span class="math"><script type="math/tex">is</script></span> <span class="math"><script type="math/tex">taller</script></span> <span class="math"><script type="math/tex">than</script></span> <span class="math"><script type="math/tex">y</script></span>"</p>
+                <p>And <strong>relations</strong> among objects: <span class="math"><script type="math/tex">T(x,y)=</script></span> "<span class="math"><script type="math/tex">x</script></span> <span class="math"><script type="math/tex">is</script></span> <span class="math"><script type="math/tex">taller</script></span>    <span class="math"><script type="math/tex">than</script></span> <span class="math"><script type="math/tex">y</script></span>"</p>
                 <p>We can now say: <span class="math"><script type="math/tex">T(Dan,M1) \land T(Dan,M2) \land \neg T(M1,M2) \land \neg T(M2,M1)</script></span>.</p>
                 <h2>Single-Argument Relations</h2>
                 <ul>
@@ -277,10 +280,8 @@
                     <li>
                         <p>A more complex example:</p>
                         <ul>
-                            <li><em>“If rain is forecast for Wednesday I’ll buy an umbrella, otherwise I’ll buy a latte.”</em>
-                                <br> *
-                                <span class="math"><script type="math/tex">R(x) =</script></span> “Rain is forecast for <span class="math"><script type="math/tex">x</script></span>.”
-                                <br> *
+                            <li><em>“If rain is forecast for Wednesday I’ll buy an umbrella, otherwise I’ll buy a latte.”</em><br> *
+                                <span class="math"><script type="math/tex">R(x) =</script></span> “Rain is forecast for <span class="math"><script type="math/tex">x</script></span>.”<br> *
                                 <span class="math"><script type="math/tex">B(x, y) =</script></span> "<span class="math"><script type="math/tex">x</script></span> will buy a <span class="math"><script type="math/tex">y</script></span>."</li>
                             <li><span class="math"><script type="math/tex">(R(Wed) \to B(me, umbrella)) \land (\neg R(Wed) \to B(me, latte))</script></span></li>
                         </ul>
@@ -372,68 +373,49 @@
                 <h3>more translations</h3>
                 <ul>
                     <li>
-                        <p>Every two people have a freind in common.
-                            <br> Let <span class="math"><script type="math/tex">F(x,y) = x</script></span>is a friend with<span class="math"><script type="math/tex">y</script></span>.
-                            <br>
+                        <p>Every two people have a freind in common.<br> Let <span class="math"><script type="math/tex">F(x,y) = x</script></span>is a friend with<span class="math"><script type="math/tex">y</script></span>.<br>
                             <span class="math"><script type="math/tex">\forall x \forall y \exists z [x \neq y \to (F(x,z) \land F(y,z)]</script></span></p>
                     </li>
                     <li>
-                        <p>“There is a person in this class all of whose friends in this class will get As”
-                            <br>
-                            <span class="math"><script type="math/tex">C(x)</script></span>: "<span class="math"><script type="math/tex">x</script></span> is in this class"
-                            <br>
-                            <span class="math"><script type="math/tex">F(x,y)</script></span>: "<span class="math"><script type="math/tex">x</script></span> and <span class="math"><script type="math/tex">y</script></span> are friends"
-                            <br>
+                        <p>“There is a person in this class all of whose friends in this class will get As”<br>
+                            <span class="math"><script type="math/tex">C(x)</script></span>: "<span class="math"><script type="math/tex">x</script></span> is in this class"<br>
+                            <span class="math"><script type="math/tex">F(x,y)</script></span>: "<span class="math"><script type="math/tex">x</script></span> and <span class="math"><script type="math/tex">y</script></span> are friends"<br>
                             <span class="math"><script type="math/tex">A(x)</script></span>: "<span class="math"><script type="math/tex">x</script></span> will get an A"</p>
                     </li>
                 </ul>
-                <p><span class="math"><script type="math/tex">\exists x \forall y C(x) \land [F(x,y) ^ C(y) \to A(y)]</script></span>
-                    <br>
-                    <span class="math"><script type="math/tex">\exists x \forall y C(x) \land [F(x,y) \to(C(y) \to A(y))]</script></span>
-                    <br> Both of these statements are correct translations.</p>
+                <p><span class="math"><script type="math/tex">\exists x \forall y C(x) \land [F(x,y) ^ C(y) \to A(y)]</script></span><br>
+                    <span class="math"><script type="math/tex">\exists x \forall y C(x) \land [F(x,y) \to(C(y) \to A(y))]</script></span><br> Both of these statements are correct translations.</p>
                 <hr>
                 <h1>Jan 16th: Introduction to Proofs</h1>
-                <p>An <strong>argument</strong> for a statement S is a sequence of statements ending with S.
-                    <br> We call S the <strong>conclusion</strong> and all the other statements the <strong>premises</strong>.
-                    <br> The argument is <strong>valid</strong> if whenever all of the premises are true, the conclusion is also true.
-                    <br>
+                <p>An <strong>argument</strong> for a statement S is a sequence of statements ending with S.<br> We call S the <strong>conclusion</strong> and all the other statements the <strong>premises</strong>.<br> The argument is <strong>valid</strong> if whenever
+                    all of the premises are true, the conclusion is also true.<br>
                     <strong>Proofs</strong> are <strong>valid arguments</strong> that establish the truth of mathematical statements.</p>
                 <h2>Introduction Rules</h2>
                 <h4><span class="math"><script type="math/tex">\land</script></span> introduction</h4>
-                <p><span class="math"><script type="math/tex">p</script></span>
-                    <br>
-                    <span class="math"><script type="math/tex">q</script></span>
-                    <br> __
+                <p><span class="math"><script type="math/tex">p</script></span><br>
+                    <span class="math"><script type="math/tex">q</script></span><br> __
                     <br>
                     <span class="math"><script type="math/tex">\therefore p \land q</script></span></p>
                 <h4><span class="math"><script type="math/tex">\lor</script></span> introduction</h4>
-                <p><span class="math"><script type="math/tex">p</script></span>
-                    <br> __
+                <p><span class="math"><script type="math/tex">p</script></span><br> __
                     <br>
                     <span class="math"><script type="math/tex">\therefore p \lor q</script></span></p>
                 <h4><span class="math"><script type="math/tex">\to</script></span> introduction</h4>
-                <p><span class="math"><script type="math/tex">p</script></span>
-                    <br>
-                    <span class="math"><script type="math/tex">.</script></span>
-                    <br>
-                    <span class="math"><script type="math/tex">.</script></span>
-                    <br>
-                    <span class="math"><script type="math/tex">q</script></span>
-                    <br> __
+                <p><span class="math"><script type="math/tex">p</script></span><br>
+                    <span class="math"><script type="math/tex">.</script></span><br>
+                    <span class="math"><script type="math/tex">.</script></span><br>
+                    <span class="math"><script type="math/tex">q</script></span><br> __
                     <br>
                     <span class="math"><script type="math/tex">\therefore p \to q</script></span></p>
                 <p><strong>There are more in the book!</strong></p>
                 <h2>Elimination Rules</h2>
                 <h4><span class="math"><script type="math/tex">\land</script></span> elimination</h4>
-                <p><span class="math"><script type="math/tex">p \land q</script></span>
-                    <br> __
+                <p><span class="math"><script type="math/tex">p \land q</script></span><br> __
                     <br>
                     <span class="math"><script type="math/tex">\therefore p</script></span></p>
                 <h4><span class="math"><script type="math/tex">\to</script></span> elimination</h4>
-                <p><span class="math"><script type="math/tex">p \to q</script></span>
-                    <br>
-                    <span class="math"><script type="math/tex">p</script></span>
-                    <br> __
+                <p><span class="math"><script type="math/tex">p \to q</script></span><br>
+                    <span class="math"><script type="math/tex">p</script></span><br> __
                     <br>
                     <span class="math"><script type="math/tex">\therefore q</script></span></p>
                 <p><strong>There are more in the book!</strong></p>
@@ -443,40 +425,34 @@
                 <ul>
                     <li><span class="math"><script type="math/tex">P(c)</script></span> allows us to infer that <span class="math"><script type="math/tex">\therefore\exists x P(x)</script></span></li>
                     <li><span class="math"><script type="math/tex">\forall x P(x)</script></span> allows us to infer that <span class="math"><script type="math/tex">\therefore P(c)</script></span></li>
-                    <li>If we state <span class="math"><script type="math/tex">\exists x P(x)</script></span> we can write a box saying (Let <span class="math"><script type="math/tex">c P(c)</script></span>. —&gt; <span class="math"><script type="math/tex">q</script></span>). If we can arrive at the proposition <span class="math"><script type="math/tex">q</script></span> in the box, we can conclude <span class="math"><script type="math/tex">\therefore q</script></span> outside of the box too.</li>
+                    <li>If we state <span class="math"><script type="math/tex">\exists x P(x)</script></span> we can write a box saying (Let <span class="math"><script type="math/tex">c P(c)</script></span>. —&gt; <span class="math"><script type="math/tex">q</script></span>).
+                        If we can arrive at the proposition <span class="math"><script type="math/tex">q</script></span> in the box, we can conclude <span class="math"><script type="math/tex">\therefore q</script></span> outside of the box too.</li>
                     <li>Finally; if within a box we start with (<span class="math"><script type="math/tex">c</script></span> and then reach the conclusion that <span class="math"><script type="math/tex">P(c)</script></span>) we can say <span class="math"><script type="math/tex">\therefore\forall x P(x)</script></span></li>
                 </ul>
                 <h3>example</h3>
                 <ol>
                     <li><span class="math"><script type="math/tex">\forall x (B(x) \to A(x))</script></span> (premise i)</li>
-                    <li><span class="math"><script type="math/tex">\exists x B(x)</script></span> (premise 2)
-                        <br> (start box)</li>
+                    <li><span class="math"><script type="math/tex">\exists x B(x)</script></span> (premise 2)<br> (start box)</li>
                     <li><span class="math"><script type="math/tex">c B(c)</script></span> (assumption, c is a specific person)</li>
                     <li><span class="math"><script type="math/tex">B(c) \to A(c)</script></span> (<span class="math"><script type="math/tex">\forall</script></span>-elim, 1)</li>
                     <li><span class="math"><script type="math/tex">A(c)</script></span> (<span class="math"><script type="math/tex">\to</script></span>-elim, 3,4)</li>
-                    <li><span class="math"><script type="math/tex">\exists x A(x)</script></span> (<span class="math"><script type="math/tex">\exists</script></span>-intro, 5)
-                        <br> (close box)</li>
+                    <li><span class="math"><script type="math/tex">\exists x A(x)</script></span> (<span class="math"><script type="math/tex">\exists</script></span>-intro, 5)<br> (close box)</li>
                     <li><span class="math"><script type="math/tex">\exists x A(x)</script></span> (<span class="math"><script type="math/tex">\exists</script></span>-elim, 2,3-6) (<strong>CONCLUSION</strong>)</li>
                 </ol>
                 <h3>inference example</h3>
                 <ol>
                     <li><span class="math"><script type="math/tex">\forall x \forall y(P(x)\to Q(y))</script></span> (premise)</li>
-                    <li><span class="math"><script type="math/tex">\exists x P(x)</script></span> (premise)
-                        <br> (open box)</li>
-                    <li><span class="math"><script type="math/tex">y_0</script></span>
-                        <br> (open box)</li>
+                    <li><span class="math"><script type="math/tex">\exists x P(x)</script></span> (premise)<br> (open box)</li>
+                    <li><span class="math"><script type="math/tex">y_0</script></span><br> (open box)</li>
                     <li><span class="math"><script type="math/tex">x_0 P(x_0)</script></span> (assumption)</li>
                     <li><span class="math"><script type="math/tex">\forall y P(x_0)\to Q(y)</script></span> (<span class="math"><script type="math/tex">\forall</script></span>-elim 1, <span class="math"><script type="math/tex">x_0</script></span>)</li>
                     <li><span class="math"><script type="math/tex">P(x_0)\to Q(y_0)</script></span> (<span class="math"><script type="math/tex">\forall</script></span>-elim 5,<span class="math"><script type="math/tex">y_0</script></span>)</li>
-                    <li><span class="math"><script type="math/tex">Q(y_0)</script></span> (<span class="math"><script type="math/tex">\to</script></span>-elim 6,4)
-                        <br> (close box)</li>
-                    <li><span class="math"><script type="math/tex">Q(y_0)</script></span> (<span class="math"><script type="math/tex">\exists</script></span>-elim 2,4-7)
-                        <br> (close box)</li>
+                    <li><span class="math"><script type="math/tex">Q(y_0)</script></span> (<span class="math"><script type="math/tex">\to</script></span>-elim 6,4)<br> (close box)</li>
+                    <li><span class="math"><script type="math/tex">Q(y_0)</script></span> (<span class="math"><script type="math/tex">\exists</script></span>-elim 2,4-7)<br> (close box)</li>
                     <li><span class="math"><script type="math/tex">\forall y Q(y)</script></span> (<span class="math"><script type="math/tex">\forall</script></span>-intro 3-8) (<strong>CONCLUSION</strong>)</li>
                 </ol>
                 <h3>proof by contradiction</h3>
-                <p><strong><u>Claim:</u></strong> There are infinitely many prime numbers.
-                    <br>
+                <p><strong><u>Claim:</u></strong> There are infinitely many prime numbers.<br>
                     <strong><u>Proof (by contradiction:</u></strong></p>
                 <ol>
                     <li>Assume the claim is <u><em>false</em></u>.</li>
@@ -510,7 +486,7 @@
                 </ul>
                 <hr>
                 <h1>January 23rd: Sets</h1>
-                <h2>Wrapping up Proofs:  Party of Six</h2>
+                <h2>Wrapping up Proofs: Party of Six</h2>
                 <ul>
                     <li>Assume “is a friend” is a symmetric relationship, - i.e. “A is a friend of B <span class="math"><script type="math/tex">\leftrightarrow</script></span> B is a friend of A”</li>
                     <li>Claim: In any group of 6 people there are at least 3 mutual friends or 3 mutual strangers. Moreover, this is not always true in a group of 5 people.
@@ -563,9 +539,7 @@
                     <li>All people are friends with a pair of others, and not friends with another pair.</li>
                 </ul>
                 <h2>Sets</h2>
-                <p>A <strong><em>set</em></strong> is a collection of items.
-                    <br> One notation is the curly braces.
-                    <br> For example:</p>
+                <p>A <strong><em>set</em></strong> is a collection of items.<br> One notation is the curly braces.<br> For example:</p>
                 <ul>
                     <li>{a,n,r,b,o} is the set of characters needed to spell “Ann Arbor”</li>
                     <li>{mon,wed,fri,sat,sun} is the set of days where EECS 203 does not have lectures.</li>
@@ -582,14 +556,50 @@
                 <h3>Set Builder Notation:</h3>
                 <p>‘S is the set of all odd primes’ becomes <span class="math"><script type="math/tex">S = \{x\space|\space Prime(x) \land Odd(x)\}</script></span></p>
                 <h3>Set relations:</h3>
-                <p>S is a subset of T; meaning all of S is contained in T
-                    <br> S is a proper subset of T; meaning T has more elements than S.
-                    <br> S and T are disjoint; meaning they have nothing in common.</p>
+                <p>S is a subset of T; meaning all of S is contained in T<br> S is a proper subset of T; meaning T has more elements than S.<br> S and T are disjoint; meaning they have nothing in common.</p>
                 <h3>Cardinality: Counting the number of elements</h3>
-                <p>If S contains n elements, how many elements are in P(S)?
-                    <br> The answer is <span class="math"><script type="math/tex">2^n</script></span>. Imagine a bitstring, with each bit representing whether or not an element is contained in the subset. There are <span class="math"><script type="math/tex">2^n</script></span> possible bitstrings that can be constructed, including <span class="math"><script type="math/tex">\emptyset</script></span>.</p>
+                <p>If S contains n elements, how many elements are in P(S)?<br> The answer is <span class="math"><script type="math/tex">2^n</script></span>. Imagine a bitstring, with each bit representing whether or not an element is contained in the subset. There are
+                    <span class="math"><script type="math/tex">2^n</script></span> possible bitstrings that can be constructed, including <span class="math"><script type="math/tex">\emptyset</script></span>.</p>
                 <h3>Sequences</h3>
                 <p>An <u><strong><em>ordered</em></strong></u> list of items, indicated by parentheses (…), not curly braces {…}</p>
+                <hr>
+                <h1>Feb 1st: Induction Proofs</h1>
+                <p>I missed a few lectures, oops.</p>
+                <h2>THE PRINCIPLE OF MATHEMATICAL INDUCTION</h2>
+                <p>To prove that <span class="math"><script type="math/tex">P(n)</script></span> is true for all positive integers <span class="math"><script type="math/tex">n</script></span>, where <span class="math"><script type="math/tex">P(n)</script></span> is a propositional
+                    function, we complete two steps:</p>
+                <h4><strong><em>BASIS STEP:</em></strong></h4>
+                <p>We verify that <span class="math"><script type="math/tex">P(1)</script></span> is true.</p>
+                <h4><strong><em>INDUCTIVE STEP</em></strong></h4>
+                <p>We show that the conditional statement <span class="math"><script type="math/tex">P(k)\to P(k+1)</script></span> is true for all positive integers <span class="math"><script type="math/tex">k</script></span>.</p>
+                <p>In completing the inductive step, we assume that <span class="math"><script type="math/tex">P(k)</script></span> is true for an arbitrary positive integer <span class="math"><script type="math/tex">k</script></span> and show that under that assumption,
+                    <span class="math"><script type="math/tex">P(k+1)</script></span> is also true. The initial assumption that <span class="math"><script type="math/tex">P(k)</script></span> is called the <strong>inductive hypothesis</strong>.</p>
+                <h2>An Example</h2>
+                <p>Let <span class="math"><script type="math/tex">P(n)</script></span> mean you can climb the <span class="math"><script type="math/tex">n</script></span>-th rung in a ladder. We want to show that <span class="math"><script type="math/tex">\forall n \geq 1 P(n)</script></span>    is true. We are given that <span class="math"><script type="math/tex">P(1)</script></span> is true and that if you can reach a rung, you can reach the rung above it.</p>
+                <p>The BASIS STEP (or base case) is that you can reach the first rung of the ladder, or <span class="math"><script type="math/tex">P(1)</script></span>.<br> The INDUCTIVE STEP is that <span class="math"><script type="math/tex">\forall k \geq 1 (P(k)\to P(k+1))</script></span>,
+                    from the given premise.</p>
+                <p>We can then conclude that <span class="math"><script type="math/tex">\forall n \geq 1\space\space P(n)</script></span>.</p>
+                <h2>Another example</h2>
+                <ul>
+                    <li>
+                        <p>Prove, for all natural numbers, that the sum <span class="math"><script type="math/tex">0+1+2+3...+n=\frac{n(n+1)}{2}</script></span></p>
+                    </li>
+                    <li>
+                        <p>BASIS STEP: <span class="math"><script type="math/tex">P(0)</script></span> is <span class="math"><script type="math/tex">0</script></span> and <span class="math"><script type="math/tex">P(1)</script></span> is <span class="math"><script type="math/tex">1</script></span>.</p>
+                    </li>
+                    <li>
+                        <p>INDUCTIVE STEP: Assume that <span class="math"><script type="math/tex">P(k)</script></span> is true, where <span class="math"><script type="math/tex">k</script></span> is an arbitrary natural number.</p>
+                        <ul>
+                            <li>Consider <span class="math"><script type="math/tex">P(k+1)</script></span>:</li>
+                            <li><span class="math"><script type="math/tex">0+1+2...+k+(k+1)</script></span></li>
+                            <li><span class="math"><script type="math/tex">=(0+1+2...+k)+(k+1)</script></span></li>
+                            <li><span class="math"><script type="math/tex">=\frac{k(k+1)}{2} + (k+1)</script></span> (Because of the <strong>inductive hypothesis</strong> <span class="math"><script type="math/tex">P(k)</script></span>!)</li>
+                            <li><span class="math"><script type="math/tex">=\frac{(k+1)(k+2)}{2}</script></span> (By algebra, we need to actually show this)</li>
+                            <li>The first equality follows from P(k), and the second by simplification; therefore P(k+1) is true.</li>
+                            <li>Therefore, by induction, <span class="math"><script type="math/tex">\forall n \geq 0\space\space P(n)=0+1+2+3...+n=\frac{n(n+1)}{2}</script></span> is true.</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
