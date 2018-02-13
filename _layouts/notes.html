@@ -257,12 +257,12 @@
                         </ul>
                     </li>
                 </ul>
-                <p>There’s <strong><em>nothing</em></strong> in these statements to show that they’re all essentially the same statement with the people replaced. There’s no ability for abstraction.</p>
+                <p>There’s <em><strong>nothing</strong></em> in these statements to show that they’re all essentially the same statement with the people replaced. There’s no ability for abstraction.</p>
                 <p>Predicate logic explicitly describes <strong>objects</strong>.</p>
                 <ul>
                     <li>Let’s create <em>Dan</em>, <em>M1</em>, and <em>M2</em>.</li>
                 </ul>
-                <p>And <strong>relations</strong> among objects: <span class="math"><script type="math/tex">T(x,y)=</script></span> "<span class="math"><script type="math/tex">x</script></span> <span class="math"><script type="math/tex">is</script></span> <span class="math"><script type="math/tex">taller</script></span>    <span class="math"><script type="math/tex">than</script></span> <span class="math"><script type="math/tex">y</script></span>"</p>
+                <p>And <strong>relations</strong> among objects: <span class="math"><script type="math/tex">T(x,y)=</script></span> "<span class="math"><script type="math/tex">x</script></span> <span class="math"><script type="math/tex">is</script></span> <span class="math"><script type="math/tex">taller</script></span>        <span class="math"><script type="math/tex">than</script></span> <span class="math"><script type="math/tex">y</script></span>"</p>
                 <p>We can now say: <span class="math"><script type="math/tex">T(Dan,M1) \land T(Dan,M2) \land \neg T(M1,M2) \land \neg T(M2,M1)</script></span>.</p>
                 <h2>Single-Argument Relations</h2>
                 <ul>
@@ -485,8 +485,8 @@
                     </li>
                 </ul>
                 <hr>
-                <h1>January 23rd: Sets</h1>
-                <h2>Wrapping up Proofs: Party of Six</h2>
+                <h1>Jan 23rd: Sets</h1>
+                <h2>Wrapping up Proofs:  Party of Six</h2>
                 <ul>
                     <li>Assume “is a friend” is a symmetric relationship, - i.e. “A is a friend of B <span class="math"><script type="math/tex">\leftrightarrow</script></span> B is a friend of A”</li>
                     <li>Claim: In any group of 6 people there are at least 3 mutual friends or 3 mutual strangers. Moreover, this is not always true in a group of 5 people.
@@ -539,7 +539,7 @@
                     <li>All people are friends with a pair of others, and not friends with another pair.</li>
                 </ul>
                 <h2>Sets</h2>
-                <p>A <strong><em>set</em></strong> is a collection of items.<br> One notation is the curly braces.<br> For example:</p>
+                <p>A <em><strong>set</strong></em> is a collection of items.<br> One notation is the curly braces.<br> For example:</p>
                 <ul>
                     <li>{a,n,r,b,o} is the set of characters needed to spell “Ann Arbor”</li>
                     <li>{mon,wed,fri,sat,sun} is the set of days where EECS 203 does not have lectures.</li>
@@ -558,16 +558,16 @@
                 <h3>Set relations:</h3>
                 <p>S is a subset of T; meaning all of S is contained in T<br> S is a proper subset of T; meaning T has more elements than S.<br> S and T are disjoint; meaning they have nothing in common.</p>
                 <h3>Cardinality: Counting the number of elements</h3>
-                <p>If S contains n elements, how many elements are in P(S)?<br> The answer is <span class="math"><script type="math/tex">2^n</script></span>. Imagine a bitstring, with each bit representing whether or not an element is contained in the subset. There are
-                    <span class="math"><script type="math/tex">2^n</script></span> possible bitstrings that can be constructed, including <span class="math"><script type="math/tex">\emptyset</script></span>.</p>
+                <p>If S contains n elements, how many elements are in P(S)?<br> The answer is <span class="math"><script type="math/tex">2^n</script></span>. Imagine a bitstring, with each bit representing whether or not an element is contained in the subset. There
+                    are <span class="math"><script type="math/tex">2^n</script></span> possible bitstrings that can be constructed, including <span class="math"><script type="math/tex">\emptyset</script></span>.</p>
                 <h3>Sequences</h3>
-                <p>An <u><strong><em>ordered</em></strong></u> list of items, indicated by parentheses (…), not curly braces {…}</p>
+                <p>An <u><em><strong>ordered</strong></em></u> list of items, indicated by parentheses (…), not curly braces {…}</p>
                 <hr>
                 <h1>Feb 1st: Induction Proofs</h1>
                 <p>I missed a few lectures, oops.</p>
                 <h2>THE PRINCIPLE OF MATHEMATICAL INDUCTION</h2>
-                <p>To prove that <span class="math"><script type="math/tex">P(n)</script></span> is true for all positive integers <span class="math"><script type="math/tex">n</script></span>, where <span class="math"><script type="math/tex">P(n)</script></span> is a propositional
-                    function, we complete two steps:</p>
+                <p>To prove that <span class="math"><script type="math/tex">P(n)</script></span> is true for all positive integers <span class="math"><script type="math/tex">n</script></span>, where <span class="math"><script type="math/tex">P(n)</script></span> is
+                    a propositional function, we complete two steps:</p>
                 <h4><strong><em>BASIS STEP:</em></strong></h4>
                 <p>We verify that <span class="math"><script type="math/tex">P(1)</script></span> is true.</p>
                 <h4><strong><em>INDUCTIVE STEP</em></strong></h4>
@@ -575,7 +575,7 @@
                 <p>In completing the inductive step, we assume that <span class="math"><script type="math/tex">P(k)</script></span> is true for an arbitrary positive integer <span class="math"><script type="math/tex">k</script></span> and show that under that assumption,
                     <span class="math"><script type="math/tex">P(k+1)</script></span> is also true. The initial assumption that <span class="math"><script type="math/tex">P(k)</script></span> is called the <strong>inductive hypothesis</strong>.</p>
                 <h2>An Example</h2>
-                <p>Let <span class="math"><script type="math/tex">P(n)</script></span> mean you can climb the <span class="math"><script type="math/tex">n</script></span>-th rung in a ladder. We want to show that <span class="math"><script type="math/tex">\forall n \geq 1 P(n)</script></span>    is true. We are given that <span class="math"><script type="math/tex">P(1)</script></span> is true and that if you can reach a rung, you can reach the rung above it.</p>
+                <p>Let <span class="math"><script type="math/tex">P(n)</script></span> mean you can climb the <span class="math"><script type="math/tex">n</script></span>-th rung in a ladder. We want to show that <span class="math"><script type="math/tex">\forall n \geq 1 P(n)</script></span>        is true. We are given that <span class="math"><script type="math/tex">P(1)</script></span> is true and that if you can reach a rung, you can reach the rung above it.</p>
                 <p>The BASIS STEP (or base case) is that you can reach the first rung of the ladder, or <span class="math"><script type="math/tex">P(1)</script></span>.<br> The INDUCTIVE STEP is that <span class="math"><script type="math/tex">\forall k \geq 1 (P(k)\to P(k+1))</script></span>,
                     from the given premise.</p>
                 <p>We can then conclude that <span class="math"><script type="math/tex">\forall n \geq 1\space\space P(n)</script></span>.</p>
@@ -600,6 +600,83 @@
                         </ul>
                     </li>
                 </ul>
+                <hr>
+                <h1>Feb 13th: Permutations and Combinations</h1>
+                <h2>Permutations</h2>
+                <ul>
+                    <li><span class="math"><script type="math/tex">P(n, k)</script></span> = number of ways to choose <em>k</em> things out of <em>n</em> things, where order counts.</li>
+                </ul>
+                <span class="math"><script type="math/tex; mode=display">P(n, k) = \frac{n!}{(n-k)!}
+                </script></span>
+                <ul>
+                    <li>A <em><strong>sequence</strong></em> of k things</li>
+                </ul>
+                <h2>Stirling’s Formula:</h2>
+                <ul>
+                    <li>Factorials are big, so we can approximate them using a fancy formula.</li>
+                </ul>
+                <span class="math"><script type="math/tex; mode=display">n! \approx \sqrt{2\pi n}(\frac{n}{e})^n
+                </script></span>
+                <span class="math"><script type="math/tex; mode=display">\textbf{"Stirling's Formula"}
+                </script></span>
+                <h2>Combinations</h2>
+                <ul>
+                    <li><span class="math"><script type="math/tex">C(n, k)</script></span> = number of ways to choose a set of <em>k</em> things out of <em>n</em> things, where order does not matter.</li>
+                </ul>
+                <span class="math"><script type="math/tex; mode=display">C(n, k) = \frac{n!}{k!(n-k)!} = {n \choose k} \text{ (pronounced n choose k)}
+                </script></span>
+                <ul>
+                    <li>A <em><strong>set</strong></em> of k things</li>
+                </ul>
+                <h2>Combinatorial Proofs</h2>
+                <p>Here’s an Example</p>
+                <ul>
+                    <li>Claim: <span class="math"><script type="math/tex">C(n, k) = C(n, n-k)</script></span></li>
+                    <li>Proof One: Algebraic
+                        <ul>
+                            <li><span class="math"><script type="math/tex">C(n,k) = \frac{n!}{k!(n-k)!}</script></span></li>
+                            <li><span class="math"><script type="math/tex">= \frac{n!}{(n-k)!k!}</script></span></li>
+                            <li><span class="math"><script type="math/tex">= C(n, n-k)</script></span></li>
+                        </ul>
+                    </li>
+                    <li>Proof Two: Combinatorial
+                        <ul>
+                            <li>Instead of choosing k elements to remove from a set of n elements, choose which n-k elements are to stay in the original set.</li>
+                            <li>Since this also specifies which k elements are removed, C(n, n-k) must be equal to C(n, k).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2>Binomial Theorem</h2>
+                <ul>
+                    <li><span class="math"><script type="math/tex">n \choose k</script></span> is often called a <em>binomial coefficient</em>.</li>
+                </ul>
+                <p>Let’s consider the binomial expansion.</p>
+                <ul>
+                    <li><span class="math"><script type="math/tex">(x+y)^2 = x^2 + 2xy + y^2</script></span></li>
+                    <li><span class="math"><script type="math/tex">(x+y)^3 = x^3 + 3x^2y + 3xy^2 + y^3</script></span></li>
+                    <li>…</li>
+                    <li><span class="math"><script type="math/tex">(x+y)^5 = (x+y)(x+y)(x+y)(x+y)(x+y)</script></span> = ?</li>
+                    <li>= <span class="math"><script type="math/tex">?x^5 + ?x^4y + ?x^3y^2 + ?x^2y^3 + ?xy^4 + ?y^5</script></span></li>
+                    <li>How can we get the coefficients of this binomial expansion?</li>
+                    <li>With the following theorem (the binomial theorem):</li>
+                </ul>
+                <span class="math"><script type="math/tex; mode=display">(x+y)^n = \sum_{k=0}^{n} {n \choose k}x^ky^{n-k}
+                </script></span>
+                <h2>Pascal’s Identity</h2>
+                <ul>
+                    <li><strong><em>Pascal’s Identity</em></strong>: If <span class="math"><script type="math/tex">n</script></span> and <span class="math"><script type="math/tex">k</script></span> are integers with <span class="math"><script type="math/tex">n \geq k \geq 1</script></span>,
+                        then:</li>
+                </ul>
+                <span class="math"><script type="math/tex; mode=display">{n+1 \choose k} = {n \choose k+1} + {n \choose k}
+                </script></span>
+                <h2>Pascal’s Triangle</h2>
+                <ul>
+                    <li>The <span class="math"><script type="math/tex">n^{th}</script></span> row in the triangle consists of the binomial coefficients of <span class="math"><script type="math/tex">C(n, k), k=0,...n</script></span>.</li>
+                    <li>The value of a number in a row follows Pascal’s identity (it’s the sum of the two numbers above it)</li>
+                </ul>
+                <p><img src="https://i.imgur.com/Ii0Ap4u.png" alt="triangle as coefficients"><br>
+                    <img src="https://i.imgur.com/xmeypxb.png" alt="the triangle"></p>
+
             </div>
         </div>
     </div>
