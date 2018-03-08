@@ -23,7 +23,7 @@ title: home
 		{% include navbar.html %}
 
 		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-12 about" id="info">
+			<div class="col-lg-6 col-sm-12 about" id="info">
 				{% for page in site.pages %}
 					{% if page.title == "ABOUT" %}
 						{{ page.content }}
@@ -32,70 +32,8 @@ title: home
 			</div>
 
 			<!-- External Links -->
-			<div class="col-lg-4 col-md-6 col-sm-12 about links">
-				<h3>Find me elsewhere on the internet!</h3>
-				<!--  Soundcloud embed -->
-				<br>
-				<div class="extlink">
-					<br>
-					<a href="https://soundcloud.com/eashw" target="_blank">
-						<i class="fa fa-soundcloud fa-lg" aria-hidden="true"></i> eashw
-					</a>
-				</div>
-				<!--  GitHub embed-->
-				<div class="extlink">
-					<br>
-
-					<a href="https://github.com/eashwar" target="_blank">
-						<i class="fa fa-github fa-lg" aria-hidden="true"></i> eashwar
-					</a>
-				</div>
-				<!--  Instagram embed-->
-				<div class="extlink">
-					<br>
-
-					<a href="https://www.instagram.com/_eashwar/" target="_blank">
-						<i class="fa fa-instagram fa-lg" aria-hidden="true"></i> _eashwar
-					</a>
-				</div>
-				<!--  Twitter embed-->
-				<div class="extlink">
-					<br>
-
-					<a href="https://www.twitter.com/_eashwar/" target="_blank">
-						<i class="fa fa-twitter fa-lg" aria-hidden="true"></i> _eashwar
-					</a>
-				</div>
-				<!-- YouTube embed-->
-				<div class="extlink">
-					<br>
-
-					<a href="https://www.youtube.com/user/theewok629/" target="_blank">
-						<i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i> theewok629
-					</a>
-				</div>
-				<!--  Steam embed
-				<div class="extlink">
-					<br>
-
-					<a href="http://steamcommunity.com/id/theewok629/" target="_blank">
-						<i class="fa fa-steam fa-lg" aria-hidden="true"></i> theewok629
-					</a>
-				</div>-->
-				<!--  Email embed-->
-				<div class="extlink">
-					<br>
-					<a href="http://www.google.com/recaptcha/mailhide/d?k=01acpirUAdGm8kXTEX3VqxAQ==&amp;c=gHBKTo4lpAXZTN2ZlH_3VYBvFxQZw9ThesKtdMg8BY8=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01acpirUAdGm8kXTEX3VqxAQ\x3d\x3d\x26c\x3dgHBKTo4lpAXZTN2ZlH_3VYBvFxQZw9ThesKtdMg8BY8\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;"
-					    title="Reveal this e-mail address">
-						<i class="fa fa-envelope fa-lg" aria-hidden="true"></i> &lt; click here for my email &gt;
-					</a>
-					<br />
-					<br />
-
-				</div>
-			</div>
 			<a href="https://resume.creddle.io/resume/1r07ere59ch" target="_blank">
-				<div class="col-lg-4 col-md-12 col-sm-12 resume">
+				<div class="col-lg-6 col-md-12 col-sm-12 resume">
 					<div class="reslink">
 						<i class="fa fa-file-text fa-lg" aria-hidden="true"></i> Resume
 					</div>
@@ -120,6 +58,9 @@ title: home
 			</div>
 
 		</div>
+
+		{% include footer.html %}
+
 	</div>
 </body>
 

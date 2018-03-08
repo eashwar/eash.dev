@@ -23,7 +23,9 @@ h2 {
 }
 
 h3 {
-    color: #C0C0C0
+    color: #C0C0C0;
+    font-size: 28px;
+    text-align: center;
 }
 
 p {
@@ -39,10 +41,14 @@ a:hover {
     color: #2f6b34;
     text-decoration: underline;
 }
+.extlink {
+    text-align: center;
+    font-size: 18px;
+}
 
 .row {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .post {
@@ -50,4 +56,13 @@ a:hover {
     background: rgba(81, 187, 89, 0.4);
     text-align: left;
     border-top: solid black 5px;
+}
+
+.footer {
+    padding-top: 5%;
+    background: rgba(81, 187, 89, 0.4);
+}
+.footer.row{
+    padding-top: 30px;
+    padding-bottom: 60px;
 }

@@ -2,14 +2,13 @@
 title: ABOUT
 ---
 ## hello!
-I'm a freshman at the University of Michigan. My interests include:
+I'm a freshman studying computer science with a minor in music at the University of Michigan. My interests include:
 
-* computer science
 * video game music and music technology
 * clarinet and piano performance
-* speedrunning
+* video game speedrunning
 * parkour
 
-Feel free to check out my blog or get in touch with me using any of the platforms listed in the next card!
+Feel free to check out my blog or get in touch with me with the links at the bottom of the page!
 
 This website was made using [`jekyll`](https://jekyllrb.com/), [`mathjax`](https://www.mathjax.org/), [`jQuery`](http://jquery.com), and [`bootstrap`](http://getbootstrap.com/); the resume was made using [Creddle](http://creddle.io).

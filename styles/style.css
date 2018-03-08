@@ -86,6 +86,9 @@ a:hover {
     font-size: 45px;
 }
 
+.about-203{
+    text-align: center;
+}
 
 /*ROW 2: A POST AND TWITTER FEED*/
 
@@ -98,4 +101,14 @@ a:hover {
 
 .twitter-feed {
     border-top: solid #E8EDE7 5px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: rgba(81, 187, 89, 0.2);
+}
+.footer.row{
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
