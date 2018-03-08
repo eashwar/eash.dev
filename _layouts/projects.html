@@ -7,14 +7,14 @@ title: blog
 <head>
     {% include common-head.html %}
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="{{site.url}}/styles/blog.css">
+    <link rel="stylesheet" type="text/css" href="{{site.url}}/styles/projects.css">
     {% include common-script.html %}
 </head>
 
 <body>
     {{content}}
     <h1 align="center">
-        <span class="lastName">BLOG - </span>
+        <span class="lastName">PROJECTS - </span>
         <a href="{{site.url}}">
             <span class="lastName">EASHWAR MOHAN</span>
         </a>
@@ -22,17 +22,22 @@ title: blog
 
     <div class="container-fluid">
         {% include navbar.html %}
-        {% for post in site.posts %}
         <div class="row">
-            <div class="col-lg-12 post" id={{post.title}}>
+        {% for post in site.posts %}
+            <div class="col-lg-4 post" id={{post.title}}>
                 {{ post.excerpt }}
                 {% if post.content contains site.excerpt_separator %}
                     <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
                 {% endif %}
             </div>
+            {% assign mod = forloop.index | modulo: 3 %}
+            {% if mod == 0 %}
+        </div>
+        <div class="row">
+            {% endif %}
+        {% endfor %}
         </div>
 
-        {% endfor %}
         <br/>
         <br/>
         {% include footer.html %}

@@ -8,11 +8,10 @@ layout: post
 ### The site looks the same, what was updated?
 
 This website now uses Jekyll! That means that writing blog posts is no longer a pain, and I now feel good about the website. Look out for CSS updates, probably soon!
-
+<!--more-->
 
 ### NACVGM!
 I was at the 5th Annual North American Conference for Video Game Music! It was held at the University of Michigan and I had an absolute blast meeting people and hearing some awesome talks.
-<!--more-->
 [Here's](http://smtd.umich.edu/performances_events/nacvgm/documents/nacvgm-program.pdf) the program if you're interested, and check out [#nacvgm](https://twitter.com/hashtag/NACVGM) on twitter to follow up on what happened and what the people that were there are doing now.
 
 ### School

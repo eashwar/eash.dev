@@ -55,7 +55,9 @@ a:hover {
     color: black;
     background: rgba(81, 187, 89, 0.4);
     text-align: left;
-    border-top: solid black 5px;
+    border: solid black 5px;
+    min-height: 450px;
+    max-height: 450px;
 }
 
 .footer {
