@@ -57,6 +57,14 @@ a:hover {
     padding-right: 20%;
 }
 
+.row.match-my-cols {
+    overflow: hidden;
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
 
 .post {
     color: black;

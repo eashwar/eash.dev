@@ -25,7 +25,7 @@ title: blog
         <div class="row">
             Here are all of the computer and music projects that I've worked on/am working on at the moment! Newer projects appear at the top, and older projects appear at the bottom. Click on the title of a project or "Read more" for more information!
         </div>
-        <div class="row">
+        <div class="row match-my-cols">
         {% for post in site.posts %}
             <div class="col-lg-4 post" id={{post.title}}>
                 {{ post.excerpt }}
@@ -36,7 +36,7 @@ title: blog
             {% assign mod = forloop.index | modulo: 3 %}
             {% if mod == 0 %}
         </div>
-        <div class="row">
+        <div class="row match-my-cols">
             {% endif %}
         {% endfor %}
         </div>
