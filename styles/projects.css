@@ -28,6 +28,10 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    font-size: 30px;
+}
+
 p {
     font-size: 20px;
     color: #E8EDE7;
@@ -57,7 +61,7 @@ a:hover {
     text-align: left;
     border: solid black 5px;
     min-height: 450px;
-    max-height: 450px;
+
 }
 
 .footer {
