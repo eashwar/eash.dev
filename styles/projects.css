@@ -9,7 +9,9 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: black;
+    color: white;
+    font-size: 18px;
+    background-color: #5d5d5d;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
@@ -54,12 +56,18 @@ a:hover {
     padding-left: 20%;
     padding-right: 20%;
 }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
 
 .post {
     color: black;
     background: rgba(81, 187, 89, 0.4);
     text-align: left;
-    border: solid black 5px;
+    border: solid #5d5d5d 8px;
     min-height: 450px;
 
 }
