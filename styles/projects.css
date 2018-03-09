@@ -56,12 +56,7 @@ a:hover {
     padding-left: 20%;
     padding-right: 20%;
 }
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
+
 
 .post {
     color: black;
