@@ -5,6 +5,12 @@
     {% include common-head.html %}
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="{{site.url}}/styles/style.css"> {% include common-script.html %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["jsMath2jax.js"]
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 
 <body>

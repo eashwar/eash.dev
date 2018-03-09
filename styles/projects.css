@@ -26,6 +26,12 @@ h2 {
     text-decoration-style: solid;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .musical h2{
     padding-top: 20px;
     min-height: 144px;
@@ -51,7 +57,7 @@ p {
 }
 
 a:link, a:visited {
-    color: #51bb59;
+    color: #a5dfa9;
 }
 
 a:hover {
@@ -63,6 +69,18 @@ a:hover {
     font-size: 18px;
 }
 
+.btn-link{
+    color: white;
+    font-size: 40px;
+}
+.btn-link:hover{
+    color: white;
+    text-decoration: none;
+}
+.btn-link:focus{
+    color: white;
+    text-decoration: none;
+}
 .row {
     padding-left: 10%;
     padding-right: 10%;
@@ -79,6 +97,7 @@ a:hover {
 }
 .section-title {
     font-size: 40px;
+    text-decoration: none !important;
 }
 
 .row.about-projects p{

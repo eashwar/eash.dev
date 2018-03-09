@@ -24,54 +24,91 @@ title: blog
         {% include navbar.html %}
         <div class="row about-projects">
             <p>
-                Here are all of the computer and music projects that I've worked on/am working on at the moment! Newer projects appear at the top, and older projects appear at the bottom. Click on the title of a project or "Read more" for more information!
+                Here are all of the computer and music projects that I've worked on/am working on at the moment. Click on each section to expand/collapse that section.
             </p>
         </div>
 
-        <div class="row match-my-cols">
-        <h2 class="section-title">Programs I've Written</h2>
-        {% assign counter = 1 %}
-        {% for post in site.posts %}
-        {% if post.title contains "computer" %}
-            <div class="col-md-4 col-sm-12 post computer" id={{post.title}}>
-                <br/>
-                {{ post.excerpt }}
-                {% if post.content contains site.excerpt_separator %}
-                    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
-                {% endif %}
+        <h2 class="section-title">
+            <button data-toggle="collapse" data-target="#currentsection" class="btn btn-link">Current Projects</button>
+        </h2>
+        <div id="currentsection" class="collapse">
+            <div class="row match-my-cols">
+            {% assign counter = 1 %}
+            {% for post in site.posts %}
+            {% if post.title contains "current" %}
+                <div class="col-md-4 col-sm-12 post computer" id={{post.title}}>
+                    <br/>
+                    {{ post.excerpt }}
+                    {% if post.content contains site.excerpt_separator %}
+                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
+                    {% endif %}
+                </div>
+                {% assign mod = counter | modulo: 3 %}
+                {% if mod == 0 %}
             </div>
-            {% assign mod = counter | modulo: 3 %}
-            {% if mod == 0 %}
-        </div>
-        <br/>
-        <div class="row match-my-cols">
+            <br/>
+            <div class="row match-my-cols">
+                {% endif %}
+                {% assign counter = counter | plus: 1 %}
             {% endif %}
-            {% assign counter = counter | plus: 1 %}
-        {% endif %}
-        {% endfor %}
+            {% endfor %}
+            </div>
         </div>
 
-        <div class="row match-my-cols">
-        <h2 class="section-title">Music I've Made</h2>
-        {% assign counter = 1 %}
-        {% for post in site.posts %}
-        {% if post.title contains "musical" %}
-            <div class="col-md-4 col-sm-12 post musical" id={{post.title}}>
-                <br/>
-                {{ post.excerpt }}
-                {% if post.content contains site.excerpt_separator %}
-                    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
-                {% endif %}
+
+        <h2 class="section-title">
+            <button data-toggle="collapse" data-target="#computersection" class="btn btn-link">Programs I've Written</button>
+        </h2>
+        <div id="computersection" class="collapse">
+            <div class="row match-my-cols">
+            {% assign counter = 1 %}
+            {% for post in site.posts %}
+            {% if post.title contains "computer" %}
+                <div class="col-md-4 col-sm-12 post computer" id={{post.title}}>
+                    <br/>
+                    {{ post.excerpt }}
+                    {% if post.content contains site.excerpt_separator %}
+                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
+                    {% endif %}
+                </div>
+                {% assign mod = counter | modulo: 3 %}
+                {% if mod == 0 %}
             </div>
-            {% assign mod = counter | modulo: 3 %}
-            {% if mod == 0 %}
-        </div>
-        <br/>
-        <div class="row match-my-cols">
+            <br/>
+            <div class="row match-my-cols">
+                {% endif %}
+                {% assign counter = counter | plus: 1 %}
             {% endif %}
-            {% assign counter = counter | plus: 1 %}
-        {% endif %}
-        {% endfor %}
+            {% endfor %}
+            </div>
+        </div>
+
+
+        <h2 class="section-title">
+            <button data-toggle="collapse" data-target="#musicsection" class="btn btn-link">Music I've Made</button>
+        </h2>
+        <div id="musicsection" class="collapse">
+            <div class="row match-my-cols">
+            {% assign counter = 1 %}
+            {% for post in site.posts %}
+            {% if post.title contains "musical" %}
+                <div class="col-md-4 col-sm-12 post musical" id={{post.title}}>
+                    <br/>
+                    {{ post.excerpt }}
+                    {% if post.content contains site.excerpt_separator %}
+                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
+                    {% endif %}
+                </div>
+                {% assign mod = counter | modulo: 3 %}
+                {% if mod == 0 %}
+            </div>
+            <br/>
+            <div class="row match-my-cols">
+                {% endif %}
+                {% assign counter = counter | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+            </div>
         </div>
 
         <br/>
