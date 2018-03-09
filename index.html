@@ -44,21 +44,22 @@ title: home
 		<div class="row">
 			{% for post in site.posts limit:1 %}
 				<div class="col-md-12 col-lg-6 post" id={{post.title}}>
-					<p style="text-align: right; font-size: 20px">a recent post from <a href="{{site.url}}/blog.html">my blog</a></p>
+					<p style="text-align: right; font-size: 20px">the most recent <a href="{{site.url}}/projects.html">project</a> I've been working on!</p>
 					{{ post.excerpt }}
 					{% if post.content contains site.excerpt_separator %}
 					<a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
 					{% endif %}
 				</div>
 			{% endfor %}
-			<div class="col-md-12 col-lg-6 twitter-feed">
+			<!-- <div class="col-md-12 col-lg-6 twitter-feed">
 				<p style="text-align: right; font-size: 20px"> my <a href="https://www.twitter.com/_eashwar/">twitter feed</a></p>
 				<a class="twitter-timeline" href="https://twitter.com/_eashwar" data-height="800" data-chrome="nofooter noscrollbar noborders transparent" data-tweet-limit="3">Tweets by _eashwar</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
+			</div> -->
 
 		</div>
-
+		<br/><br/><br/><br/><br/>
+		
 		{% include footer.html %}
 
 	</div>
