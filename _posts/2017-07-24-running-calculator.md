@@ -1,5 +1,5 @@
 ---
-title: Running Calculator
+title: Running Calculator computer
 layout: post
 ---
 Made on {{ page.date | date: "%b %-d, %Y" }}

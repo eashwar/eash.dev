@@ -1,5 +1,5 @@
 ---
-title: now-playing
+title: now-playing computer
 layout: post
 ---
 Made on {{ page.date | date: "%b %-d, %Y" }}

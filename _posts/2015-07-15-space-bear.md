@@ -1,5 +1,5 @@
 ---
-title: SpaceBear
+title: SpaceBear computer
 layout: post
 ---
 Made on {{ page.date | date: "%b %-d, %Y" }}

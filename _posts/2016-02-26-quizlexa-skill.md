@@ -1,5 +1,5 @@
 ---
-title: Quizlexa
+title: Quizlexa computer
 layout: post
 ---
 Made on {{ page.date | date: "%b %-d, %Y" }}

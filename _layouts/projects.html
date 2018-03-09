@@ -22,22 +22,55 @@ title: blog
 
     <div class="container-fluid">
         {% include navbar.html %}
-        <div class="row">
-            Here are all of the computer and music projects that I've worked on/am working on at the moment! Newer projects appear at the top, and older projects appear at the bottom. Click on the title of a project or "Read more" for more information!
+        <div class="row about-projects">
+            <p>
+                Here are all of the computer and music projects that I've worked on/am working on at the moment! Newer projects appear at the top, and older projects appear at the bottom. Click on the title of a project or "Read more" for more information!
+            </p>
         </div>
+
         <div class="row match-my-cols">
+        <h2>Programs I've Written</h2>
+        {% assign counter = 1 %}
         {% for post in site.posts %}
-            <div class="col-lg-4 post" id={{post.title}}>
+        {% if post.title contains "computer" %}
+            <div class="col-md-4 col-sm-12 post computer" id={{post.title}}>
+                <br/>
                 {{ post.excerpt }}
                 {% if post.content contains site.excerpt_separator %}
                     <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
                 {% endif %}
             </div>
-            {% assign mod = forloop.index | modulo: 3 %}
+            {% assign mod = counter | modulo: 3 %}
             {% if mod == 0 %}
         </div>
+        <br/>
         <div class="row match-my-cols">
             {% endif %}
+            {% assign counter = counter | plus: 1 %}
+        {% endif %}
+        {% endfor %}
+        </div>
+
+        <div class="row match-my-cols">
+        <h2>Music I've Made</h2>
+        {% assign counter = 1 %}
+        {% for post in site.posts %}
+        {% if post.title contains "musical" %}
+            <div class="col-md-4 col-sm-12 post musical" id={{post.title}}>
+                <br/>
+                {{ post.excerpt }}
+                {% if post.content contains site.excerpt_separator %}
+                    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
+                {% endif %}
+            </div>
+            {% assign mod = counter | modulo: 3 %}
+            {% if mod == 0 %}
+        </div>
+        <br/>
+        <div class="row match-my-cols">
+            {% endif %}
+            {% assign counter = counter | plus: 1 %}
+        {% endif %}
         {% endfor %}
         </div>
 

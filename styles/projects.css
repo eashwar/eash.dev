@@ -18,15 +18,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1{
     text-transform: uppercase;
+    font-size:45px;
 }
 h2 {
-    font-size: 50px;
+    font-size: 33px;
+    text-align: center;
     text-decoration-style: solid;
+}
+
+.musical h2{
+    padding-top: 20px;
+    min-height: 144px;
+}
+
+.computer h2{
+    min-height: 75px;
 }
 
 h3 {
     color: #C0C0C0;
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -53,27 +64,34 @@ a:hover {
 }
 
 .row {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+@media (min-width:961px)  {
+    .row.match-my-cols {
+        overflow: hidden;
+    }
 
-.row.match-my-cols {
-    overflow: hidden;
+    .row.match-my-cols [class*="col-md"]{
+        margin-bottom: -99999px;
+        padding-bottom: 99999px;
+    }
 }
-
-.row.match-my-cols [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+.row.about-projects{
+    font-size: 20px;
+    padding-bottom: 1%;
+    border: solid #5d5d5d 10px;
+    color: #E8EDE7;
 }
 
 .post {
     color: black;
     background: rgba(81, 187, 89, 0.4);
     text-align: left;
-    border: solid #5d5d5d 8px;
+    border: solid #5d5d5d 10px;
     min-height: 450px;
-
 }
+
 
 .footer {
     padding-top: 5%;
