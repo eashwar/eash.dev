@@ -1,25 +1,11 @@
+---
+title: nacvgm
+---
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta name="robots" content="noindex">
-    <!-- Icons -->
-    <script src="https://use.fontawesome.com/3ddc1f836a.js"></script>
-    <!-- Share Tech Mono-->
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <!-- Icon -->
-    <link rel="shortcut icon" type="image/png" href="./images/favicon2.png" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script>
-    <script src="scripts/main.js"></script>
-
-    <title>eashwar mohan</title>
-
+    {% include common-head.html %}
 </head>
 
 <body>
@@ -29,6 +15,9 @@
             <span class="lastName">mohan</span>
         </a>
     </h1>
+    <div class="container-fluid">
+        {% include navbar.html %}
+    </div>
     <h1>Strategies for Algorithmic Interactive Music Generation and Implementation in Video Games</h1>
     <h3>Alvaro Lopez</h3>
     <blockquote>
@@ -49,6 +38,10 @@
     <p>Templating &amp; Training leads to similar musical</p>
     <h3>Google Magenta</h3>
     <p>Using Tensor Flow tech to create compelling music</p>
+
+    {% include common-script.html %}
+    {% include footer.html %}
+
 </body>
 
 </html>

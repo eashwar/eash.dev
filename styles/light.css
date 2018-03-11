@@ -1,80 +1,108 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #E8EDE7;
-}
-table, th, td {
-    border: 1px solid black;
-    padding: 15px;
-}
-h1, h2, h3, h4, h5, h6 {
+/* Main CSS Tags */
+h1, h2, h3, h4, h5, h6
+{
     font-family: 'Josefin Sans', sans-serif;
 }
-h1 {
+
+h1
+{
     text-align: center;
     font-size: 45px;
 }
 
-h2 {
-    font-size: 36px;
+h2
+{
+    font-size: 33px;
     text-align: center;
+    text-decoration-style: solid;
 }
 
-h3 {
+h3
+{
     font-size: 24px;
     text-align: center;
 }
 
-p {
-    font-size: 17px;
-    /*color: #E8EDE7;*/
+h4
+{
+    font-size: 30px;
+}
+
+p
+{
+    font-size: 20px;
     vertical-align: middle;
 }
 
-a:link, a:visited {
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    background-color: #E8EDE7;
+}
+
+a:link, a:visited
+{
     color: #51bb59;
 }
 
-a:hover {
+a:hover
+{
     color: #2f6b34;
     text-decoration: underline;
 }
-/* Rows */
-.row {
+
+table, th, td
+{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+/* HEADER */
+.firstName
+{
+    color: white;
+    font-weight: bold;
+}
+
+.lastName
+{
+    color: black;
+    font-weight: bold;
+}
+
+/* ROWS */
+.row
+{
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 1%;
 }
 
-
-/*BEFORE ROW 1*/
-
-.firstName {
-    color: white;
-    font-weight: bold;
-}
-
-.lastName {
-    color: black;
-    font-weight: bold;
-    /*color: #E8EDE7;*/
-}
-
-
-/*ROW 1: ABOUT*/
-
-.about {
+/* ABOUT ME */
+.about
+{
     color: black;
     background-color: rgba(81, 187, 89, 0.2);
     min-height: 500px;
     border: solid #E8EDE7 2.5px;
 }
 
-.extlink {
+.extlink
+{
     text-align: center;
     font-size: 18px;
 }
 
-.resume {
+.resume
+{
     background-color: rgba(81, 187, 89, 0.2);
     display: flex;
     justify-content: center;
@@ -83,94 +111,114 @@ a:hover {
     border: solid #E8EDE7 2.5px;
 }
 
-.reslink {
+.reslink
+{
     font-size: 45px;
 }
 
-.about-203{
-    text-align: center;
-}
-
-/*ROW 2: PROJECTS */
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.musical h2{
-    padding-top: 20px;
-    min-height: 144px;
-}
-
-.computer h2{
-    min-height: 75px;
-}
-
-.btn-link{
-    color: #51bb59;
-    font-size: 40px;
-}
-.btn-link:hover{
-    color: #51bb59;
-    text-decoration: none;
-}
-.btn-link:focus{
-    color: #51bb59;
-    text-decoration: none;
-}
-
-.post {
-    color: black;
-    background: rgba(81, 187, 89, 0.2);
-    text-align: left;
-    border-top: solid #E8EDE7 5px;
-}
-
-@media (min-width:961px)  {
-    .row.match-my-cols {
-        overflow: hidden;
-    }
-
-    .row.match-my-cols [class*="col-md"]{
-        margin-bottom: -99999px;
-        padding-bottom: 99999px;
-    }
-}
-
-.section-title {
-
-    font-size: 40px;
-    text-decoration: none !important;
-}
-
-.section-title .fa {
-  transition: .3s transform ease-in-out;
-}
-
-.section-title .collapsed .fa {
-  transform: rotate(-90deg);
-}
-.row.about-projects p{
+/* PROJECTS */
+.row.about-projects p
+{
     font-size: 25px;
     padding-bottom: 1%;
     border: solid #E8EDE7 10px;
     text-align: center;
 }
 
-/*FOOTER*/
+.section-title
+{
 
-.footer {
+    font-size: 40px;
+    text-decoration: none !important;
+}
+
+.section-title .fa
+{
+    transition: .3s transform ease-in-out;
+}
+
+.section-title .collapsed .fa
+{
+    transform: rotate(-90deg);
+}
+
+.current h2
+{
+    min-height: 75px;
+}
+
+.computer h2
+{
+    min-height: 75px;
+}
+
+.musical h2
+{
+    padding-top: 20px;
+    min-height: 144px;
+}
+
+.btn-link
+{
+    color: #51bb59;
+    font-size: 40px;
+}
+
+.btn-link:hover
+{
+    color: #51bb59;
+    text-decoration: none;
+}
+
+.btn-link:focus
+{
+    color: #51bb59;
+    text-decoration: none;
+}
+
+.post
+{
+    color: black;
+    background: rgba(81, 187, 89, 0.2);
+    text-align: left;
+    border: solid #E8EDE7 10px;
+    min-height: 450px;
+}
+
+@media (min-width:961px)
+{
+    .row.match-my-cols
+    {
+        overflow: hidden;
+    }
+
+    .row.match-my-cols [class*="col-md"]
+    {
+        margin-bottom: -99999px;
+        padding-bottom: 99999px;
+    }
+}
+
+.about-203
+{
+    text-align: center;
+}
+
+/* FOOTER */
+.footer
+{
     background-color: rgba(81, 187, 89, 0.2);
     position:relative;
 }
-.footer.row{
+
+.footer.row
+{
     padding-top: 30px;
     padding-bottom: 60px;
 }
 
-.btn-default{
+.btn-default
+{
     background-color: transparent;
     margin-right: 40px;
     margin-bottom: 40px;
@@ -179,6 +227,7 @@ img {
     right: 0;
 }
 
-.btn-default:focus{
+.btn-default:focus
+{
     background-color: transparent;
 }
