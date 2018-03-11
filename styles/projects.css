@@ -95,11 +95,19 @@ a:hover {
         padding-bottom: 99999px;
     }
 }
+
 .section-title {
     font-size: 40px;
     text-decoration: none !important;
 }
 
+.section-title .fa {
+  transition: .3s transform ease-in-out;
+}
+
+.section-title .collapsed .fa {
+  transform: rotate(-90deg);
+}
 .row.about-projects p{
     font-size: 25px;
     padding-bottom: 1%;
