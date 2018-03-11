@@ -16,6 +16,7 @@ h1 {
 
 h2 {
     font-size: 36px;
+    text-align: center;
 }
 
 h3 {
@@ -90,7 +91,35 @@ a:hover {
     text-align: center;
 }
 
-/*ROW 2: A POST AND TWITTER FEED*/
+/*ROW 2: PROJECTS */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.musical h2{
+    padding-top: 20px;
+    min-height: 144px;
+}
+
+.computer h2{
+    min-height: 75px;
+}
+
+.btn-link{
+    color: #51bb59;
+    font-size: 40px;
+}
+.btn-link:hover{
+    color: #51bb59;
+    text-decoration: none;
+}
+.btn-link:focus{
+    color: #51bb59;
+    text-decoration: none;
+}
 
 .post {
     color: black;
@@ -99,8 +128,35 @@ a:hover {
     border-top: solid #E8EDE7 5px;
 }
 
-.twitter-feed {
-    border-top: solid #E8EDE7 5px;
+@media (min-width:961px)  {
+    .row.match-my-cols {
+        overflow: hidden;
+    }
+
+    .row.match-my-cols [class*="col-md"]{
+        margin-bottom: -99999px;
+        padding-bottom: 99999px;
+    }
+}
+
+.section-title {
+
+    font-size: 40px;
+    text-decoration: none !important;
+}
+
+.section-title .fa {
+  transition: .3s transform ease-in-out;
+}
+
+.section-title .collapsed .fa {
+  transform: rotate(-90deg);
+}
+.row.about-projects p{
+    font-size: 25px;
+    padding-bottom: 1%;
+    border: solid #E8EDE7 10px;
+    text-align: center;
 }
 
 /*FOOTER*/
