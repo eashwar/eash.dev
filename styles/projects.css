@@ -54,6 +54,7 @@ h4 {
 p {
     font-size: 20px;
     color: #E8EDE7;
+    vertical-align: middle;
 }
 
 a:link, a:visited {
@@ -126,10 +127,23 @@ a:hover {
 
 
 .footer {
-    padding-top: 5%;
-    background: rgba(81, 187, 89, 0.4);
+    background-color: rgba(81, 187, 89, 0.2);
+    position:relative;
 }
 .footer.row{
     padding-top: 30px;
     padding-bottom: 60px;
+}
+
+.btn-default{
+    background-color: transparent;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-default:focus{
+    background-color: transparent;
 }
