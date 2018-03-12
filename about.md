@@ -9,6 +9,6 @@ I'm a freshman studying computer science with a minor in music at the University
 * video game speedrunning
 * parkour
 
-[Check out my projects]({{site.url}}/projects.html), or get in touch with me with the links at the bottom of the page!
+Check out my projects down below, or get in touch with me with the links at the bottom of the page!
 
 This website was made using [`jekyll`](https://jekyllrb.com/), [`mathjax`](https://www.mathjax.org/), [`jQuery`](http://jquery.com), and [`bootstrap`](http://getbootstrap.com/); the resume was made using [Creddle](http://creddle.io).

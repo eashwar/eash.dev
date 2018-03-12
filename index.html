@@ -1,12 +1,13 @@
 ---
 title: home
+redirect_from: "/projects.html"
 ---
 <!DOCTYPE html>
 <html>
 
 <head>
 	{% include common-head.html %}
-	<title>{{ page.title }} - {{ site.title }}</title>
+	<title>{{ site.title }}</title>
 </head>
 
 <body>
@@ -18,9 +19,11 @@ title: home
 	</h1>
 	<div class="container-fluid">
 		<!-- The navbar row-->
-		{% include navbar.html %}
+		<!-- {% include navbar.html %} -->
 
 		<div class="row">
+
+			<!--  Loads the "about" MD page -->
 			<div class="col-lg-6 col-sm-12 about" id="info">
 				{% for page in site.pages %}
 					{% if page.title == "ABOUT" %}
@@ -29,7 +32,7 @@ title: home
 				{% endfor %}
 			</div>
 
-			<!-- External Links -->
+			<!-- Resume -->
 			<a href="https://resume.creddle.io/resume/1r07ere59ch" target="_blank">
 				<div class="col-lg-6 col-md-12 col-sm-12 resume">
 					<div class="reslink">
@@ -39,30 +42,119 @@ title: home
 			</a>
 		</div>
 		<br>
-		<div class="row">
-			{% for post in site.posts limit:1 %}
-				<div class="col-md-12 col-lg-6 post" id={{post.title}}>
-					<br/>
-					<p style="text-align: right; font-size: 20px">the most recent <a href="{{site.url}}/projects.html">project</a> I've been working on!</p>
-					{{ post.excerpt }}
-					{% if post.content contains site.excerpt_separator %}
-					<a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-					{% endif %}
-				</div>
-			{% endfor %}
-			<!-- <div class="col-md-12 col-lg-6 twitter-feed">
-				<p style="text-align: right; font-size: 20px"> my <a href="https://www.twitter.com/_eashwar/">twitter feed</a></p>
-				<a class="twitter-timeline" href="https://twitter.com/_eashwar" data-height="800" data-chrome="nofooter noscrollbar noborders transparent" data-tweet-limit="3">Tweets by _eashwar</a>
-				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div> -->
 
-		</div>
+		<!-- Projects -->
+		<div class="row about-projects">
+			<h2>
+				PROJECTS
+			</h2>
+            <p>
+                Here are all of the computer and music projects that I've worked on/am working on at the moment. Click on each section to expand/collapse that section.
+            </p>
+        </div>
+
+        <h2 class="section-title">
+            <button data-toggle="collapse" data-target="#currentsection" aria-expanded="true" class="btn btn-link collapsed">
+                <i class="fa fa-chevron-down"></i>
+                Current Projects
+            </button>
+        </h2>
+        <div id="currentsection" class="collapse">
+            <div class="row match-my-cols">
+            {% assign counter = 1 %}
+            {% for post in site.posts %}
+            {% if post.title contains "current" %}
+                <div class="col-md-4 col-sm-12 post computer" id={{post.title}}>
+                    <br/>
+                    {{ post.excerpt }}
+                    {% if post.content contains site.excerpt_separator %}
+                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
+                    {% endif %}
+                </div>
+                {% assign mod = counter | modulo: 3 %}
+                {% if mod == 0 %}
+            </div>
+            <br/>
+            <div class="row match-my-cols">
+                {% endif %}
+                {% assign counter = counter | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+
+
+        <h2 class="section-title">
+            <button data-toggle="collapse" data-target="#computersection" aria-expanded="true" class="btn btn-link collapsed">
+                <i class="fa fa-chevron-down"></i>
+                Programs
+            </button>
+        </h2>
+        <div id="computersection" class="collapse">
+            <div class="row match-my-cols">
+            {% assign counter = 1 %}
+            {% for post in site.posts %}
+            {% if post.title contains "computer" %}
+                <div class="col-md-4 col-sm-12 post computer" id={{post.title}}>
+                    <br/>
+                    {{ post.excerpt }}
+                    {% if post.content contains site.excerpt_separator %}
+                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
+                    {% endif %}
+                </div>
+                {% assign mod = counter | modulo: 3 %}
+                {% if mod == 0 %}
+            </div>
+            <br/>
+            <div class="row match-my-cols">
+                {% endif %}
+                {% assign counter = counter | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+
+
+        <h2 class="section-title">
+            <button data-toggle="collapse" data-target="#musicsection" aria-expanded="true" class="btn btn-link collapsed">
+                <i class="fa fa-chevron-down"></i>
+                Music
+            </button>
+        </h2>
+        <div id="musicsection" class="collapse">
+            <div class="row match-my-cols">
+            {% assign counter = 1 %}
+            {% for post in site.posts %}
+            {% if post.title contains "musical" %}
+                <div class="col-md-4 col-sm-12 post musical" id={{post.title}}>
+                    <br/>
+                    {{ post.excerpt }}
+                    {% if post.content contains site.excerpt_separator %}
+                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
+                    {% endif %}
+                </div>
+                {% assign mod = counter | modulo: 3 %}
+                {% if mod == 0 %}
+            </div>
+            <br/>
+            <div class="row match-my-cols">
+                {% endif %}
+                {% assign counter = counter | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
 		<br/><br/><br/><br/><br/>
 
 		{% include footer.html %}
 
+		{% include common-script.html %}
+
 	</div>
-	{% include common-script.html %}
 </body>
 
 </html>
