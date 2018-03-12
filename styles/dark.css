@@ -228,16 +228,18 @@ table, th, td
 
 .btn-default
 {
+    border: none;
     color: white;
     background-color: transparent;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    /* margin-left: 20px;
+    margin-top: 20px; */
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
 }
 
 .btn-default:focus
 {
+    color: white;
     background-color: transparent;
 }
