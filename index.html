@@ -84,6 +84,39 @@ redirect_from: "/projects.html"
         </div>
 
 
+
+		<h2 class="section-title">
+            <button data-toggle="collapse" data-target="#musicsection" aria-expanded="true" class="btn btn-link collapsed">
+                <i class="fa fa-chevron-down"></i>
+                Music
+            </button>
+        </h2>
+        <div id="musicsection" class="collapse">
+            <div class="row match-my-cols">
+            {% assign counter = 1 %}
+            {% for post in site.posts %}
+            {% if post.title contains "musical" %}
+                <div class="col-md-4 col-sm-12 post musical" id={{post.title}}>
+                    <br/>
+                    {{ post.excerpt }}
+                    {% if post.content contains site.excerpt_separator %}
+                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
+                    {% endif %}
+                </div>
+                {% assign mod = counter | modulo: 3 %}
+                {% if mod == 0 %}
+            </div>
+            <br/>
+            <div class="row match-my-cols">
+                {% endif %}
+                {% assign counter = counter | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+
+
+
         <h2 class="section-title">
             <button data-toggle="collapse" data-target="#computersection" aria-expanded="true" class="btn btn-link collapsed">
                 <i class="fa fa-chevron-down"></i>
@@ -115,35 +148,6 @@ redirect_from: "/projects.html"
         </div>
 
 
-        <h2 class="section-title">
-            <button data-toggle="collapse" data-target="#musicsection" aria-expanded="true" class="btn btn-link collapsed">
-                <i class="fa fa-chevron-down"></i>
-                Music
-            </button>
-        </h2>
-        <div id="musicsection" class="collapse">
-            <div class="row match-my-cols">
-            {% assign counter = 1 %}
-            {% for post in site.posts %}
-            {% if post.title contains "musical" %}
-                <div class="col-md-4 col-sm-12 post musical" id={{post.title}}>
-                    <br/>
-                    {{ post.excerpt }}
-                    {% if post.content contains site.excerpt_separator %}
-                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
-                    {% endif %}
-                </div>
-                {% assign mod = counter | modulo: 3 %}
-                {% if mod == 0 %}
-            </div>
-            <br/>
-            <div class="row match-my-cols">
-                {% endif %}
-                {% assign counter = counter | plus: 1 %}
-            {% endif %}
-            {% endfor %}
-            </div>
-        </div>
 
         <br/>
         <br/>
