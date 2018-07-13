@@ -2,9 +2,10 @@
 title: ABOUT
 ---
 ## hello!
-I'm a freshman studying computer science with a minor in music at the University of Michigan. My interests include:
+I'm a sophomore studying computer science with a minor in music at the University of Michigan. My interests include:
 
-* video game music and music technology
+* video game music 
+* music technology
 * clarinet and piano performance
 * video game speedrunning
 * parkour
