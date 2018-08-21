@@ -5,7 +5,7 @@ layout: post
 Made on {{ page.date | date: "%b %-d, %Y" }}
 ## ["I've heard that before!": An Introduction to Leitmotifs in Video Games]({{page.url}})
 
-On March 23, 2018, I gave a talk for the Video Game Music Club at the University of Michigan about leitmotifs in video games and strategies for listening to and recognizing leitmotifs in the games that people play. Click "Read more" to view the presentation slides!
+On March 23, 2018, I gave a talk for the Video Game Music Club at the University of Michigan about leitmotifs in video games and strategies for listening to and recognizing leitmotifs in the games that people play. Check out the presentation slides below!
 
 <!--more-->
 
