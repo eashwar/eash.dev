@@ -2,7 +2,7 @@
 title: ABOUT
 ---
 ## hello!
-I'm a sophomore studying computer science with a minor in music at the University of Michigan. My interests include:
+I'm a junior studying computer science with a minor in music at the University of Michigan. My interests include:
 
 * video game music 
 * music technology
