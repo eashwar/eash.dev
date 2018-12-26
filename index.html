@@ -63,29 +63,14 @@ redirect_from: "/projects.html"
         </div>
 
         <div class="d-flex justify-content-center">
-            <div class="card-deck">
-                {% assign counter = 0 %}
+            <div class="card-columns">
                 {% for post in site.posts %}
-                {% assign mod = counter | modulo: 2 %}
-                {% if mod == 0 %}
-                    <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-                {% endif %}
-                {% assign mod = counter | modulo: 3 %}
-                {% if mod == 0 %}
-                    <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
-                    <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
-                {% endif %}
-                {% assign mod = counter | modulo: 4 %}
-                {% if mod == 0 %}
-                    <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
-                {% endif %}
                 <div class="card post {% if post.title contains "current" %}current {% endif %}{% if post.title contains "computer" %}computer {% endif %}{% if post.title contains "musical" %}musical {% endif %}" id={{post.title}}>
                     {{ post.excerpt }}
                     {% if post.content contains site.excerpt_separator %}
                         <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
                     {% endif %}
                     </div>
-                {% assign counter = counter | plus: 1 %}
                 {% endfor %}
             </div>
         </div>
