@@ -1,245 +1,166 @@
 /* Main CSS Tags */
-h1, h2, h3, h4, h5, h6
-{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-h1
-{
+h1 {
+    color: white;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size:45px;
+    font-size: 45px;
 }
 
-h2
-{
-    font-size: 33px;
+h2 {
+    font-size: 30px;
     text-align: center;
     text-decoration-style: solid;
 }
 
-h3
-{
+h3 {
     color: #C0C0C0;
     font-size: 24px;
     text-align: center;
 }
 
-h4
-{
+h4 {
     font-size: 30px;
 }
 
-p
-{
+p {
     font-size: 20px;
     color: #E8EDE7;
     vertical-align: middle;
 }
 
-img
-{
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-body
-{
+body {
     font-family: 'Raleway', sans-serif;
     color: white;
     font-size: 18px;
     background-color: #5d5d5d;
 }
 
-a:link, a:visited
-{
+a:link,
+a:visited {
     color: #a5dfa9;
 }
 
-a:hover
-{
+a:hover {
     color: #2f6b34;
     text-decoration: underline;
 }
 
-table, th, td
-{
+table,
+th,
+td {
     border: 1px solid white;
     padding: 15px;
 }
 
-
-/* HEADER */
-.firstName
-{
+.header {
     color: white;
-    font-weight: bold;
+    padding-top: 2vh;
 }
 
-.lastName
-{
-    color: #E8EDE7;
-    font-weight: bold;
-}
 
 /* ROWS */
-.row
-{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 1%;
+
+.row {
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 1vh;
 }
+
 
 /* ABOUT ME */
-.about
-{
+
+.about {
     color: white;
     background: rgba(81, 187, 89, 0.4);
-    min-height: 500px;
-    border: solid #5d5d5d 10px;
+    padding: 3vh;
 }
 
-.extlink
-{
+.extlink {
     text-align: center;
     font-size: 18px;
 }
 
-.resume
-{
+.resume {
+    min-height: 30vh;
     background: rgba(81, 187, 89, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 500px;
-    border: solid #5d5d5d 10px;
 }
 
-.reslink
-{
+.reslink {
     font-size: 45px;
 }
 
+
 /* PROJECTS */
-.row.about-projects h2
-{
-    font-size: 40px;
+
+.btn-secondary {
+    margin: 2vh;
 }
 
-.row.about-projects p
-{
-    font-size: 25px;
-    padding-bottom: 1%;
-    border: solid #5d5d5d 10px;
-    color: #E8EDE7;
-    text-align: center;
-}
-
-.section-title
-{
-    font-size: 40px;
-    text-decoration: none !important;
-}
-
-.section-title .fa
-{
-  transition: .3s transform ease-in-out;
-}
-
-.section-title .collapsed .fa
-{
-  transform: rotate(-90deg);
-}
-
-.current h2
-{
-    min-height: 75px;
-}
-
-.computer h2
-{
-    min-height: 75px;
-}
-
-.musical h2
-{
-    padding-top: 20px;
-    min-height: 144px;
-}
-
-.btn-link
-{
-    color: white;
-    font-size: 40px;
-}
-
-.btn-link:hover
-{
-    color: white;
-    text-decoration: none;
-}
-
-.btn-link:focus
-{
-    color: white;
-    text-decoration: none;
-}
-
-.post
-{
-    color: black;
+#currbtn {
     background: rgba(81, 187, 89, 0.4);
+}
+#codebtn{
+    background: rgba(30, 177, 214, 0.4);
+}
+#musbtn{
+    background: rgba(124, 30, 212, 0.4);
+}
+
+
+.about-projects {
+    color: white;
+    background-color: #5d5d5d;
+    padding: 3vh;
+    justify-content: center;
+}
+
+.post h2 {
+    min-height: 75px;
+}
+
+.post {
+    color: black;
     text-align: left;
-    border: solid #5d5d5d 10px;
-    min-height: 450px;
+    padding: 3vh;
+    padding-bottom: 5vh;
+    margin: 3vh;
 }
 
-@media (min-width:961px)
-{
-    .row.match-my-cols
-    {
-        overflow: hidden;
-    }
-
-    .row.match-my-cols [class*="col-md"]
-    {
-        margin-bottom: -99999px;
-        padding-bottom: 99999px;
-    }
+.computer{
+    background: rgba(30, 177, 214, 0.4);
+}
+.musical{
+    background: rgba(124, 30, 212, 0.4);
 }
 
-.about-203
-{
-    text-align: center;
+.card-deck{
+    justify-content: center;
 }
 
 /* FOOTER */
-.footer
-{
-    background-color: rgba(81, 187, 89, 0.2);
-    position:relative;
-}
 
-.footer.row
-{
-    padding-top: 30px;
-    padding-bottom: 60px;
-}
-
-.btn-default
-{
-    border: none;
-    color: white;
-    background-color: transparent;
-    /* margin-left: 20px;
-    margin-top: 20px; */
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.btn-default:focus
-{
-    color: white;
-    background-color: transparent;
+.footer {
+    margin-top: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    position: relative;
 }

@@ -10,6 +10,6 @@ I'm a junior studying computer science with a minor in music at the University o
 * video game speedrunning
 * parkour
 
-Check out my projects down below, or get in touch with me with the links at the bottom of the page!
+Check out my projects down below, or feel free to [email me](mailto:hello@eash.fyi).
 
 This website was made using [`jekyll`](https://jekyllrb.com/){:target="_blank"}, [`mathjax`](https://www.mathjax.org/){:target="_blank"}, [`jQuery`](http://jquery.com){:target="_blank"}, and [`bootstrap`](http://getbootstrap.com/){:target="_blank"}; the resume was made using \\(\LaTeX\\).

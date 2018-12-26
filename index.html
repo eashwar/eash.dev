@@ -11,148 +11,84 @@ redirect_from: "/projects.html"
 </head>
 
 <body>
-	<!-- First name bold/white, last name normal/black -->
-	<h1 align="center">
-		<a href="/">
-			<span class="lastName"> EASHWAR MOHAN </span>
-		</a>
-	</h1>
-	<div class="container-fluid">
-		<!-- The navbar row-->
-		<!-- {% include navbar.html %} -->
-
-		<div class="row">
-
+    <div class="container-fluid">
+        <h1 align="center" class="header">
+            <a href="/">EASHWAR MOHAN</a>
+        </h1>
+        
+		<div class="d-flex justify-content-center">
+            <div class="card-deck">
 			<!--  Loads the "about" MD page -->
-			<div class="col-lg-6 col-sm-12 about" id="info">
-				{% for page in site.pages %}
-					{% if page.title == "ABOUT" %}
-						{{ page.content }}
-					{% endif %}
-				{% endfor %}
-			</div>
+                <div class="card about">
+                    {% for page in site.pages %}
+                        {% if page.title == "ABOUT" %}
+                            {{ page.content }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
 
 			<!-- Resume -->
-			<a href="/resume" target="_blank">
-				<div class="col-lg-6 col-md-12 col-sm-12 resume">
-					<div class="reslink">
-						<i class="fa fa-file-text fa-lg" aria-hidden="true"></i> Resume
-					</div>
-				</div>
-			</a>
+                <div class="card resume">
+                    <a href="/resume" target="_blank" class="card-link">
+                        <div class="reslink">
+                            <i class="fa fa-file-text fa-lg" aria-hidden="true"></i> Resume
+                        </div>
+                    </a>
+                </div>
+            </div>
 		</div>
-		<br>
 
 		<!-- Projects -->
-		<div class="row about-projects">
-			<h2>
-				PROJECTS
-			</h2>
-            <p>
-                Here are all of the computer and music projects that I've worked on/am working on at the moment. Click on each section to expand/collapse that section.
-            </p>
+		<div class="d-flex justify-content-center">
+            <div class="card about-projects border-0">
+                <h2>PROJECTS</h2>
+                <p>
+                    Below are all of the computer and music projects that I've worked on/am working on at the moment. Click a button to filter projects by type!
+                </p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active" id="allbtn">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+                        </label>
+                        <label class="btn btn-secondary" id="currbtn">
+                          <input type="radio" name="options" id="option2" autocomplete="off"> Recent Projects
+                        </label>
+                        <label class="btn btn-secondary" id="codebtn">
+                          <input type="radio" name="options" id="option3" autocomplete="off"> Coding Projects
+                        </label>
+                        <label class="btn btn-secondary" id="musbtn">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Musical Projects
+                        </label>
+                </div>
+            </div>
         </div>
 
-        <h2 class="section-title">
-            <button data-toggle="collapse" data-target="#currentsection" aria-expanded="true" class="btn btn-link collapsed">
-                <i class="fa fa-chevron-down"></i>
-                Current Projects
-            </button>
-        </h2>
-        <div id="currentsection" class="collapse">
-            <div class="row match-my-cols">
-            {% assign counter = 1 %}
-            {% for post in site.posts %}
-            {% if post.title contains "current" %}
-                <div class="col-md-4 col-sm-12 post computer" id={{post.title}}>
-                    <br/>
-                    {{ post.excerpt }}
-                    {% if post.content contains site.excerpt_separator %}
-                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
-                    {% endif %}
-                </div>
+        <div class="d-flex justify-content-center">
+            <div class="card-deck">
+                {% assign counter = 0 %}
+                {% for post in site.posts %}
+                {% assign mod = counter | modulo: 2 %}
+                {% if mod == 0 %}
+                    <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                {% endif %}
                 {% assign mod = counter | modulo: 3 %}
                 {% if mod == 0 %}
-            </div>
-            <br/>
-            <div class="row match-my-cols">
+                    <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+                    <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
                 {% endif %}
-                {% assign counter = counter | plus: 1 %}
-            {% endif %}
-            {% endfor %}
-            </div>
-        </div>
-
-
-
-		<h2 class="section-title">
-            <button data-toggle="collapse" data-target="#musicsection" aria-expanded="true" class="btn btn-link collapsed">
-                <i class="fa fa-chevron-down"></i>
-                Music (Compositions, Covers, and Talks)
-            </button>
-        </h2>
-        <div id="musicsection" class="collapse">
-            <div class="row match-my-cols">
-            {% assign counter = 1 %}
-            {% for post in site.posts %}
-            {% if post.title contains "musical" %}
-                <div class="col-md-4 col-sm-12 post musical" id={{post.title}}>
-                    <br/>
+                {% assign mod = counter | modulo: 4 %}
+                {% if mod == 0 %}
+                    <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
+                {% endif %}
+                <div class="card post {% if post.title contains "current" %}current {% endif %}{% if post.title contains "computer" %}computer {% endif %}{% if post.title contains "musical" %}musical {% endif %}" id={{post.title}}>
                     {{ post.excerpt }}
                     {% if post.content contains site.excerpt_separator %}
-                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
+                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
                     {% endif %}
-                </div>
-                {% assign mod = counter | modulo: 3 %}
-                {% if mod == 0 %}
-            </div>
-            <br/>
-            <div class="row match-my-cols">
-                {% endif %}
+                    </div>
                 {% assign counter = counter | plus: 1 %}
-            {% endif %}
-            {% endfor %}
+                {% endfor %}
             </div>
         </div>
-
-
-
-        <h2 class="section-title">
-            <button data-toggle="collapse" data-target="#computersection" aria-expanded="true" class="btn btn-link collapsed">
-                <i class="fa fa-chevron-down"></i>
-                Computer Things (Programs, CLI tools, and more)
-            </button>
-        </h2>
-        <div id="computersection" class="collapse">
-            <div class="row match-my-cols">
-            {% assign counter = 1 %}
-            {% for post in site.posts %}
-            {% if post.title contains "computer" %}
-                <div class="col-md-4 col-sm-12 post computer" id={{post.title}}>
-                    <br/>
-                    {{ post.excerpt }}
-                    {% if post.content contains site.excerpt_separator %}
-                        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a><br/><br/>
-                    {% endif %}
-                </div>
-                {% assign mod = counter | modulo: 3 %}
-                {% if mod == 0 %}
-            </div>
-            <br/>
-            <div class="row match-my-cols">
-                {% endif %}
-                {% assign counter = counter | plus: 1 %}
-            {% endif %}
-            {% endfor %}
-            </div>
-        </div>
-
-
-
-        <br/>
-        <br/>
-
-		<br/><br/><br/><br/><br/>
 
 		{% include footer.html %}
 
