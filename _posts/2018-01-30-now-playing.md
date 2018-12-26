@@ -9,7 +9,7 @@ This is a command line tool to control basic spotify playback from a bash termin
 
 <!--more-->
 
-#### [**now-playing on GitHub**](https://github.com/eashwar/now-playing){:target="_blank"}
+#### [**now-playing on GitHub**](https://github.com/eashwar/now-playing){:target="_blank"}{:rel="noopener"}
 
 ![now-playing demo]({{site.url}}/images/now-playing-demo.gif)
 

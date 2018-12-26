@@ -12,4 +12,4 @@ I'm a junior studying computer science with a minor in music at the University o
 
 Check out my projects down below, or feel free to [email me](mailto:hello@eash.fyi).
 
-This website was made using [`jekyll`](https://jekyllrb.com/){:target="_blank"}, [`mathjax`](https://www.mathjax.org/){:target="_blank"}, [`jQuery`](http://jquery.com){:target="_blank"}, and [`bootstrap`](http://getbootstrap.com/){:target="_blank"}; the resume was made using \\(\LaTeX\\).
+This website was made using [`jekyll`](https://jekyllrb.com/){:target="_blank"}{:rel="noopener"}, [`mathjax`](https://www.mathjax.org/){:target="_blank"}{:rel="noopener"}, [`jQuery`](http://jquery.com){:target="_blank"}{:rel="noopener"}, and [`bootstrap`](http://getbootstrap.com/){:target="_blank"}{:rel="noopener"}; the resume was made using \\(\LaTeX\\).

@@ -9,7 +9,7 @@ This is an (unpublished) skill for the Amazon Echo which allows the user to prac
 
 <!--more-->
 
-#### [You can check out the DevPost submission for the project here, which contains links to both the webapp and skill components of the project!](https://devpost.com/software/quizlexa)
+#### [You can check out the DevPost submission for the project here, which contains links to both the webapp and skill components of the project!](https://devpost.com/software/quizlexa){:target="blank"}{:rel="noopener"}
 
 On the weekend of February 26, 2016, I participated in the second [Spartahack](https://spartahack.com/) hackathon at Michigan State University. This was during my junior year of high school, and it was my first ever hackathon experience. Along with 3 other friends from my high school, we created a skill for the Amazon Echo that created the ability to read from sets of Quizlet flash cards.
 

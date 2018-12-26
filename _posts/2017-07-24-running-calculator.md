@@ -11,7 +11,7 @@ A JFX application for calculating and comparing the running pace for multiple ru
 
 <!--more-->
 
-#### [**Check out the Running Calculator on Github!**](https://github.com/eashwar/running-calculator){:target="_blank"}
+#### [**Check out the Running Calculator on Github!**](https://github.com/eashwar/running-calculator){:target="_blank"}{:rel="noopener"}
 
 
 ![screenshot-1]({{site.url}}/images/running-calc-1.png) ![screenshot-2]({{site.url}}/images/running-calc-2.png)
