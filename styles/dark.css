@@ -144,7 +144,11 @@ td {
     padding-bottom: 5vh;
     margin: 3vh;
 }
-
+@media (min-width: 768px) { 
+    .post{
+        max-width: 33vw;
+    }
+}
 .computer{
     background: rgba(30, 177, 214, 0.4);
 }
