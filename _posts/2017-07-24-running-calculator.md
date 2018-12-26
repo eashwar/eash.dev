@@ -2,7 +2,7 @@
 title: Running Calculator computer
 layout: post
 ---
-Made on {{ page.date | date: "%b %-d, %Y" }}
+{{ page.date | date: "%b %Y" }}
 ## [Running Calculator]({{page.url}})
 
 ![runner]({{site.url}}/images/running-calc-icon.png)

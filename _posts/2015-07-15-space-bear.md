@@ -2,7 +2,7 @@
 title: SpaceBear computer
 layout: post
 ---
-Made on {{ page.date | date: "%b %-d, %Y" }}
+{{ page.date | date: "%b %Y" }}
 ## [SpaceBear]({{page.url}})
 
 ![bear sprite]({{site.url}}/images/spacebearleft.png)

@@ -2,7 +2,7 @@
 title: Quizlexa computer
 layout: post
 ---
-Made on {{ page.date | date: "%b %-d, %Y" }}
+{{ page.date | date: "%b %Y" }}
 ## [Quizlexa]({{page.url}})
 
 This is an (unpublished) skill for the Amazon Echo which allows the user to practice Quizlet flash cards auditorally with Alexa, made during Spartahack 2.

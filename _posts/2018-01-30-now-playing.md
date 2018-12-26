@@ -2,7 +2,7 @@
 title: now-playing computer
 layout: post
 ---
-Made on {{ page.date | date: "%b %-d, %Y" }}
+{{ page.date | date: "%b %Y" }}
 ## [now-playing: spotify for bash]({{page.url}})
 
 This is a command line tool to control basic spotify playback from a bash terminal. play/pause, skip, seek, and view the current playing song, without having to move away from the terminal! Check out the GIF below.
