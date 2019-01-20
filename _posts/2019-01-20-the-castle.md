@@ -9,6 +9,6 @@ layout: post
 
 The Castle: Overture and Scattering is meant to represent a mysterious, fortified castle with a hidden power: the ability to disappear without a trace. The song begins with a militaristic section describing the outside of the fortress, followed by a slower section representing the mysterious inner workings of the ancient structure, and finally, a frantic dance-like ending as the castle violently shakes and dissipates into nothingness, leaving behind not even a speck of dust. 
 
-I started working on this in the summer of 2017, but I had a case of writer's block where I wasn't sure how to write the middle section. I've finally finished it, taking heavy inspiration from Marty O'Donnell (of Halo fame).
+I started working on this in the summer of 2018, but I had a case of writer's block where I wasn't sure how to write the middle section. I've finally finished it, taking heavy inspiration from Marty O'Donnell (of Halo fame).
 
 I hope you enjoy the piece!
