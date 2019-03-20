@@ -11,6 +11,6 @@ This is a command line tool to control basic spotify playback from a bash termin
 
 #### [**now-playing on GitHub**](https://github.com/eashwar/now-playing){:target="_blank"}{:rel="noopener"}
 
-![now-playing demo]({{site.url}}/images/now-playing-demo.gif)
+![now-playing demo](eash.dev/images/now-playing-demo.gif)
 
 now-playing works by allowing bash to make cURL requests to a local [Express](https://expressjs.com){:target="_blank"} server that you have to spin up. Fear not, though: it uses essentially no processing power though, so the only inconvenience is to remember to spin it up when you start up your machine.
