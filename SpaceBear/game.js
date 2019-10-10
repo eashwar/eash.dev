@@ -1220,7 +1220,7 @@ var boss = {
 	yPosition: world.yPosition + 700,
 	height: 356,
 	width: 800,
-	image: loadImage("images/boss.png"),
+	image: loadImage("images/Boss.png"),
 	shootDirection: "left",
 	fireRate: 1.25,
 	fireTimer: 0.0,
