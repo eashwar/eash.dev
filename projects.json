@@ -1,0 +1,114 @@
+[
+    {
+        "name": "SpaceBear",
+        "type": "Software",
+        "date": "July 15 2015",
+        "description": "A 2D platformer made using a JavaScript library called codeheart.js. Made in 36 hours with two teammates during a summer camp at Michigan State University.",
+        "link": "https://github.com/eashwar/SpaceBear",
+        "id": "01"
+    },
+    {
+        "name": "An Ideal of Hope (Man of Steel) - Piano Cover",
+        "type": "Music",
+        "date": "April 12 2016",
+        "description": "A piano cover of the theme to Man of Steel, composed by Hans Zimmer. This was the first piece I ever transcribed by ear for piano solo. Click to listen on Soundcloud.",
+        "link": "https://soundcloud.com/eashw/an-ideal-of-hope-man-of-steel-main-theme-piano-cover",
+        "id": "02"
+    },
+    {
+        "name": "Quizlexa",
+        "type": "Software",
+        "date": "February 26 2016",
+        "description": "Won ninth place at Spartahack 2. An (unpublished) Alexa skill + companion webapp for practicing Quizlet digital flash cards.",
+        "link": "https://devpost.com/Software/quizlexa",
+        "id": "03"
+    },
+    {
+        "name": "Mike Oldfield - Nuclear (Piano/Clarinet/Bass Clarinet Cover)",
+        "type": "Music",
+        "date": "September 10 2016",
+        "description": "In this King Crimson inspired cover (and a rare recording of me singing!), I cover this song, which was featured in Metal Gear Solid V: The Phantom Pain. Click to listen on Soundcloud.",
+        "link": "https://soundcloud.com/eashw/nuclear-piano-clarinet-bassclarinet-cover",
+        "id": "04"
+    },
+    {
+        "name": "Chiptune Bach",
+        "type": "Music",
+        "date": "November 14 2016",
+        "description": "Made for my application to the University of Michigan Perforing Arts Technology program. A chiptune cover of JS Bach's Contrapunctus VII fugue from The Art of Fugue. Click to listen on Soundcloud.",
+        "link": "https://soundcloud.com/eashw/chiptune-contrapunctus-vii",
+        "id": "05"
+    },
+    {
+        "name": "That Reminds Me of a Puzzle!",
+        "type": "Music",
+        "date": "December 30 2016",
+        "description": "An electro-swing remix of the theme song to puzzle video game series, Professor Layton. I originally transcribed this by ear as a piano solo, but then had some fun with it. Click to listen on Soundcloud.",
+        "link": "https://soundcloud.com/eashw/reminds-me-of-a-puzzle",
+        "id": "06"
+    },
+    {
+        "name": "Slumber",
+        "type": "Music",
+        "date": "May 8 2017",
+        "description": "Commissioned by a group of student filmmakers at my high school, this piano solo starts with a haunting refrain but builds into an intense, pounding climax. Click to listen on Soundcloud.",
+        "link": "https://soundcloud.com/eashw/slumber",
+        "id": "07"
+    },
+    {
+        "name": "Running Calculator",
+        "type": "Software",
+        "date": "July 24 2017",
+        "description": "I wrote this JFX application to help my high school cross country coach with managing and planning workouts for our team. It even has CSV import/export support.",
+        "link": "https://github.com/eashwar/running-calculator",
+        "id": "08"
+    },
+    {
+        "name": "Vs. the Ultimate Evil at the End of Time",
+        "type": "Music",
+        "date": "December 2 2017",
+        "description": "Made for my final project in the Video Game Music class at the University of Michigan. This piece, written in the style of boss fight Music, takes major inspiration from Yoko Shimomura. Click to listen on Soundcloud.",
+        "link": "https://soundcloud.com/eashw/boss-fight",
+        "id": "09"
+    },
+    {
+        "name": "now-playing: Spotify for Bash",
+        "type": "Software",
+        "date": "January 30 2018",
+        "description": "A command line tool to control basic Spotify playback in the Bash terminal (play/pause, skip, seek, view current song). Built using cURL and a lightweight ExpressJS server. Click here for the GitHub repo.",
+        "link": "https://github.com/eashwar/now-playing",
+        "id": "10"
+    },
+    {
+        "name": "Michigan Hackers Website",
+        "type": "Software",
+        "date": "April 10 2018",
+        "description": "A ReactJS frontend, Go backend brochure website for Michigan Hackers at the University of Michigan. I was the backend developer and lead frontend developer of this website. Click here to see the website!",
+        "link": "https://michiganhackers.org",
+        "id": "11"
+    },
+    {
+        "name": "Talks for Video Game Music Club",
+        "type": "Talks",
+        "date": "December 8 2019",
+        "description": "As vice president of the Video Game Music Club at the University of Michigan, I help prepare a talk for (nearly) every weekly club meeting. Click here to view some of the talks we've given!",
+        "link": "https://drive.google.com/drive/folders/1t2b7p8IR2xdU7_cBaSIov0nOPkppg2VA?usp=sharing",
+        "id": "13"
+    },
+    {
+        "name": "FAMNM Website",
+        "type": "Software",
+        "date": "April 20 2019",
+        "description": "I was elected the webmaster of the FIRST Alumni and Mentors Network at Michigan (FAMNM), a volunteer group at the University of Michigan that mentors local robotics teams. Click here to see the website I maintain.",
+        "link": "https://famnm.club",
+        "id": "14"
+    },
+    {
+        "name": "Metroid (NES) Remake",
+        "type": "Software",
+        "date": "October 1 2019",
+        "description": "As a project in EECS 494: Game Development at the University of Michigan, I (along with a partner), recreated the Brinstar area from Metroid in Unity. Click to download (for Windows and Mac)",
+        "link": "/metroid.zip",
+        "id": "15"
+    }
+]
