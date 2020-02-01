@@ -8,52 +8,12 @@
         "id": "01"
     },
     {
-        "name": "An Ideal of Hope (Man of Steel) - Piano Cover",
-        "type": "Music",
-        "date": "April 12 2016",
-        "description": "A piano cover of the theme to Man of Steel, composed by Hans Zimmer. This was the first piece I ever transcribed by ear for piano solo. Click to listen on Soundcloud.",
-        "link": "https://soundcloud.com/eashw/an-ideal-of-hope-man-of-steel-main-theme-piano-cover",
-        "id": "02"
-    },
-    {
         "name": "Quizlexa",
         "type": "Software",
         "date": "February 26 2016",
         "description": "Won ninth place at Spartahack 2. An (unpublished) Alexa skill + companion webapp for practicing Quizlet digital flash cards.",
-        "link": "https://devpost.com/Software/quizlexa",
+        "link": "https://devpost.com/software/quizlexa",
         "id": "03"
-    },
-    {
-        "name": "Mike Oldfield - Nuclear (Piano/Clarinet/Bass Clarinet Cover)",
-        "type": "Music",
-        "date": "September 10 2016",
-        "description": "In this King Crimson inspired cover (and a rare recording of me singing!), I cover this song, which was featured in Metal Gear Solid V: The Phantom Pain. Click to listen on Soundcloud.",
-        "link": "https://soundcloud.com/eashw/nuclear-piano-clarinet-bassclarinet-cover",
-        "id": "04"
-    },
-    {
-        "name": "Chiptune Bach",
-        "type": "Music",
-        "date": "November 14 2016",
-        "description": "Made for my application to the University of Michigan Perforing Arts Technology program. A chiptune cover of JS Bach's Contrapunctus VII fugue from The Art of Fugue. Click to listen on Soundcloud.",
-        "link": "https://soundcloud.com/eashw/chiptune-contrapunctus-vii",
-        "id": "05"
-    },
-    {
-        "name": "That Reminds Me of a Puzzle!",
-        "type": "Music",
-        "date": "December 30 2016",
-        "description": "An electro-swing remix of the theme song to puzzle video game series, Professor Layton. I originally transcribed this by ear as a piano solo, but then had some fun with it. Click to listen on Soundcloud.",
-        "link": "https://soundcloud.com/eashw/reminds-me-of-a-puzzle",
-        "id": "06"
-    },
-    {
-        "name": "Slumber",
-        "type": "Music",
-        "date": "May 8 2017",
-        "description": "Commissioned by a group of student filmmakers at my high school, this piano solo starts with a haunting refrain but builds into an intense, pounding climax. Click to listen on Soundcloud.",
-        "link": "https://soundcloud.com/eashw/slumber",
-        "id": "07"
     },
     {
         "name": "Running Calculator",
@@ -62,14 +22,6 @@
         "description": "I wrote this JFX application to help my high school cross country coach with managing and planning workouts for our team. It even has CSV import/export support.",
         "link": "https://github.com/eashwar/running-calculator",
         "id": "08"
-    },
-    {
-        "name": "Vs. the Ultimate Evil at the End of Time",
-        "type": "Music",
-        "date": "December 2 2017",
-        "description": "Made for my final project in the Video Game Music class at the University of Michigan. This piece, written in the style of boss fight Music, takes major inspiration from Yoko Shimomura. Click to listen on Soundcloud.",
-        "link": "https://soundcloud.com/eashw/boss-fight",
-        "id": "09"
     },
     {
         "name": "now-playing: Spotify for Bash",
@@ -110,5 +62,13 @@
         "description": "As a project in EECS 494: Game Development at the University of Michigan, I (along with a partner), recreated the Brinstar area from Metroid in Unity. Click to download (for Windows and Mac)",
         "link": "/metroid.zip",
         "id": "15"
+    },
+    {
+        "name": "The Archive Album",
+        "type": "Music",
+        "date": "February 2 2020",
+        "description": "All of the music I arranged/composed in 2016 and 2017, all in one album. A mishmash of covers and original work.",
+        "link": "https://eashwar.bandcamp.com/album/the-archive-album",
+        "id": "16"
     }
 ]
