@@ -70,5 +70,12 @@
         "description": "All of the music I arranged/composed in 2016 and 2017, all in one album. A mishmash of covers and original work.",
         "link": "https://eashwar.bandcamp.com/album/the-archive-album",
         "id": "16"
+    },
+    {
+        "name": "The Castle",
+        "type": "Music",
+        "date": "January 20 2019",
+        "description": "A tone-poem I wrote in early 2019, inspired by depictions of Dracula's Castle (especially in art from the Castlevania series of video games",
+        "id": "17"
     }
 ]
