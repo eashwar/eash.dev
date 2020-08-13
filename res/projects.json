@@ -44,7 +44,7 @@
         "type": "Talks",
         "date": "December 8 2019",
         "description": "As vice president of the Video Game Music Club at the University of Michigan, I help prepare a talk for (nearly) every weekly club meeting. Click here to view some of the talks we've given!",
-        "link": "https://drive.google.com/drive/folders/1t2b7p8IR2xdU7_cBaSIov0nOPkppg2VA?usp=sharing",
+        "link": "https://drive.google.com/drive/folders/1zY0KR9kRMqSLEshZ6FqIJuK9hBBZ8yez?usp=sharing",
         "id": "13"
     },
     {
@@ -60,7 +60,7 @@
         "type": "Software",
         "date": "October 1 2019",
         "description": "As a project in EECS 494: Game Development at the University of Michigan, I (along with a partner), recreated the Brinstar area from Metroid in Unity. Click to download (for Windows and Mac)",
-        "link": "/metroid.zip",
+        "link": "/res/metroid.zip",
         "id": "15"
     },
     {
