@@ -78,6 +78,12 @@ body {
     width: 100px;
 }
 
+.headshot {
+    border-radius: 50%;
+    border: solid 1px #98fbcc;
+    background: linear-gradient(#fc97ed, #93a1f8);
+}
+
 .about {
     margin: 0 20vw;
     color: white;
@@ -101,7 +107,7 @@ body {
 }
 
 .fab:hover, .fas:hover {
-    transform: scale(1.1); 
+    transform: scale(1.2); 
 }
 
 @media only screen and (max-width: 1400px) {

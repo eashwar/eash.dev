@@ -43,7 +43,7 @@
         "name": "Talks for Video Game Music Club",
         "type": "Talks",
         "date": "December 8 2019",
-        "description": "As vice president of the Video Game Music Club at the University of Michigan, I help prepare a talk for (nearly) every weekly club meeting. Click here to view some of the talks we've given!",
+        "description": "As current president and co-founder of the Video Game Music Club at the University of Michigan, I help prepare a talk for (nearly) every weekly club meeting. Click here to view some of the talks we've given!",
         "link": "https://drive.google.com/drive/folders/1zY0KR9kRMqSLEshZ6FqIJuK9hBBZ8yez?usp=sharing",
         "id": "13"
     },
@@ -51,7 +51,7 @@
         "name": "FAMNM Website",
         "type": "Software",
         "date": "April 20 2019",
-        "description": "I was elected the webmaster of the FIRST Alumni and Mentors Network at Michigan (FAMNM), a volunteer group at the University of Michigan that mentors local robotics teams. Click here to see the website I maintain.",
+        "description": "I'm the webmaster of two years for the FIRST Alumni and Mentors Network at Michigan (FAMNM), a volunteer group at the University of Michigan that mentors local robotics teams. Click here to see the website I maintain.",
         "link": "https://famnm.club",
         "id": "14"
     },
@@ -66,7 +66,7 @@
     {
         "name": "The Archive Album",
         "type": "Music",
-        "date": "February 2 2020",
+        "date": "January 1 2018",
         "description": "All of the music I arranged/composed in 2016 and 2017, all in one album. A mishmash of covers and original work.",
         "link": "https://eashwar.bandcamp.com/album/the-archive-album",
         "id": "16"
@@ -75,7 +75,16 @@
         "name": "The Castle",
         "type": "Music",
         "date": "January 20 2019",
-        "description": "A tone-poem I wrote in early 2019, inspired by depictions of Dracula's Castle (especially in art from the Castlevania series of video games",
+        "description": "A tone-poem I wrote in early 2019, inspired by depictions of Dracula's Castle (especially depictions from the Castlevania series)",
+        "link": "https://eashwar.bandcamp.com/track/the-castle-overture-and-scattering",
         "id": "17"
+    },
+    {
+        "name": "Robot Rescue Original Soundtrack",
+        "type": "Music",
+        "date": "January 20 2020",
+        "description": "Soundtrack for the second place game at the Global Game Jam 2020 (Ann Arbor site). Composed from scratch in 48 hours.",
+        "link": "http://eashwar.bandcamp.com/album/robot-rescue-original-game-soundtrack",
+        "id": "18"
     }
 ]
