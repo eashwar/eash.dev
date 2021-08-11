@@ -86,5 +86,12 @@
         "description": "Soundtrack for the second place game at the Global Game Jam 2020 (Ann Arbor site). Composed from scratch in 48 hours.",
         "link": "http://eashwar.bandcamp.com/album/robot-rescue-original-game-soundtrack",
         "id": "18"
+    },
+    {
+        "name": "GridBeat",
+        "type": "Software",
+        "date": "April 30 2020",
+        "description": "GridBeat is a Picross-inspired music-education rhythm puzzle game I created during an independent study at the University of Michigan. Available on Google Play Store",
+        "link": "https://play.google.com/store/apps/details?id=com.EashwarMohan.GridBeat"
     }
 ]
