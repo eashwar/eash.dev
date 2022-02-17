@@ -6,9 +6,14 @@ let routes = new Map([
     ['resume', 'resume.html'],
 ]);
 
-const navigate = page => {
+const navigate = async page => {
     fetch('pages/' + page).then(res => res.text())
-    .then(html => {document.getElementById('root').innerHTML = html;})
+    .then(async html => {
+        document.getElementById('root').style.opacity = 0;
+        await new Promise(r => setTimeout(r, 500));
+        document.getElementById('root').innerHTML = html;
+        document.getElementById('root').style.opacity = 1;
+    })
     .then(() => {
         if (window.location.hash.substr(1) === 'projects')
             projHTML();
