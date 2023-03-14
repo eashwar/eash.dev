@@ -74,7 +74,7 @@ body {
 
 .projectWrap {
     background-repeat: no-repeat;
-    background: linear-gradient(#98fbcc, #93e5ec);
+    background: linear-gradient(#93a1f8, #fc97ed);
     position: relative;
     padding: .6rem;
     border-radius: 10px;
@@ -83,7 +83,7 @@ body {
 }
 
 .project {
-    background: linear-gradient(#fc97ed, #93a1f8);
+    background: linear-gradient(#93e5ec, #98fbcc);
     align-items: center;
     text-align: center;
     justify-content: center;
