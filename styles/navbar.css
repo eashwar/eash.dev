@@ -2,7 +2,7 @@
 * NAVBAR *
 *********/
 .headerName a{
-    color: white;
+    color: #604093;
     text-decoration: none;
     float: left;
 }
@@ -15,7 +15,7 @@
 
 .navbar a{
     text-decoration: none;
-    color: white;
+    color: #604093;
     transition-duration: .2s;
 }
 

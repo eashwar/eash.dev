@@ -30,22 +30,21 @@ body {
     justify-content: center;
     font-family: 'Labrada', serif;
     font-size: 25px;
-    background-color: #604093;
+    background-color: #eafdf7;
 }
 
 .about {
     margin: 0 10vw;
-    color: white;
+    color: #604093;
     max-width: 1000px;
 }
 
 .about a {
-    color: #98fbcc;
-    transition-duration: .2s;
+    color: #93a1f8;
 }
 
 .about a:hover {
-    color: #93e5ec;
+    color: #fc97ed;
 }
 
 .headshot {
@@ -75,7 +74,7 @@ body {
 
 .projectWrap {
     background-repeat: no-repeat;
-    background: linear-gradient(#fc97ed, #93a1f8);
+    background: linear-gradient(#98fbcc, #93e5ec);
     position: relative;
     padding: .6rem;
     border-radius: 10px;
@@ -84,7 +83,7 @@ body {
 }
 
 .project {
-    background: linear-gradient(#98fbcc, #93e5ec);
+    background: linear-gradient(#fc97ed, #93a1f8);
     align-items: center;
     text-align: center;
     justify-content: center;
