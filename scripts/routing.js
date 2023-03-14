@@ -1,4 +1,5 @@
 import { projHTML } from './projects.js'
+import { putExtLinks } from './extLinks.js';
 
 let routes = new Map([
     ['home', 'home.html'],
@@ -15,14 +16,19 @@ const navigate = async page => {
         document.getElementById('root').style.opacity = 1;
     })
     .then(() => {
-        if (window.location.hash.substr(1) === 'projects')
+        if (window.location.hash.substring(1) === 'projects') {
             projHTML();
-        else if (window.location.hash.substr(1) === 'resume')
+        }
+        else if (window.location.hash.substring(1) === 'resume') {
             PDFObject.embed("/res/resume.pdf", "#resumeContainer", {
                 fallbackLink: '<p>This browser does not support inline PDFs. <a href="[url]">Download resume here.</a></p>',
                 height: "100%",
                 width: "80%",
             });
+        }
+        else {
+            putExtLinks();
+        }
     })
     .catch(console.log);
 };
