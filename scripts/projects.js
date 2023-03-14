@@ -21,7 +21,7 @@ const projHTML = () => {
         let dateString = `${dateStringArr[0]} ${dateStringArr[2]}`;
 
         return `<article class="projectWrap">
-            <span>
+            <span class="rampart">
                 <i class="fas fa-${projTypeToIcon[project.type]}"></i>
                 <b>${project.type.toLowerCase()}</b>
             </span>
