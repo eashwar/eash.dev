@@ -10,6 +10,7 @@
 .navbar {
     padding: 0 20vw 2vw;
     font-size: 30px;
+    font-family: 'Rampart One', monospace;
 }
 
 .navbar a{

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quantico&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada&family=Rampart+One&display=swap');
 html {
     height: 100%;
 }
@@ -20,7 +19,7 @@ main {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Quantico', monospace;
+    font-family: 'Rampart One', monospace;
     text-align: center;
 }
 
@@ -29,7 +28,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-family: 'Josefin Sans', serif;
+    font-family: 'Labrada', serif;
     font-size: 25px;
     background-color: #604093;
 }
@@ -90,18 +89,22 @@ body {
     text-align: center;
     justify-content: center;
     padding: 1.5rem;
+    margin: .6rem;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
 }
 
-.projectWrap a, .projectWrap p {
+.projectWrap a {
     text-decoration: none;
     color: darkslategrey;
-    font-family: 'Quantico', monospace;
 }
 
 .projectWrap a:hover {
     text-decoration: none;
     color:black;
+}
+
+.rampart {
+    font-family: 'Rampart One', monospace;
 }
