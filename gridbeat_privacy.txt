@@ -1,0 +1,22 @@
+# GridBeat Privacy Policy
+
+This privacy policy is simple. We do not collect any personal data, apart from your save progress on the game, which is saved entirely on your device and not transmitted via any network to any servers.
+
+The app does not and will not engage in any ad targeting, data mining, or other activities that would compromise your privacy, and we do not and will not affiliate ourselves with any third parties that do so.
+
+## Third Party Policies
+
+I use Google Play Services and Unity for this. Check out their policies here:
+
+- https://unity3d.com/legal/privacy-policy
+- https://www.google.com/policies/privacy/
+
+They may collect crash data and logs. These won't have any personally identifying data, as per their requirements.
+
+## Changes to This Privacy Policy
+
+I may change this from time to time. This current policy is effective as of 2024-01-15.
+
+## Contact Me
+
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at questions@eash.dev.
