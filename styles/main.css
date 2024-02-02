@@ -94,6 +94,14 @@ body {
     flex-direction: column;
 }
 
+.project iframe {
+    display: block; 
+    margin: 0 auto; 
+    width: auto; 
+    border: 0; 
+    overflow: hidden;
+}
+
 .projectWrap a {
     text-decoration: none;
     color: darkslategrey;
