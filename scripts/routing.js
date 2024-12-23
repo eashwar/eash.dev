@@ -19,14 +19,7 @@ const navigate = async page => {
         if (window.location.hash.substring(1) === 'projects') {
             projHTML();
         }
-        else if (window.location.hash.substring(1) === 'resume') {
-            PDFObject.embed("/res/resume.pdf", "#resumeContainer", {
-                fallbackLink: '<p>This browser does not support inline PDFs. <a href="[url]">Download resume here.</a></p>',
-                height: "100%",
-                width: "80%",
-            });
-        }
-        else {
+        else if (window.location.hash.substring(1) !== 'resume') {
             putExtLinks();
         }
     })
