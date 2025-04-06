@@ -1,31 +1,42 @@
 /*********
 * NAVBAR *
 *********/
+
 .headerName a{
-    color: #604093;
+    color: var(--primary-light);
     text-decoration: none;
     float: left;
+}
+
+.logo {
+    height: 64px;
+    padding-right: 16px;
 }
 
 .navbar {
     padding: 0 20vw 2vw;
     font-size: 30px;
-    font-family: 'Rampart One', monospace;
+    font-family: 'Technotot', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar a{
     text-decoration: none;
-    color: #604093;
+    color: var(--primary-light);
     transition-duration: .2s;
+    display: flex;
+    align-items: center;
 }
 
 .navbar a:hover {
-    text-decoration: none;
-    color: #93a1f8;
+    text-decoration: underline;
+    color: var(--gradient-03);
 }
 
 .underLink a{
-    border-bottom: solid 1px;
+    text-decoration: underline;
 }
 
 .navbar li {
@@ -44,7 +55,7 @@
     .navbar li {
         padding: 16px;
         text-decoration: none;
-        float: right;
+        float: left;
     }
 }
 
@@ -63,7 +74,7 @@
         padding: 0;
         margin: 0;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .navbar li {

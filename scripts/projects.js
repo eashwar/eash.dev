@@ -20,8 +20,8 @@ const projHTML = () => {
         let dateStringArr = project.date.split(' ');
         let dateString = `${dateStringArr[0]} ${dateStringArr[2]}`;
 
-        return `<article class="projectWrap">
-            <span class="rampart">
+        return `<article class="project-outer">
+            <span class="technotot text-secondary-orange">
                 <i class="fas fa-${projTypeToIcon[project.type]}"></i>
                 <b>${project.type.toLowerCase()}</b>
             </span>
@@ -29,17 +29,17 @@ const projHTML = () => {
             target="_blank"
             tabindex="${index + 5}"
             rel="noopener noreferrer" >
-                <div class="project">
+                <div class="project bg-gradient-partial">
                     <p><b>${project.name.toLowerCase()}</b></p>
                     <p>${project.description}</p>
                 </div>
             </a>
-            <time datetime="${new Date(project.date).toISOString()}">${dateString.toLowerCase()}</time>
+            <time datetime="${new Date(project.date).toISOString()}" class="technotot text-secondary-orange">${dateString.toLowerCase()}</time>
         </article>
         `;
     }))
     .then((html) => {
-        document.getElementById('projects').innerHTML = html.join(' ');
+        document.getElementById('projects-container').innerHTML = html.join(' ');
     })
     .catch(console.log);
 }

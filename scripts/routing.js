@@ -5,6 +5,7 @@ let routes = new Map([
     ['home', 'home.html'],
     ['projects', 'projects.html'],
     ['resume', 'resume.html'],
+    ['brand', 'brand.html']
 ]);
 
 const navigate = async page => {
@@ -16,10 +17,12 @@ const navigate = async page => {
         document.getElementById('root').style.opacity = 1;
     })
     .then(() => {
-        if (window.location.hash.substring(1) === 'projects') {
+        let newHash = window.location.hash.substring(1);
+        console.log("newhash", newHash)
+        if (newHash === 'projects') {
             projHTML();
         }
-        else if (window.location.hash.substring(1) !== 'resume') {
+        else if (newHash === '' || newHash === 'home') {
             putExtLinks();
         }
     })
@@ -27,7 +30,7 @@ const navigate = async page => {
 };
 
 const onHashChange = e => {
-    let newHash = window.location.hash.substr(1);
+    let newHash = window.location.hash.substring(1);
     if (window.location.hash.length === 0)
         navigate(routes.get('home'));
     else if (routes.has(newHash))

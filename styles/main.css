@@ -1,4 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Labrada&family=Rampart+One&display=swap');
+@font-face {
+    font-family: 'Labrada';
+    src: url(Labrada-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Technotot';
+    src: url(Technotot.otf);
+}
+
+:root {
+    --primary-dark: #3d566c;
+    --primary-light: #d3f5ff;
+    --secondary-orange: #e59d23;
+    --secondary-blay: #6f889f;
+    --gradient-02: #318ba2;
+    --gradient-03: #2ec3c0;
+    --gradient-04: #7bfac4;
+    --border-radius: 10px;
+}
+
+/***************
+* FUNDAMENTALS *
+***************/
+
+.technotot {
+    font-family: 'Technotot', monospace;
+}
+
+.labrada {
+    font-family: 'Labrada', serif;
+}
+
+.text-primary-dark {
+    color: var(--primary-dark)
+}
+
+.text-primary-light {
+    color: var(--primary-light)
+}
+
+.text-secondary-orange {
+    color: var(--secondary-orange)
+}
+
+.text-secondary-blay {
+    color: var(--secondary-blay)
+}
+
+.text-gradient-02 {
+    color: var(--gradient-02)
+}
+
+.text-gradient-03 {
+    color: var(--gradient-03)
+}
+
+.text-gradient-04 {
+    color: var(--gradient-04)
+}
+
+.bg-primary-dark {
+    background-color: var(--primary-dark)
+}
+
+.bg-primary-light {
+    background-color: var(--primary-light)
+}
+
+.bg-secondary-orange {
+    background-color: var(--secondary-orange)
+}
+
+.bg-secondary-blay {
+    background-color: var(--secondary-blay)
+}
+
+.bg-gradient-full {
+    background: linear-gradient(to right, var(--primary-dark), var(--gradient-02), var(--gradient-03), var(--gradient-04));
+}
+
+.bg-gradient-partial {
+    background: linear-gradient(var(--gradient-04), var(--gradient-03), var(--gradient-02));
+}
+
+.w-100 {
+    width: 100%;
+    margin: 0px 50px;
+}
+
 html {
     height: 100%;
 }
@@ -13,13 +102,8 @@ main {
     align-items: center;
 }
 
-#resumeContainer {
-    height: 100%;
-    width: 100%
-}
-
 h1, h2, h3, h4, h5 {
-    font-family: 'Rampart One', monospace;
+    font-family: 'Technotot', monospace;
     text-align: center;
 }
 
@@ -30,28 +114,28 @@ body {
     justify-content: center;
     font-family: 'Labrada', serif;
     font-size: 25px;
-    background-color: #eafdf7;
+    background-color: var(--primary-dark);
 }
 
 .about {
     margin: 0 10vw;
-    color: #604093;
+    color: var(--primary-light);
     max-width: 1000px;
 }
 
 .about a {
-    color: #93a1f8;
+    color: var(--gradient-03);
 }
 
 .about a:hover {
-    color: #fc97ed;
+    color: var(--gradient-04);
 }
 
 .headshot {
     width: 250px;
-    border-radius: 50%;
-    border: solid 1px #98fbcc;
-    background: linear-gradient(#fc97ed, #93a1f8);
+    border-radius: var(--border-radius);
+    border: solid 5px var(--secondary-orange);
+
 }
 
 #extLinks a {
@@ -67,51 +151,67 @@ body {
     transform: scale(1.2); 
 }
 
-#projects {
-    display: grid;
-    justify-content: center;
-}
-
-.projectWrap {
-    background-repeat: no-repeat;
-    background: linear-gradient(#93a1f8, #fc97ed);
-    position: relative;
-    padding: .6rem;
-    border-radius: 10px;
-    margin: 30px 5vw;
+.brand-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     max-width: 1000px;
+    justify-content: center;
 }
 
-.project {
-    background: linear-gradient(#93e5ec, #98fbcc);
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 1.5rem;
-    margin: .6rem;
-    border-radius: 8px;
+.box-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    border-radius: var(--border-radius);
+    border: 1px dashed var(--primary-light);
+    box-sizing: border-box;
+    margin: 50px 50px;
 }
 
-.project iframe {
-    display: block; 
-    margin: 0 auto; 
-    width: auto; 
-    border: 0; 
-    overflow: hidden;
+.box {
+    height: 250px;
+    width: 250px;
+    margin: 20px 20px 5px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary-light);
 }
 
-.projectWrap a {
-    text-decoration: none;
-    color: darkslategrey;
+@media only screen and (max-width: 1400px) {
+    .logo-big {
+        height: 256px;
+        width: 256px;
+    }
 }
 
-.projectWrap a:hover {
-    text-decoration: none;
-    color:black;
+@media only screen and (min-width: 1401px) {
+    .gradient-box {
+        width: 500px !important;
+    }
+
+    .gradient-box-container {
+        width: 600px !important;
+        max-width: 600px !important;
+    }
+
+    .brand-container > .technotot, .labrada {
+        font-size: 50px;
+    }
+    
+    .logo-big {
+        height: 512px;
+        width: 512px;
+    }
+    
+    .brand-container > h1 {
+        font-size: 100px;
+    }
 }
 
-.rampart {
-    font-family: 'Rampart One', monospace;
+.brand-color-text {
+    align-content: center;
+    margin: 5px 0px;
 }
+

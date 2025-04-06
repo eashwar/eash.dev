@@ -1,0 +1,52 @@
+
+
+/***********
+* Projects *
+***********/
+
+#projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-outer {
+    background-repeat: no-repeat;
+    background: var(--secondary-blay);
+    position: relative;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    margin: 50px;
+    max-width: 500px;
+}
+
+.project-outer a {
+    text-decoration: none;
+    color: var(--primary-dark);
+    transition: ease-in 0.2s
+}
+
+.project-outer a:hover {
+    text-decoration: none;
+    color:var(--primary-light);
+}
+
+.project {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+}
+
+.project iframe {
+    display: block; 
+    margin: 0 auto; 
+    width: auto; 
+    border: 0; 
+    overflow: hidden;
+}
