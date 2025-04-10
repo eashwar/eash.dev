@@ -143,11 +143,11 @@ body {
     font-size: 50px;
 }
 
-.fab, .fas {
+.fa-brands, .fa-solid {
     transition: all .2s ease-in-out;
 }
 
-.fab:hover, .fas:hover {
+.fa-brands:hover, .fa-solid:hover {
     transform: scale(1.2); 
 }
 
