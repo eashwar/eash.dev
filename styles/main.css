@@ -157,6 +157,7 @@ body {
     flex-wrap: wrap;
     max-width: 1000px;
     justify-content: center;
+    color: var(--primary-light);
 }
 
 .box-container {
