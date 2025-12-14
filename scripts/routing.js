@@ -5,7 +5,8 @@ let routes = new Map([
     ['home', 'home.html'],
     ['projects', 'projects.html'],
     ['resume', 'resume.html'],
-    ['brand', 'brand.html']
+    ['brand', 'brand.html'],
+    ['blog', 'blog.html']
 ]);
 
 const navigate = async page => {
