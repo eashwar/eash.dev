@@ -37,18 +37,5 @@
         </ul>
     </nav>
     <main id="root">{{CONTENT}}</main>
-    <script type="module">
-        import { projHTML } from '/scripts/projects.js';
-        import { putExtLinks } from '/scripts/extLinks.js';
-
-        // Determine which page we're on based on the path
-        const path = window.location.pathname;
-
-        if (path === '/' || path === '/index.html' || path === '/index') {
-            putExtLinks();
-        } else if (path === '/projects.html' || path === '/projects') {
-            projHTML();
-        }
-    </script>
 </body>
 </html>
