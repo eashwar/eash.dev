@@ -1,22 +1,31 @@
+const fs = require('fs');
+const path = require('path');
+
 const projTypeToIcon = {
     "Music": "headphones",
     "Software": "laptop",
     "Talks": "microphone",
     "Game": "gamepad"
-}
+};
 
-const projHTML = () => {
-    fetch("/res/projects.json")
-    .then(res => {
-        if (!res.ok) throw Error(res.statusText);
-        return res.json();
-    })
-    .then(data => data.sort((a, b) => {
+const extLinks = [
+    {href: "mailto:eash@eash.dev", icon: "fa-solid fa-envelope"},
+    {href: "https://linkedin.com/in/eashw", icon: "fa-brands fa-linkedin"},
+    {href: "https://github.com/eashwar", icon: "fa-brands fa-github"},
+    {href: "https://bsky.app/profile/eash.dev", icon: "fa-brands fa-bluesky"}
+];
+
+function generateProjectsHtml() {
+    const projectsPath = path.join(__dirname, '../res/projects.json');
+    const projectsData = JSON.parse(fs.readFileSync(projectsPath, 'utf-8'));
+
+    const sortedProjects = projectsData.sort((a, b) => {
         let dateA = new Date(a.date).getTime();
         let dateB = new Date(b.date).getTime();
         return dateB - dateA;
-    }))
-    .then(data => data.map((project, index) => {
+    });
+
+    const projectsHtml = sortedProjects.map((project, index) => {
         let dateStringArr = project.date.split(' ');
         let dateString = `${dateStringArr[0]} ${dateStringArr[2]}`;
 
@@ -37,11 +46,17 @@ const projHTML = () => {
             <time datetime="${new Date(project.date).toISOString()}" class="technotot text-secondary-orange">${dateString.toLowerCase()}</time>
         </article>
         `;
-    }))
-    .then((html) => {
-        document.getElementById('projects-container').innerHTML = html.join(' ');
-    })
-    .catch(console.log);
+    });
+
+    return projectsHtml.join(' ');
 }
 
-export { projHTML };
+function generateExtLinksHtml() {
+    const extLinksHtml = extLinks.map(item => {
+        return `<a href="${item.href}" target="_blank" rel="noopener noreferrer"><i class="${item.icon}"></i></a>`
+    });
+
+    return extLinksHtml.join(' ');
+}
+
+module.exports = { generateProjectsHtml, generateExtLinksHtml };

@@ -1,0 +1,9 @@
+{
+    "name": "eash-dev",
+    "version": "5.0.0",
+    "private": true,
+    "dependencies": {
+        "marked": "^17.0.1",
+        "js-yaml": "^4.1.1"
+    }
+}
