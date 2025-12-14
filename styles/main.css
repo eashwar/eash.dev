@@ -8,6 +8,11 @@
     src: url(Technotot.otf);
 }
 
+@font-face {
+    font-family: 'FiraCode';
+    src: url(FiraCode-VariableFont_wght.ttf);
+}
+
 :root {
     --primary-dark: #3d566c;
     --primary-light: #d3f5ff;
@@ -29,6 +34,10 @@
 
 .labrada {
     font-family: 'Labrada', serif;
+}
+
+.firacode {
+    font-family: 'FiraCode', monospace;
 }
 
 .text-primary-dark {
