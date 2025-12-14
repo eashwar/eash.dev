@@ -74,7 +74,7 @@ const postItemsHtml = postList.map((post, idx) => {
                 class="text-secondary-orange labrada">
             ${formatDate(post.date)}:
         </time>
-        <a href="/blog/${post.link}.html" tabindex="${idx + 5}">
+        <a href="/blog/${post.link}" tabindex="${idx + 5}">
             <b>${post.title.toLowerCase()}</b>
         </a>
     </li>`

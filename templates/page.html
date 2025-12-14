@@ -24,19 +24,31 @@
 <body>
     <nav class="navbar">
         <h1 class="headerName">
-            <a href="#">
+            <a href="/">
                 <img class="logo" src="res/logo.svg" />
                 eashwar mohan
             </a>
         </h1>
         <ul>
-            <li class="underLink"><a href="#home" tabindex="0">home</a></li>
-            <li class="underLink"><a href="#blog" tabindex="1">blog</a></li>
-            <li class="underLink"><a href="#resume" tabindex="2">resume</a></li>
+            <li class="underLink"><a href="/" tabindex="0">home</a></li>
+            <li class="underLink"><a href="/blog" tabindex="1">blog</a></li>
+            <li class="underLink"><a href="/resume" tabindex="2">resume</a></li>
             <li class="underLink"><a href="https://music.eash.dev" tabindex="3">music</a></li>
         </ul>
     </nav>
-    <main id="root"></main>
-    <script src="scripts/routing.js" type="module" defer></script>
+    <main id="root">{{CONTENT}}</main>
+    <script type="module">
+        import { projHTML } from '/scripts/projects.js';
+        import { putExtLinks } from '/scripts/extLinks.js';
+
+        // Determine which page we're on based on the path
+        const path = window.location.pathname;
+
+        if (path === '/' || path === '/index.html' || path === '/index') {
+            putExtLinks();
+        } else if (path === '/projects.html' || path === '/projects') {
+            projHTML();
+        }
+    </script>
 </body>
 </html>
