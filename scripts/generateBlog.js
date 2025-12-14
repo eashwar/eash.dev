@@ -57,6 +57,7 @@ for (const markdownFile of markdownFiles) {
 
     const postHtml = blogPostTemplate
         .replaceAll(/\{\{TITLE\}\}/g, frontmatter.title)
+        .replaceAll(/\{\{DESCRIPTION\}\}/g, frontmatter.description)
         .replaceAll(/\{\{TIMESTAMP\}\}/g, parsedDate)
         .replace(/\{\{BODY\}\}/g, parsedMarkdown);
 

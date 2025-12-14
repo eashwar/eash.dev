@@ -1,5 +1,6 @@
 ---
 title: My Example Blog Post
+description: a post showing off eash's blog.
 date: 2025-12-14
 ---
 

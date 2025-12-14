@@ -11,12 +11,22 @@ const pageFiles = fs.readdirSync(pagesFolder)
 
 const pageContentMap = {
     'home': {
+        '{{DESCRIPTION}}': "eashwar's portfolio and blog about art, music, games, and software",
         '{{EXT_LINKS}}': generateExtLinksHtml()
     },
     'projects': {
+        '{{DESCRIPTION}}': "a portfolio of projects eash has worked on!",
         '{{PROJECTS}}': generateProjectsHtml()
     }
 };
+
+const pageDescriptionMap = {
+    'home': "eashwar's portfolio and blog about art, music, games, and software",
+    'projects': "a portfolio of projects eash has worked on!",
+    'resume': "the resume for software engineer eashwar mohan",
+    'blog': "eash's blog about art, music, games, and software",
+    'brand': "the brand style guide for eashwar mohan's personal brand.",
+}
 
 for (const pageFile of pageFiles) {
     const fileBasename = path.basename(pageFile, '.html')
@@ -29,7 +39,9 @@ for (const pageFile of pageFiles) {
         }
     }
 
-    const pageHtml = pageTemplate.replace(/\{\{CONTENT\}\}/g, content);
+    const pageHtml = pageTemplate
+        .replace(/\{\{CONTENT\}\}/g, content)
+        .replace(/\{\{DESCRIPTION\}\}/g, pageDescriptionMap[fileBasename]);
 
     // home.html becomes index.html, others keep their names
     const outputFilename = fileBasename === 'home' ? 'index.html' : `${fileBasename}.html`;
