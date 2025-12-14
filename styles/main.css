@@ -104,12 +104,11 @@ html {
 
 main {
     margin-bottom: 10%;
-    transition: opacity 0.1s linear 0s;
-    opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    view-transition-name: main-content;
 }
 
 h1, h2, h3, h4, h5 {
@@ -125,12 +124,16 @@ body {
     font-family: 'Labrada', serif;
     font-size: 25px;
     background-color: var(--primary-dark);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .about {
     margin: 0 10vw;
     color: var(--primary-light);
     max-width: 1000px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .about a {
@@ -253,6 +256,35 @@ body {
     border: 1px solid var(--primary-light);
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    .about {
+        margin: 0 5vw;
+    }
+
+    #extLinks a {
+        margin: 0 8px;
+        font-size: 40px;
+    }
+
+    .box-container {
+        margin: 30px 20px;
+        max-width: 90%;
+    }
+
+    .headshot-trap {
+        width: 150px;
+        height: 150px;
+    }
+
+    .headshot-duo {
+        transform: scale(0.8);
+    }
+}
+
 @media only screen and (max-width: 1400px) {
     .logo-big {
         height: 256px;
@@ -294,7 +326,21 @@ body {
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
-    animation-duration: 0.1s;
+    animation-duration: 0.05s;
     animation-timing-function: ease-in-out;
+    mix-blend-mode: normal;
+}
+
+::view-transition-old(navbar),
+::view-transition-new(navbar) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+
+::view-transition-old(main-content),
+::view-transition-new(main-content) {
+    animation-duration: 0.05s;
+    animation-timing-function: ease-in-out;
+    mix-blend-mode: normal;
 }
 
