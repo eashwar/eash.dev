@@ -6,7 +6,7 @@ COPY package.json package-lock.json* ./
 RUN npm install
 
 COPY templates/ ./templates/
-COPY scripts/build-blog.js ./scripts/
+COPY scripts/generateBlog.js ./scripts/
 COPY pages/ ./pages/
 COPY styles/ ./styles/
 
