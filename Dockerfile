@@ -24,7 +24,7 @@ COPY --from=builder /build/*.html /usr/share/nginx/html/
 COPY scripts/ /usr/share/nginx/html/scripts/
 COPY styles/ /usr/share/nginx/html/styles/
 COPY res/ /usr/share/nginx/html/res/
-COPY favicon.ico me.jpg gridbeat_privacy.txt /usr/share/nginx/html/
+COPY favicon.ico me.jpg me_drawing.png gridbeat_privacy.txt /usr/share/nginx/html/
 
 # Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
