@@ -44,7 +44,7 @@
     margin-top: 1vh;
 }
 
-@media only screen and (min-width: 1401px) {
+@media only screen and (min-width: 1251px) {
     .navbar ul {
         list-style-type: none;
         margin: 0;
@@ -59,7 +59,7 @@
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1250px) {
     .headerName {
         padding-bottom: 15px;
         display: flex;
