@@ -3,30 +3,13 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
 
-/*
-markdown posts located at posts/ dir
-template file at templates/blog-post.html
-generate blogs to blog/ dir
-blog "manifest" pages/
-*/
-
 const postsFolder = path.join(__dirname, "../posts")
 const blogPostTemplatePath = path.join(__dirname, "../templates/blog-post.html")
 const blogListingTemplatePath = path.join(__dirname, "../templates/blog-listing.html")
 const blogPostOutputFolder = path.join(__dirname, "../blog")
 const pagesFolder = path.join(__dirname, "../pages")
 
-/*
- - create output folder
- - parse frontmatter
- - date? maybe helper fn needed
- - actually generate post
- - generate manifest/list file
-*/
-
-// helper functions
 const parseFrontmatter = (content) => {
-    // match frontmatter yaml, and then markdown content
     const parsedContent = content.match(/^---([\s\S]*)---\n([\s\S]*)$/)
 
     if(!parsedContent) {
@@ -44,10 +27,8 @@ const formatDate = (dateString) => {
     return date.toISOString().split('T')[0];
 }
 
-// actual script:
 if (!fs.existsSync(blogPostOutputFolder))
 {
-    // do it
     fs.mkdirSync(blogPostOutputFolder, {recursive: true})
 }
 
@@ -71,7 +52,7 @@ for (const markdownFile of markdownFiles) {
     postList.push({
         title: frontmatter.title,
         date: parsedDate,
-        link: fileBasename // join with "blog/ to actually link"
+        link: fileBasename // join with "blog/" to actually link
     })
 
     const postHtml = blogPostTemplate
