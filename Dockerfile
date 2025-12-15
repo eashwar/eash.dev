@@ -5,6 +5,7 @@ WORKDIR /build
 COPY package.json package-lock.json* ./
 RUN npm install
 
+COPY config.json ./
 COPY templates/ ./templates/
 COPY scripts/generateBlog.js scripts/generatePages.js scripts/renderContent.js ./scripts/
 COPY pages/ ./pages/
@@ -21,6 +22,8 @@ FROM nginx:alpine
 
 COPY --from=builder /build/blog/ /usr/share/nginx/html/blog/
 COPY --from=builder /build/*.html /usr/share/nginx/html/
+COPY --from=builder /build/feed.xml /usr/share/nginx/html/
+COPY --from=builder /build/feed.atom /usr/share/nginx/html/
 # Copy all original static files
 COPY styles/ /usr/share/nginx/html/styles/
 COPY res/ /usr/share/nginx/html/res/

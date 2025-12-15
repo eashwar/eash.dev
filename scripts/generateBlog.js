@@ -1,3 +1,4 @@
+const { Feed } = require('feed');
 const marked = require('marked');
 const yaml = require('js-yaml');
 const fs = require('fs');
@@ -8,6 +9,9 @@ const blogPostTemplatePath = path.join(__dirname, "../templates/blog-post.html")
 const blogListingTemplatePath = path.join(__dirname, "../templates/blog-listing.html")
 const blogPostOutputFolder = path.join(__dirname, "../blog")
 const pagesFolder = path.join(__dirname, "../pages")
+const configPath = path.join(__dirname, '../config.json')
+
+const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'))
 
 const parseFrontmatter = (content) => {
     const parsedContent = content.match(/^---([\s\S]*)---\n([\s\S]*)$/)
@@ -51,8 +55,10 @@ for (const markdownFile of markdownFiles) {
 
     postList.push({
         title: frontmatter.title,
+        description: frontmatter.description,
         date: parsedDate,
-        link: fileBasename // join with "blog/" to actually link
+        link: fileBasename, // join with "blog/" to actually link
+        htmlContent: parsedMarkdown
     })
 
     const postHtml = blogPostTemplate
@@ -88,3 +94,39 @@ fs.writeFileSync(
     path.join(pagesFolder, 'blog.html'),
     blogListingHtml
 )
+
+const feed = new Feed({
+    title: config.site.title,
+    description: config.site.description,
+    id: config.site.url,
+    link: config.site.url,
+    language: config.site.language,
+    favicon: `${config.site.url}/favicon.ico`,
+    copyright: `All rights reserved ${new Date().getFullYear()}, ${config.site.author.name}`,
+    author: {
+        name: config.site.author.name,
+        email: config.site.author.email,
+        link: config.site.url
+    }
+});
+
+for (const post of postList) {
+    feed.addItem({
+        title: post.title,
+        id: `${config.site.url}/blog/${post.link}`,
+        link: `${config.site.url}/blog/${post.link}`,
+        description: post.description,
+        content: post.htmlContent,
+        author: [
+            {
+                name: config.site.author.name,
+                email: config.site.author.email,
+                link: config.site.url
+            }
+        ],
+        date: new Date(post.date)
+    });
+}
+
+fs.writeFileSync(path.join(__dirname, '../feed.xml'), feed.rss2());
+fs.writeFileSync(path.join(__dirname, '../feed.atom'), feed.atom1());

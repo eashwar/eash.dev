@@ -1,0 +1,12 @@
+{
+  "site": {
+    "title": "Eashwar Mohan",
+    "description": "thoughts, tutorials, and musings on software, music, and creative work from eashwar mohan",
+    "url": "https://eash.dev",
+    "author": {
+      "name": "Eashwar Mohan",
+      "email": "eash@eash.dev"
+    },
+    "language": "en"
+  }
+}
