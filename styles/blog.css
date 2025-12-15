@@ -1,5 +1,6 @@
 .blog-post {
-    margin: 0 10vw;
+    margin: 0 auto;
+    padding: 0 10vw;
     max-width: 1000px;
 }
 
