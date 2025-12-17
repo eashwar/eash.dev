@@ -214,9 +214,18 @@ body {
     border-radius: var(--border-radius);
 }
 
-#extLinks a {
-    margin: 0 10px;
-    font-size: 50px;
+.extLinks p {
+    margin: 5px auto 0;
+}
+
+.extLinks a {
+    margin: 0 5px;
+    font-size: 30px;
+    color: var(--gradient-03);
+}
+
+.extLinks a:hover {
+    color: var(--gradient-04);
 }
 
 .fa-brands, .fa-solid {
@@ -263,11 +272,6 @@ body {
 
     .about {
         margin: 0 5vw;
-    }
-
-    #extLinks a {
-        margin: 0 8px;
-        font-size: 40px;
     }
 
     .box-container {
@@ -320,6 +324,15 @@ body {
     align-content: center;
     margin: 5px 0px;
 }
+
+.footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--secondary-blay);
+    text-align: center;
+}
+
 @view-transition {
     navigation: auto;
 }
