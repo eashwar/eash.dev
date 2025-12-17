@@ -12,7 +12,8 @@ const extLinks = [
     {href: "mailto:eash@eash.dev", icon: "fa-solid fa-envelope"},
     {href: "https://linkedin.com/in/eashw", icon: "fa-brands fa-linkedin"},
     {href: "https://github.com/eashwar", icon: "fa-brands fa-github"},
-    {href: "https://bsky.app/profile/eash.dev", icon: "fa-brands fa-bluesky"}
+    {href: "https://bsky.app/profile/eash.dev", icon: "fa-brands fa-bluesky"},
+    {href: "https://eash.dev/feed.atom", icon: "fa-solid fa-rss"}
 ];
 
 function generateProjectsHtml() {
@@ -56,7 +57,7 @@ function generateExtLinksHtml() {
         return `<a href="${item.href}" target="_blank" rel="noopener noreferrer"><i class="${item.icon}"></i></a>`
     });
 
-    return extLinksHtml.join(' ');
+    return `<footer class="footer"><p class="extLinks">${extLinksHtml.join(' ')}</p></footer>`
 }
 
 module.exports = { generateProjectsHtml, generateExtLinksHtml };

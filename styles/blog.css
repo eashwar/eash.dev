@@ -117,14 +117,6 @@
     margin: 2rem 0;
 }
 
-.blog-footer {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-top: 2rem;
-    border-top: 2px solid var(--secondary-blay);
-    text-align: center;
-}
-
 .blog-back-link {
     color: var(--gradient-03);
     text-decoration: none;

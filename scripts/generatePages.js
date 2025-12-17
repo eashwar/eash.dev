@@ -11,8 +11,7 @@ const pageFiles = fs.readdirSync(pagesFolder)
 
 const pageContentMap = {
     'home': {
-        '{{DESCRIPTION}}': "eashwar's portfolio and blog about art, music, games, and software",
-        '{{EXT_LINKS}}': generateExtLinksHtml()
+        '{{DESCRIPTION}}': "eashwar's portfolio and blog about art, music, games, and software"
     },
     'projects': {
         '{{DESCRIPTION}}': "a portfolio of projects eash has worked on!",
@@ -38,6 +37,9 @@ for (const pageFile of pageFiles) {
             content = content.replace(placeholder, htmlContent);
         }
     }
+
+    // Append footer at the bottom of the content
+    content = content + generateExtLinksHtml();
 
     const pageHtml = pageTemplate
         .replace(/\{\{CONTENT\}\}/g, content)
