@@ -43,4 +43,52 @@ i started the way many of your favorite online artists might: with some fanart. 
 
 and hey, it doesn't actually look half bad! it looks relatively close to the source, at least! but the time it took was kinda abysmal, and it really didn't feel like "real drawing" as much as just copying (oh, little did i realize at this point how much learning art is studying art you like)
 
-within a few days, i realized a few things; i needed to learn about shapes, i needed to be paying better attention to my surroundings, and i needed to have bigger paper to draw on.
+so after this i did what anyone would do. went to youtube and watched a bunch of random beginner content! within a few days, i picked up a few things repeated across a decent number of vids; i needed to learn about lines and shapes, i needed to be paying better attention to my surroundings, and i needed to have bigger paper to draw on. mostly, i picked up that i needed to initially start by doing more shorter, messier drawings than slow, concentrated copy work.
+
+## getting into the habit
+
+**insert day 3/4, a day in the teens, a day in the 20s**
+
+the first few weeks were a lot of this sort of thing: studies, screenshots, practice of fundamentals. drawing things and people i saw outside.
+
+looking back, i think the thing that stands out the most to me is how dark and scratchy the pencil lines are here. i really was putting a lot of force behind my pencil marks and redrawing them a ton unconfidently.
+
+
+when i hit around day 50, i was unbelievably excited and motivated to keep going. 
+
+
+**insert stuff from day 50-70**
+
+looking back on it, a lot of what i see during this part of the year i already cringe at in terms of the quality. but in the moment i remember feeling really pleased with what i was putting out, because of how much growth and improvement i was seeing.
+
+## the drawing tablet enters the ring
+
+**77, 79, 83**
+
+for my birthday, my sister gave me her wacom drawing tablet. she hadn't been using it, and wanting to motivate my consistency here, she thought i might get good use out of it.
+
+and boy, did i!
+
+i found a bunch of utility in the way that i could take reference images and study them a lot closer -- including tracing over them, but outside of tracing, a much more intuitive way to gauge shape and form and practice. i'm especially glad i didn't *start* with this tablet because i think physically drawing first ensured i had some important fundamentals before getting access to superpowers like tracing and ctrl+z.
+
+extremely notably, 83 was a self-portrait i'm rather proud of, which i used as my profile picture online for a large chunk of the year.
+
+
+## logo and style guide
+
+day 94 and 95
+
+## getting to 100
+
+lots of highlights, but mainly gradual improvement
+
+## the journey to day 200 and feeling of plateauing
+
+the next 100 days
+
+## the mechatober hurdle
+
+## hands week and more
+
+## the final stretch
+
