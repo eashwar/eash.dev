@@ -76,15 +76,13 @@ extremely notably, 83 was a self-portrait i'm rather proud of, which i used as m
 
 ## logo and style guide
 
-day 94 and 95
+on day 94 and 95, i decided in my dunning-kruger haze of confidence that i was skilled enough to do the optional side quest from the beginning of the year. and if do say so myself, i think i cooked:
 
-## getting to 100
+the logo here is both a cube shape with piano keys on it, but the orientation of the keys subtly contains my initials (EM). choosing the colors and fonts also was a great time, and i'm happy with the result. you can see this at any time on the [brand sheet page of my website](https://eash.dev/brand)!
 
-lots of highlights, but mainly gradual improvement
+## passing day 100 and journeying to day 200
 
-## the journey to day 200: excellent growth, trip to europe
-
-the next 100 days
+lots of highlights, but mainly gradual improvement, excellent fun confidence boosting work during europe trip.
 
 ## lead up to october
 
@@ -94,3 +92,6 @@ the next 100 days
 
 ## the final stretch
 
+## my favorite pieces
+
+## what's in store for 2026?
