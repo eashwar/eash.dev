@@ -1,12 +1,12 @@
 .blog-post {
     margin: 0 auto;
     padding: 0 10vw;
-    max-width: 90vw;
+    max-width: 75vw;
 }
 
 .blog-content {
     color: var(--primary-light);
-    max-width: 75vw;
+    max-width: 60vw;
 }
 
 
@@ -132,8 +132,8 @@
 
 .blog-body table img {
     margin: 0 auto;
-    max-width: min(30vw, 500px);
-    min-height: 450px;
+    max-width: min(25vw, 500px);
+    min-height: auto;
 }
 
 .blog-body table .image-description {
@@ -172,7 +172,7 @@
     }
 
     .blog-body img {
-        max-width: min(60vw,300px);
+        max-width: min(55vw,300px);
         display: block;
         margin-left: auto;
         margin-right: auto;
