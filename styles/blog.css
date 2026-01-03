@@ -144,6 +144,11 @@
 @media only screen and (max-width: 768px) {
     .blog-post {
         margin: 0 5vw;
+        max-width: 90vw;
+    }
+
+    .blog-content {
+        max-width: 75vw;
     }
 
     .blog-header h1 {
@@ -172,7 +177,7 @@
     }
 
     .blog-body img {
-        max-width: min(55vw,300px);
+        max-width: max(75vw,300px);
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -180,6 +185,10 @@
         min-height: auto;
         max-height: 450px;
         border-radius: var(--border-radius);
+    }
+    
+    .blog-body table img {
+        max-width: max(75vw,300px);
     }
 
     .blog-body table {
