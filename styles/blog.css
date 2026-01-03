@@ -1,12 +1,12 @@
 .blog-post {
     margin: 0 auto;
     padding: 0 10vw;
-    max-width: 1000px;
+    max-width: 90vw;
 }
 
 .blog-content {
     color: var(--primary-light);
-    max-width: 85vw;
+    max-width: 75vw;
 }
 
 
@@ -99,6 +99,7 @@
 .blog-body img {
     margin: 1.5rem auto;
     height: auto;
+    min-height: auto;
     border-radius: var(--border-radius);
     max-width: 500px;
     display: block;
@@ -114,11 +115,30 @@
     margin-bottom: 1.5rem;
 }
 
-iframe {
-    max-width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.blog-body table {
+    border: none;
+    border-collapse: collapse;
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.blog-body table td {
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.blog-body table img {
+    margin: 0 auto;
+    max-width: min(30vw, 500px);
+    min-height: 450px;
+}
+
+.blog-body table .image-description {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -157,13 +177,18 @@ iframe {
         margin-left: auto;
         margin-right: auto;
         height: auto;
+        min-height: auto;
+        max-height: 450px;
         border-radius: var(--border-radius);
     }
 
-    iframe {
-        max-width: min(60vw,300px);
+    .blog-body table {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+    }
+
+    .blog-body table td {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
     }
 }
