@@ -39,7 +39,10 @@ if (!fs.existsSync(blogPostOutputFolder))
 const postList = []
 const blogPostTemplate = fs.readFileSync(blogPostTemplatePath, 'utf-8')
 const blogListingTemplate = fs.readFileSync(blogListingTemplatePath, 'utf-8')
-const markdownFiles = fs.readdirSync(postsFolder)
+const markdownFiles = fs.readdirSync(postsFolder).filter(file => {
+    const filePath = path.join(postsFolder, file);
+    return fs.statSync(filePath).isFile() && file.endsWith('.md');
+})
 
 for (const markdownFile of markdownFiles) {
 

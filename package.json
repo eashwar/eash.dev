@@ -6,5 +6,8 @@
         "marked": "^17.0.1",
         "js-yaml": "^4.1.1",
         "feed": "^4.2.2"
+    },
+    "scripts": {
+        "serve": "docker build -t eash-dev .; docker run -p 8080:80 eash-dev"
     }
 }
