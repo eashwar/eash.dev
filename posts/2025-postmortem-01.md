@@ -82,9 +82,11 @@ day 94 and 95
 
 lots of highlights, but mainly gradual improvement
 
-## the journey to day 200 and feeling of plateauing
+## the journey to day 200: excellent growth, trip to europe
 
 the next 100 days
+
+## lead up to october
 
 ## the mechatober hurdle
 
