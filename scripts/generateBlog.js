@@ -31,6 +31,19 @@ const formatDate = (dateString) => {
     return date.toISOString().split('T')[0];
 }
 
+const addImageDescriptions = (html) => {
+    // Match img tags and extract alt text
+    return html.replace(/<img([^>]*?)>/g, (match, attributes) => {
+        const altMatch = attributes.match(/alt="([^"]*)"/);
+        const altText = altMatch ? altMatch[1] : '';
+
+        if (altText) {
+            return `${match}\n<p class="image-description">${altText}</p>`;
+        }
+        return match;
+    });
+}
+
 if (!fs.existsSync(blogPostOutputFolder))
 {
     fs.mkdirSync(blogPostOutputFolder, {recursive: true})
@@ -39,7 +52,10 @@ if (!fs.existsSync(blogPostOutputFolder))
 const postList = []
 const blogPostTemplate = fs.readFileSync(blogPostTemplatePath, 'utf-8')
 const blogListingTemplate = fs.readFileSync(blogListingTemplatePath, 'utf-8')
-const markdownFiles = fs.readdirSync(postsFolder)
+const markdownFiles = fs.readdirSync(postsFolder).filter(file => {
+    const filePath = path.join(postsFolder, file);
+    return fs.statSync(filePath).isFile() && file.endsWith('.md');
+})
 
 for (const markdownFile of markdownFiles) {
 
@@ -49,7 +65,7 @@ for (const markdownFile of markdownFiles) {
 
     const {frontmatter, markdown} = parseFrontmatter(content)
 
-    const parsedMarkdown = marked.parse(markdown)
+    const parsedMarkdown = addImageDescriptions(marked.parse(markdown))
 
     const parsedDate = formatDate(frontmatter.date)
 
