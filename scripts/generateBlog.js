@@ -31,6 +31,19 @@ const formatDate = (dateString) => {
     return date.toISOString().split('T')[0];
 }
 
+const addImageDescriptions = (html) => {
+    // Match img tags and extract alt text
+    return html.replace(/<img([^>]*?)>/g, (match, attributes) => {
+        const altMatch = attributes.match(/alt="([^"]*)"/);
+        const altText = altMatch ? altMatch[1] : '';
+
+        if (altText) {
+            return `${match}\n<p class="image-description">${altText}</p>`;
+        }
+        return match;
+    });
+}
+
 if (!fs.existsSync(blogPostOutputFolder))
 {
     fs.mkdirSync(blogPostOutputFolder, {recursive: true})
@@ -52,7 +65,7 @@ for (const markdownFile of markdownFiles) {
 
     const {frontmatter, markdown} = parseFrontmatter(content)
 
-    const parsedMarkdown = marked.parse(markdown)
+    const parsedMarkdown = addImageDescriptions(marked.parse(markdown))
 
     const parsedDate = formatDate(frontmatter.date)
 
