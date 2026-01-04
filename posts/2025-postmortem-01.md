@@ -1,6 +1,6 @@
 ---
 title: "reviewing 2025, part 1: on 365 days of daily art and creative resistance training"
-description: Thoughts on the art challenge i completed in 2025 to draw every day.
+description: thoughts on the art challenge i completed in 2025 to draw every day.
 date: 2026-01-02
 ---
 
