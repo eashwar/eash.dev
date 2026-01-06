@@ -4,6 +4,24 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
 
+// Configure marked with custom renderer for linkable headers
+const renderer = new marked.Renderer();
+const originalHeadingRenderer = renderer.heading.bind(renderer);
+
+renderer.heading = function({ text, depth, tokens }) {
+    const id = text.toLowerCase().replace(/[^\w]+/g, '-');
+    return `<h${depth} id="${id}">
+        <a href="#${id}" class="header-anchor">#</a>
+        ${text}
+    </h${depth}>`;
+};
+
+marked.setOptions({
+    renderer: renderer,
+    headerIds: true,
+    gfm: true
+});
+
 const postsFolder = path.join(__dirname, "../posts")
 const blogPostTemplatePath = path.join(__dirname, "../templates/blog-post.html")
 const blogListingTemplatePath = path.join(__dirname, "../templates/blog-listing.html")
