@@ -4,6 +4,24 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
 
+// Configure marked with custom renderer for linkable headers
+const renderer = new marked.Renderer();
+const originalHeadingRenderer = renderer.heading.bind(renderer);
+
+renderer.heading = function({ text, depth, tokens }) {
+    const id = text.toLowerCase().replace(/[^\w]+/g, '-');
+    return `<h${depth} id="${id}">
+        <a href="#${id}" class="header-anchor">#</a>
+        ${text}
+    </h${depth}>`;
+};
+
+marked.setOptions({
+    renderer: renderer,
+    headerIds: true,
+    gfm: true
+});
+
 const postsFolder = path.join(__dirname, "../posts")
 const blogPostTemplatePath = path.join(__dirname, "../templates/blog-post.html")
 const blogListingTemplatePath = path.join(__dirname, "../templates/blog-listing.html")
@@ -146,3 +164,10 @@ for (const post of postList) {
 
 fs.writeFileSync(path.join(__dirname, '../feed.xml'), feed.rss2());
 fs.writeFileSync(path.join(__dirname, '../feed.atom'), feed.atom1());
+
+// Write latest post data for use by other scripts
+const latestPost = postList.length > 0 ? postList[0] : null;
+fs.writeFileSync(
+    path.join(__dirname, '../.latest-post.json'),
+    JSON.stringify(latestPost, null, 2)
+);
