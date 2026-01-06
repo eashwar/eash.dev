@@ -125,7 +125,7 @@ looking back on it now, i actually think it came out pretty dang okay despite it
 
 i think this is the strongest track i wrote for the whole year, by a non-insignificant margin. not to say that i don't overall like the other tracks, but i really think this is my strongest musical writing and the most emotionally conveyant track.
 
-i left my job of 4 years this year, took a trip to europe, and began the process of moving to a new apartment, all in the same month. i turned the piano on and meditated on my favorite "bittersweet" chord progression, the I-iv progression.
+i left my job of 4 years, took a trip to europe, and began the process of moving to a new apartment, all in the same month. i turned the piano on and meditated on my favorite "bittersweet" chord progression, the I-iv progression.
 
 i think that's where i'd leave my discussion of this track. the song itself can do the rest of the talking.
 
@@ -136,7 +136,7 @@ i think that's where i'd leave my discussion of this track. the song itself can 
 
 this is probably in my top 3 of tracks this year, if only because of how outside of my comfort zone i pushed myself to! i was really craving the idea of writing something in the style of 80's jazz pop, especially japanese city pop. a month of new beginnings and the peak of summer seemed exactly like the right month for this.
 
-i wrote out some really nonsense lyrics, downloaded a sample for a seed shaker, found a free bongo vst, and set off to the races. the chord progression of the verse is really a classic you will see on a lot of songs in this era, 36251: iii7, vi7, II7, V7, I7. it's an essential jazz and gospel progression and quintessential.
+i wrote out some really nonsense lyrics, downloaded a sample for a seed shaker, found a free bongo vst, and set off to the races. the chord progression of the verse is really a classic you will see on a lot of songs in this era, 36251: iii7, vi7, II7, V7, I7. it's a quintessential jazz and gospel progression.
 
 for the chorus, i returned to the same progression i used last month, the I-iv (major 1 to minor 4). this enabled me to tap a little bit into that floaty, nostalgic vibe again (hence "up in the clouds" in the lyrics here!)
 
