@@ -150,7 +150,7 @@ and i'm proud to say i didn't have to figure out autotune (i have no idea what s
 
 in september i got my first tattoo:
 
-![a photograph of a tattoo on my right forearm, depicting triśūla, the trident of hindu deity shiva](images/2025-postmortem/sep-001.png).
+![a photograph of a tattoo on my right forearm, depicting triśūla, the trident of hindu deity shiva](images/2025-postmortem/sep-001.png)
 
 it had me feeling relatively devotional, and i spent a good amount of time this month listening to hindu devotional music. especially with [navaratri going on](https://en.wikipedia.org/wiki/Navaratri#Tamil_Nadu) and september 30th being the saraswati puja, i felt particularly inspired to dive a little into writing in this style.
 

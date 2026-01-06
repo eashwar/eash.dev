@@ -5,13 +5,24 @@ const { generateProjectsHtml, generateExtLinksHtml } = require('./renderContent.
 const pagesFolder = path.join(__dirname, "../pages")
 const pageTemplatePath = path.join(__dirname, "../templates/page.html")
 const outputFolder = path.join(__dirname, "..")
+const latestPostPath = path.join(__dirname, "../.latest-post.json")
 
 const pageTemplate = fs.readFileSync(pageTemplatePath, 'utf-8')
 const pageFiles = fs.readdirSync(pagesFolder)
 
+// Read latest post data
+let latestPostHtml = '';
+if (fs.existsSync(latestPostPath)) {
+    const latestPost = JSON.parse(fs.readFileSync(latestPostPath, 'utf-8'));
+    if (latestPost) {
+        latestPostHtml = `<p><a href="/blog/${latestPost.link}">${latestPost.title.toLowerCase()}</a></p>`;
+    }
+}
+
 const pageContentMap = {
     'home': {
-        '{{DESCRIPTION}}': "eashwar's portfolio and blog about art, music, games, and software"
+        '{{DESCRIPTION}}': "eashwar's portfolio and blog about art, music, games, and software",
+        '{{LATEST_POST}}': latestPostHtml
     },
     'projects': {
         '{{DESCRIPTION}}': "a portfolio of projects eash has worked on!",

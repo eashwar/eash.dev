@@ -164,3 +164,10 @@ for (const post of postList) {
 
 fs.writeFileSync(path.join(__dirname, '../feed.xml'), feed.rss2());
 fs.writeFileSync(path.join(__dirname, '../feed.atom'), feed.atom1());
+
+// Write latest post data for use by other scripts
+const latestPost = postList.length > 0 ? postList[0] : null;
+fs.writeFileSync(
+    path.join(__dirname, '../.latest-post.json'),
+    JSON.stringify(latestPost, null, 2)
+);
