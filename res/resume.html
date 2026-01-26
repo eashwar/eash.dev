@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume - eashwar mohan</title>
+    <script src="https://kit.fontawesome.com/a47b572520.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: 'Labrada';
+            src: url(../styles/Labrada-VariableFont_wght.ttf);
+        }
+
+        @font-face {
+            font-family: 'Technotot';
+            src: url(../styles/Technotot.otf);
+        }
+
+        @font-face {
+            font-family: 'FiraCode';
+            src: url(../styles/FiraCode-VariableFont_wght.ttf);
+        }
+
+        :root {
+            --primary-dark: #3d566c;
+            --primary-light: #d3f5ff;
+            --secondary-orange: #e59d23;
+            --secondary-blay: #6f889f;
+            --gradient-02: #318ba2;
+            --gradient-03: #2ec3c0;
+            --gradient-04: #7bfac4;
+            --border-radius: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Labrada', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--primary-dark);
+            line-height: 1.4;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 20px;
+            background: white;
+            min-height: 100vh;
+            border-radius: var(--border-radius)
+        }
+
+        h1 {
+            font-family: 'Technotot', monospace, 'Courier New', monospace;
+            font-size: 3em;
+            color: var(--primary-dark);
+            margin-bottom: 0.3em;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-family: 'Technotot', monospace, 'Courier New', monospace;
+            font-size: 1.8em;
+            color: var(--primary-dark);
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            padding-bottom: 0.3em;
+            border-bottom: 3px solid var(--primary-dark);
+            font-weight: normal;
+        }
+
+        h3 {
+            font-family: 'Labrada', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--gradient-02);
+            font-size: 1.3em;
+            margin-top: 1.2em;
+            margin-bottom: 0.4em;
+            font-weight: bold;
+        }
+
+        /* Header contact info */
+        .header-contact {
+            text-align: center;
+            margin-bottom: 1.5em;
+            margin-top: 0.5em;
+            line-height: 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.8em 1.5em;
+        }
+
+        .header-contact a,
+        .header-contact span {
+            color: var(--primary-dark);
+            text-decoration: none;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+
+        .header-contact a:hover {
+            color: var(--gradient-03);
+        }
+
+        .header-contact i {
+            color: var(--gradient-02);
+            margin-right: 0.3em;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .header-contact a:hover i {
+            color: var(--gradient-04);
+            transform: scale(1.1);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--secondary-blay);
+            margin: 2em 0;
+            opacity: 0.3;
+        }
+
+        ul {
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+            line-height: 1.5;
+        }
+
+        a {
+            color: var(--gradient-03);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--gradient-04);
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding-left: 0.3em;
+            padding-right: 0.3em;
+            vertical-align: top;
+        }
+
+        /* Print styles */
+        @media print {
+            .pdf-exclude {
+                display: none !important;
+            }
+
+            body {
+                background: white;
+            }
+
+            .container {
+                padding: 20px 40px;
+                max-width: 100%;
+            }
+
+            h2 {
+                page-break-after: avoid;
+            }
+
+            h3 {
+                page-break-after: avoid;
+            }
+
+            ul {
+                page-break-inside: avoid;
+            }
+        }
+
+        /* PDF-specific adjustments */
+        @page {
+            size: letter;
+            margin: 0.25in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>eashwar mohan</h1>
+<p class="header-contact">
+<a href="mailto:eash@eash.dev"><i class="fa-solid fa-envelope"></i> eash@eash.dev</a>
+<a href="https://eash.dev"><i class="fa-solid fa-link"></i> eash.dev</a>
+<a href="https://github.com/eashwar"><i class="fa-brands fa-github"></i> eashwar</a>
+<a href="https://linkedin.com/in/eashw"><i class="fa-brands fa-linkedin"></i> eashw</a>
+<span><i class="fa-solid fa-location-dot"></i> San Francisco, CA</span>
+</p>
+
+
+<div class="pdf-exclude">
+<p class="header-contact">
+<b>click <a href="resume.pdf">here</a> for pdf, and <a href="/">here</a> to return back to my site.</b>
+</p>
+</div>
+
+<h2>Employment</h2>
+<h3>Notion Labs</h3>
+<p><strong>Senior Software Engineer, Developer Experience</strong> | San Francisco, CA | August 2025 - Present</p>
+<ul>
+<li>i&#39;ll fill this out at some point :) just know i&#39;m working on cool things!</li>
+</ul>
+<h3>Roblox Corporation</h3>
+<p><strong>Senior Software Engineer, Engineering Efficiency</strong> | San Mateo, CA | Sep 2024 - July 2025</p>
+<p><strong>Software Engineer, Engineering Efficiency</strong> | San Mateo, CA | Aug 2023 - Sep 2024</p>
+<ul>
+<li>Direct and manage the reliability program for Roblox&#39;s internal testing and staging environments used by engineers, QA, and designers, authoring training material, cross-functional process runbooks, and escalation policies. Reduce incident rate by over 70%, MTTM by over 85%, and help save tens of thousands of hours in developer and QA productivity.</li>
+<li>Administrate and deploy third-party developer tools for source code management and continuous integration tooling at the company, including GitHub Enterprise (both Cloud and Server), self-hosted GitHub Actions agents and Sourcegraph, as well as build in-house suite of tooling for automation, management, and permission security. Nearly 2000 users, 5000 git repositories, and millions of CI jobs a day.</li>
+<li>Implement novel microsevice canary testing mechanisms for HTTP and gRPC services to enable the rollout of continuous deployment to Roblox backend teams.</li>
+</ul>
+<p><strong>Software Engineer, Content Platform</strong> | San Mateo, CA | Aug 2021 - Aug 2023</p>
+<ul>
+<li>Architected, implemented, and maintained an ecosystem of over 25 high throughput C# gRPC and HTTP microservices (&gt; 10m QPS at peak) for the tens-of-billions user asset system behind Roblox&#39;s content platform.</li>
+<li>Decomposed and migrated legacy monolithic Windows IIS systems (one instance = one machine) to containerized Linux services orchestrated on Nomad.</li>
+<li>Designed and executed a full-stack design for a new React web frontend and asynchronous AWS SQS queue-based backend pipeline for user generated content upload.</li>
+</ul>
+<div class="pdf-exclude">
+
+<p><strong>Software Engineer Intern, Developer Services</strong> | San Mateo, CA | June 2019 – Aug 2019</p>
+<ul>
+<li>Designed and implemented .NET REST API to keep track of dependencies between in-game assets on the Roblox game platform.</li>
+<li>Beta tested a development workflow in Docker Compose, deploying to Hashicorp Nomad and Vault.</li>
+</ul>
+<h3>TechSmith Corporation</h3>
+<p><strong>Software Engineer Intern (2020), Camtasia Team</strong> | Okemos, MI | May 2020 – Aug 2020</p>
+<ul>
+<li>Enabled Camtasia, the video editor and screen recording program, to work better on mixed-DPI multi-monitor workflows.</li>
+<li>Localized Camtasia into various non-English languages.</li>
+</ul>
+<p><strong>Software Engineer Intern (2018), Camtasia Team</strong> | Okemos, MI | May 2018 – Aug 2018</p>
+<ul>
+<li>Mitigated security vulnerabilities related to zip files in Camtasia.</li>
+<li>Completed various bugfixes and small feature requests.</li>
+</ul>
+<h3>University of Michigan</h3>
+<p><strong>Graduate Student Instructor, EECS 494: Game Development</strong> | Ann Arbor, MI | August 2020 – May 2021</p>
+<ul>
+<li>Lead weekly discussion sections over auxiliary course material to help students make games in Unity.</li>
+<li>Manage office hours, a virtual forum board, moderate virtual lecture, and grade assignments.</li>
+</ul>
+<p><strong>Instructional Aide, EECS 280: Data Structures and Algorithms</strong> | Ann Arbor, MI | February 2020 - May 2020</p>
+<ul>
+<li>serve on the staff for one of the largest courses at the university of michigan</li>
+<li>hold office hours and discussion sections to teach introductory computer science topics to students</li>
+</ul>
+<p><strong>Technical Lab Assistant, Crowds and Machines Lab</strong> | Ann Arbor, MI | January 2019 – February 2020</p>
+<ul>
+<li>Educate undergraduate researchers on various tools and skills, such as version control, and software architecture.</li>
+<li>Hold office hours to assist researchers with technical problems and create/maintain documentation for the lab.</li>
+</ul>
+<p><strong>Computer Consultant, University of Michigan Dental Informatics</strong> | Ann Arbor, MI | September 2017 – May 2019</p>
+<ul>
+<li>Assist dental faculty and students of the School of Dentistry over email, phone, and in-person with technological issues.</li>
+<li>File and assign tickets using the ITS and manage the Desktop Support front desk.</li>
+</ul>
+<h3>Delta Dental of Michigan</h3>
+<p><strong>Software Engineer Intern</strong> | Okemos, MI | June 2017 – August 2017</p>
+<ul>
+<li>Integrated Open ID Connect (OIDC)/SecureAuth with desktop and web applications.</li>
+<li>Designed and implemented a REST API using the Java Persistence API (JPA), and Enterprise JavaBeans (EJB).</li>
+</ul>
+</div>
+
+<h2>Education</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>MSE in Computer Science</strong><br><strong>University of Michigan - Ann Arbor</strong><br>Sept 2020 - May 2021<br>GPA: 3.818, Part of Sequential Undergraduate/Graduate Studies program (SUGS)</td>
+<td><strong>BSE in Computer Science/Minor in Music, Summa Cum Laude</strong><br><strong>University of Michigan - Ann Arbor</strong><br>Sept 2017 - May 2020<br>Degree Completed in 3 Years and Awarded With Highest Honors, GPA: 3.875</td>
+</tr>
+</tbody></table>
+<h2>Projects</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Personal Website</strong><br><a href="https://eash.dev">eash.dev</a><br>Single-page-app implemented in raw JS (no libraries). <a href="https://github.com/eashwar/eash.dev">Github: eashwar/eash.dev</a><br><br><strong>Self Hosting scripts</strong><br><a href="https://github.com/eashwar/self-hosting">github: eashwar/self-hosting</a><br>Scripts and automation for my self-hosted Kubernetes cluster on my home server.</td>
+<td><strong>RMFPBot</strong><br><a href="https://github.com/SaltCellar-FOSS">github: SaltCellar-FOSS</a><br>A suite of self-hosted TypeScript discord bots for a cooking community discord.<br><br><strong>Music Composition/Production</strong><br><a href="https://music.eash.dev">music.eash.dev</a><br>Self-produced and recorded music.</td>
+</tr>
+</tbody></table>
+<div class="pdf-exclude">
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>GridBeat</strong><br><a href="https://play.google.com/store">GridBeat on Google Play Store</a><br>Music education puzzle game that teaches the player about drumming and rhythmic intuition. Available on Android and online at projectlegato.com/game/. Made with Unity2D.</td>
+<td><strong>TURBONEON</strong><br><a href="https://deem.itch.io/turboneon">deem.itch.io/turboneon</a><br>A 3D, splitscreen multiplayer spaceship racing game. First place winner of the December 2019 University of Michigan Student Game Showcase. Made with Unity3D.</td>
+</tr>
+<tr>
+<td><strong>Super MIDIo Bros.</strong><br><a href="https://github.com/eashwar/super-midio-bros">GitHub: eashwar/super-midio-bros</a><br>Control a level of Super Mario Bros. by playing the overworld theme on a MIDI keyboard. Made for MHacks 11. Made with pygame, pyautogui.</td>
+<td></td>
+</tr>
+</tbody></table>
+</div>
+
+<h2>Activities</h2>
+<h3>Employee Resource Groups Involvmement - Roblox</h3>
+<p><strong>Co-Lead - Pride; Co-lead - RunClub; Co-lead - Indie Games Club</strong> | January 2022 – July 2025</p>
+<ul>
+<li>Coordinate and plan events for Roblox&#39;s LGBTQ+ employee group, including helping pioneer Roblox&#39;s first participation in San Francisco Pride Parade.</li>
+<li>Organize weekly running events for company run group.</li>
+<li>Moderate monthly discussions of playthroughs of independently made video games.</li>
+</ul>
+<div class="pdf-exclude">
+<h3>Video Game Music Club</h3>
+<p><strong>Co-Founder and President/Speaker/Bandleader</strong> | January 2018 – May 2021</p>
+<ul>
+<li>Lead discussions and workshops on video game music analysis, music theory, composition, and music production.</li>
+<li>Manage mailing lists, online calendar, Discord server, and social media for the club.</li>
+</ul>
+<h3>FIRST Alumni and Mentors Network at Michigan (FAMNM)</h3>
+<p><strong>Treasurer (2018-2020) &amp; Webmaster (2019-2021)</strong> | Sept 2017 – May 2021</p>
+<ul>
+<li>Fundraised over $25,000 to establish an endowed scholarship for FIRST alumni at the University of Michigan.</li>
+<li>Drafted and submitted funding proposals to facilitate the improvement FAMNM events.</li>
+<li>Maintained the frontend and backend of the club website (<a href="https://famnm.club">https://famnm.club</a>).</li>
+</ul>
+<h3>Michigan Hackers</h3>
+<p><strong>Web Team (2018-19) &amp; Bootcamp Lead (2019-2020) &amp; Senior Advisor (2020-2021)</strong> | Jan 2018 – May 2021</p>
+<ul>
+<li>Organized weekly presentations to introduce new CS students to concepts essential to academic and career success.</li>
+<li>Topics include: version control, test-driven development, OOP and FP basics.</li>
+<li>Developed the front-end and back-end for michiganhackers.org using ReactJS and Gin, a Golang framework.</div></li>
+</ul>
+<h2>Proficiencies and Skills</h2>
+<ul>
+<li><strong>Languages &amp; Frameworks:</strong> C#/.NET, Terraform, Python, Golang, Node/TS/JS, React/HTML5/CSS, Bash, PowerShell, C/C++</li>
+<li><strong>Tooling:</strong> Git, GitHub + GitHub Actions, AWS, Docker, Kubernetes, HCP Vault</li>
+<li><strong>Music:</strong> Reaper, Ableton, Clarinet (15 years), Piano (18 years), Composition (10 years)</li>
+</ul>
+<div class="pdf-exclude">
+<h2>Awards</h2>
+<h3>Leinweber Software Scholarship</h3>
+<p><strong>Recipient</strong> | January 2019 – May 2020</p>
+</div>
+
+    </div>
+</body>
+</html>

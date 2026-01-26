@@ -9,5 +9,6 @@ blog.html
 brand.html
 projects.html
 resume.html
+!res/resume.html
 feed.*
 .latest-post.json
